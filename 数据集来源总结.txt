@@ -1,0 +1,5 @@
+https://kilthub.cmu.edu/articles/dataset/AI_Training_Node_Level_Power_Draw/29067572 
+https://github.com/sashavor/co2_inference
+https://huggingface.co/datasets/ml-energy/benchmark-v3 
+https://github.com/MIT-AI-Accelerator/MIT-Supercloud-Dataset
+ https://data.nlr.gov/submissions/312 
