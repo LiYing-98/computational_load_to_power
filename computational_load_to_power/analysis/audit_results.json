@@ -1,0 +1,667 @@
+{
+  "consistency": {
+    "batch_utilization": {
+      "below_official_stability_threshold": 0,
+      "checked": 565,
+      "failed_rows": [],
+      "formula": "avg_batch_size / max_num_seqs",
+      "maximum": 1.0,
+      "median": 0.9982979302832243,
+      "minimum": 0.8540116567460317
+    },
+    "itl_percentile_order": {
+      "checked": 565,
+      "failed": 0,
+      "failed_rows": [],
+      "formula": "median_itl_ms <= p90_itl_ms <= p95_itl_ms <= p99_itl_ms"
+    },
+    "power_identity": {
+      "checked": 565,
+      "failed": 0,
+      "failed_rows": [],
+      "formula": "avg_power_watts = energy_per_token_joules * output_throughput_tokens_per_sec",
+      "max_relative_error": 2.483118554175566e-16,
+      "median_relative_error": 0.0,
+      "relative_tolerance": 1e-09
+    },
+    "request_energy_identity": {
+      "checked": 565,
+      "failed": 0,
+      "failed_rows": [],
+      "formula": "energy_per_request_joules = energy_per_token_joules * avg_output_len",
+      "max_relative_error": 0.0,
+      "median_relative_error": 0.0,
+      "relative_tolerance": 1e-09
+    }
+  },
+  "coverage_analysis": {
+    "configs_per_model": {
+      "counts": {
+        "Qwen/Qwen3-14B": 26,
+        "Qwen/Qwen3-235B-A22B-Instruct-2507": 31,
+        "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8": 23,
+        "Qwen/Qwen3-235B-A22B-Thinking-2507": 18,
+        "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8": 22,
+        "Qwen/Qwen3-30B-A3B-Instruct-2507": 31,
+        "Qwen/Qwen3-30B-A3B-Thinking-2507": 15,
+        "Qwen/Qwen3-32B": 31,
+        "Qwen/Qwen3-8B": 29,
+        "Qwen/Qwen3-Coder-30B-A3B-Instruct": 24,
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct": 10,
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": 16,
+        "deepseek-ai/DeepSeek-R1-0528": 5,
+        "deepseek-ai/DeepSeek-V3.1": 17,
+        "google/gemma-3-12b-it": 13,
+        "google/gemma-3-27b-it": 16,
+        "meta-llama/Llama-3.1-405B-Instruct": 12,
+        "meta-llama/Llama-3.1-405B-Instruct-FP8": 15,
+        "meta-llama/Llama-3.1-70B-Instruct": 22,
+        "meta-llama/Llama-3.1-8B-Instruct": 20,
+        "meta-llama/Llama-3.3-70B-Instruct": 19,
+        "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": 9,
+        "meta-llama/Llama-4-Scout-17B-16E-Instruct": 20,
+        "nvidia/NVIDIA-Nemotron-Nano-12B-v2": 27,
+        "nvidia/NVIDIA-Nemotron-Nano-9B-v2": 29,
+        "openai/gpt-oss-120b": 39,
+        "openai/gpt-oss-20b": 26
+      },
+      "maximum": 39,
+      "median": 20,
+      "minimum": 5
+    },
+    "cross_tabs": {
+      "architecture_by_precision": {
+        "Dense Transformer": {
+          "bfloat16": 188,
+          "fp8": 15
+        },
+        "Mamba-Transformer Hybrid": {
+          "bfloat16": 56
+        },
+        "MoE": {
+          "bfloat16": 149,
+          "fp8": 92,
+          "mxfp4": 65
+        }
+      },
+      "num_gpus_by_gpu": {
+        "1": {
+          "B200": 138,
+          "H100": 112
+        },
+        "2": {
+          "B200": 39,
+          "H100": 65
+        },
+        "4": {
+          "B200": 40,
+          "H100": 43
+        },
+        "8": {
+          "B200": 74,
+          "H100": 54
+        }
+      },
+      "task_by_gpu": {
+        "gpqa": {
+          "B200": 106,
+          "H100": 81
+        },
+        "lm-arena-chat": {
+          "B200": 151,
+          "H100": 177
+        },
+        "sourcegraph-fim": {
+          "B200": 34,
+          "H100": 16
+        }
+      },
+      "task_by_precision": {
+        "gpqa": {
+          "bfloat16": 89,
+          "fp8": 33,
+          "mxfp4": 65
+        },
+        "lm-arena-chat": {
+          "bfloat16": 270,
+          "fp8": 58
+        },
+        "sourcegraph-fim": {
+          "bfloat16": 34,
+          "fp8": 16
+        }
+      }
+    },
+    "gpu_comparable_configuration_keys": {
+      "all_configuration_keys_ignoring_gpu": 454,
+      "paired_h100_b200_keys": 108
+    },
+    "gpus_per_model": {
+      "Qwen/Qwen3-14B": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-235B-A22B-Instruct-2507": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-235B-A22B-Thinking-2507": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-30B-A3B-Instruct-2507": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-30B-A3B-Thinking-2507": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-32B": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-8B": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-Coder-30B-A3B-Instruct": [
+        "B200",
+        "H100"
+      ],
+      "Qwen/Qwen3-Coder-480B-A35B-Instruct": [
+        "B200"
+      ],
+      "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": [
+        "B200"
+      ],
+      "deepseek-ai/DeepSeek-R1-0528": [
+        "B200"
+      ],
+      "deepseek-ai/DeepSeek-V3.1": [
+        "B200"
+      ],
+      "google/gemma-3-12b-it": [
+        "B200",
+        "H100"
+      ],
+      "google/gemma-3-27b-it": [
+        "B200",
+        "H100"
+      ],
+      "meta-llama/Llama-3.1-405B-Instruct": [
+        "B200"
+      ],
+      "meta-llama/Llama-3.1-405B-Instruct-FP8": [
+        "B200",
+        "H100"
+      ],
+      "meta-llama/Llama-3.1-70B-Instruct": [
+        "B200",
+        "H100"
+      ],
+      "meta-llama/Llama-3.1-8B-Instruct": [
+        "B200",
+        "H100"
+      ],
+      "meta-llama/Llama-3.3-70B-Instruct": [
+        "B200",
+        "H100"
+      ],
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": [
+        "H100"
+      ],
+      "meta-llama/Llama-4-Scout-17B-16E-Instruct": [
+        "H100"
+      ],
+      "nvidia/NVIDIA-Nemotron-Nano-12B-v2": [
+        "B200",
+        "H100"
+      ],
+      "nvidia/NVIDIA-Nemotron-Nano-9B-v2": [
+        "B200",
+        "H100"
+      ],
+      "openai/gpt-oss-120b": [
+        "B200",
+        "H100"
+      ],
+      "openai/gpt-oss-20b": [
+        "B200",
+        "H100"
+      ]
+    },
+    "models_per_task": {
+      "gpqa": 12,
+      "lm-arena-chat": 18,
+      "sourcegraph-fim": 3
+    },
+    "parallelism_sanity": {
+      "ep_divides_num_gpus": 565,
+      "tp_divides_num_gpus": 565,
+      "tp_times_dp_equals_num_gpus": 379
+    },
+    "tasks_per_model": {
+      "Qwen/Qwen3-14B": 2,
+      "Qwen/Qwen3-235B-A22B-Instruct-2507": 1,
+      "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8": 1,
+      "Qwen/Qwen3-235B-A22B-Thinking-2507": 1,
+      "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8": 1,
+      "Qwen/Qwen3-30B-A3B-Instruct-2507": 1,
+      "Qwen/Qwen3-30B-A3B-Thinking-2507": 1,
+      "Qwen/Qwen3-32B": 2,
+      "Qwen/Qwen3-8B": 2,
+      "Qwen/Qwen3-Coder-30B-A3B-Instruct": 1,
+      "Qwen/Qwen3-Coder-480B-A35B-Instruct": 1,
+      "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": 1,
+      "deepseek-ai/DeepSeek-R1-0528": 1,
+      "deepseek-ai/DeepSeek-V3.1": 2,
+      "google/gemma-3-12b-it": 1,
+      "google/gemma-3-27b-it": 1,
+      "meta-llama/Llama-3.1-405B-Instruct": 1,
+      "meta-llama/Llama-3.1-405B-Instruct-FP8": 1,
+      "meta-llama/Llama-3.1-70B-Instruct": 1,
+      "meta-llama/Llama-3.1-8B-Instruct": 1,
+      "meta-llama/Llama-3.3-70B-Instruct": 1,
+      "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": 1,
+      "meta-llama/Llama-4-Scout-17B-16E-Instruct": 1,
+      "nvidia/NVIDIA-Nemotron-Nano-12B-v2": 2,
+      "nvidia/NVIDIA-Nemotron-Nano-9B-v2": 2,
+      "openai/gpt-oss-120b": 1,
+      "openai/gpt-oss-20b": 1
+    },
+    "unique_models": 27
+  },
+  "numeric_profile": {
+    "activated_params_billions": {
+      "count": 565,
+      "iqr_outlier_count": 68,
+      "maximum": 405.0,
+      "median": 17.0,
+      "minimum": 3.0,
+      "non_positive": 0,
+      "q1": 8.0,
+      "q3": 32.0
+    },
+    "avg_batch_size": {
+      "count": 565,
+      "iqr_outlier_count": 65,
+      "maximum": 4095.0243902439024,
+      "median": 81.98511904761905,
+      "minimum": 7.453157529493407,
+      "non_positive": 0,
+      "q1": 15.999079189686924,
+      "q3": 255.51724137931035
+    },
+    "avg_output_len": {
+      "count": 565,
+      "iqr_outlier_count": 122,
+      "maximum": 11860.873737373737,
+      "median": 861.154296875,
+      "minimum": 229.6220703125,
+      "non_positive": 0,
+      "q1": 408.841796875,
+      "q3": 2110.8030303030305
+    },
+    "avg_power_watts": {
+      "count": 565,
+      "iqr_outlier_count": 19,
+      "maximum": 7710.24963406389,
+      "median": 1021.968645687438,
+      "minimum": 293.91033781272114,
+      "non_positive": 0,
+      "q1": 616.5121449284105,
+      "q3": 3098.2878789821207
+    },
+    "energy_per_request_joules": {
+      "count": 565,
+      "iqr_outlier_count": 86,
+      "maximum": 117113.0472451733,
+      "median": 444.0431271669371,
+      "minimum": 18.472040700505755,
+      "non_positive": 0,
+      "q1": 147.60976251438845,
+      "q3": 1854.4103294013923
+    },
+    "energy_per_token_joules": {
+      "count": 565,
+      "iqr_outlier_count": 81,
+      "maximum": 34.333625414199396,
+      "median": 0.4672388908079148,
+      "minimum": 0.028446538525400376,
+      "non_positive": 0,
+      "q1": 0.1858720223686476,
+      "q3": 1.3661232958863816
+    },
+    "median_itl_ms": {
+      "count": 565,
+      "iqr_outlier_count": 55,
+      "maximum": 412.0534945031977,
+      "median": 29.83295900048688,
+      "minimum": 3.8020270003471524,
+      "non_positive": 0,
+      "q1": 18.35748300072737,
+      "q3": 45.45507000875659
+    },
+    "output_throughput_tokens_per_sec": {
+      "count": 565,
+      "iqr_outlier_count": 27,
+      "maximum": 22411.535332883344,
+      "median": 2804.8645670999526,
+      "minimum": 179.76505130940487,
+      "non_positive": 0,
+      "q1": 1082.3001783790671,
+      "q3": 5514.900258722318
+    },
+    "p90_itl_ms": {
+      "count": 565,
+      "iqr_outlier_count": 64,
+      "maximum": 1760.6246729992563,
+      "median": 36.17100650444627,
+      "minimum": 4.903670208295807,
+      "non_positive": 0,
+      "q1": 21.905543468892574,
+      "q3": 63.7841984629631
+    },
+    "p95_itl_ms": {
+      "count": 565,
+      "iqr_outlier_count": 61,
+      "maximum": 2032.0430309948279,
+      "median": 42.25611686706543,
+      "minimum": 5.0160094047896555,
+      "non_positive": 0,
+      "q1": 24.716751277446747,
+      "q3": 75.94001314428169
+    },
+    "p99_itl_ms": {
+      "count": 565,
+      "iqr_outlier_count": 61,
+      "maximum": 2345.212553998863,
+      "median": 66.56867032870652,
+      "minimum": 5.42817416368052,
+      "non_positive": 0,
+      "q1": 34.41342919832098,
+      "q3": 124.22373022884138
+    },
+    "total_params_billions": {
+      "count": 565,
+      "iqr_outlier_count": 22,
+      "maximum": 671.0,
+      "median": 32.0,
+      "minimum": 8.0,
+      "non_positive": 0,
+      "q1": 14.0,
+      "q3": 235.0
+    }
+  },
+  "profile": {
+    "candidate_key": {
+      "duplicate_group_examples": {
+        "gpqa | openai/gpt-oss-20b | H100 | 1 | 96 | 1 | 1 | 1": 2,
+        "lm-arena-chat | Qwen/Qwen3-30B-A3B-Instruct-2507 | H100 | 2 | 256 | 1 | 2 | 1": 2,
+        "lm-arena-chat | Qwen/Qwen3-30B-A3B-Instruct-2507 | H100 | 2 | 512 | 1 | 2 | 1": 2
+      },
+      "duplicate_groups": 3,
+      "fields": [
+        "task",
+        "model_id",
+        "gpu_model",
+        "num_gpus",
+        "max_num_seqs",
+        "tensor_parallel",
+        "expert_parallel",
+        "data_parallel"
+      ],
+      "multiplicity": {
+        "1": 559,
+        "2": 3
+      },
+      "rows_in_duplicate_groups": 6,
+      "unique_keys": 562
+    },
+    "column_count": 23,
+    "columns": [
+      "activated_params_billions",
+      "architecture",
+      "avg_batch_size",
+      "avg_output_len",
+      "avg_power_watts",
+      "data_parallel",
+      "energy_per_request_joules",
+      "energy_per_token_joules",
+      "expert_parallel",
+      "gpu_model",
+      "max_num_seqs",
+      "median_itl_ms",
+      "model_id",
+      "nickname",
+      "num_gpus",
+      "output_throughput_tokens_per_sec",
+      "p90_itl_ms",
+      "p95_itl_ms",
+      "p99_itl_ms",
+      "task",
+      "tensor_parallel",
+      "total_params_billions",
+      "weight_precision"
+    ],
+    "coverage": {
+      "architecture": {
+        "Dense Transformer": 203,
+        "Mamba-Transformer Hybrid": 56,
+        "MoE": 306
+      },
+      "data_parallel": {
+        "1": 549,
+        "4": 6,
+        "8": 10
+      },
+      "expert_parallel": {
+        "1": 363,
+        "2": 41,
+        "4": 53,
+        "8": 108
+      },
+      "gpu_model": {
+        "B200": 291,
+        "H100": 274
+      },
+      "max_num_seqs": {
+        "1024": 21,
+        "128": 60,
+        "1536": 8,
+        "16": 72,
+        "192": 24,
+        "2048": 13,
+        "256": 51,
+        "3072": 5,
+        "32": 71,
+        "384": 17,
+        "4096": 5,
+        "512": 35,
+        "64": 67,
+        "768": 13,
+        "8": 72,
+        "96": 31
+      },
+      "model_id": {
+        "Qwen/Qwen3-14B": 26,
+        "Qwen/Qwen3-235B-A22B-Instruct-2507": 31,
+        "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8": 23,
+        "Qwen/Qwen3-235B-A22B-Thinking-2507": 18,
+        "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8": 22,
+        "Qwen/Qwen3-30B-A3B-Instruct-2507": 31,
+        "Qwen/Qwen3-30B-A3B-Thinking-2507": 15,
+        "Qwen/Qwen3-32B": 31,
+        "Qwen/Qwen3-8B": 29,
+        "Qwen/Qwen3-Coder-30B-A3B-Instruct": 24,
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct": 10,
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": 16,
+        "deepseek-ai/DeepSeek-R1-0528": 5,
+        "deepseek-ai/DeepSeek-V3.1": 17,
+        "google/gemma-3-12b-it": 13,
+        "google/gemma-3-27b-it": 16,
+        "meta-llama/Llama-3.1-405B-Instruct": 12,
+        "meta-llama/Llama-3.1-405B-Instruct-FP8": 15,
+        "meta-llama/Llama-3.1-70B-Instruct": 22,
+        "meta-llama/Llama-3.1-8B-Instruct": 20,
+        "meta-llama/Llama-3.3-70B-Instruct": 19,
+        "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": 9,
+        "meta-llama/Llama-4-Scout-17B-16E-Instruct": 20,
+        "nvidia/NVIDIA-Nemotron-Nano-12B-v2": 27,
+        "nvidia/NVIDIA-Nemotron-Nano-9B-v2": 29,
+        "openai/gpt-oss-120b": 39,
+        "openai/gpt-oss-20b": 26
+      },
+      "num_gpus": {
+        "1": 250,
+        "2": 104,
+        "4": 83,
+        "8": 128
+      },
+      "task": {
+        "gpqa": 187,
+        "lm-arena-chat": 328,
+        "sourcegraph-fim": 50
+      },
+      "tensor_parallel": {
+        "1": 452,
+        "2": 63,
+        "4": 30,
+        "8": 20
+      },
+      "weight_precision": {
+        "bfloat16": 393,
+        "fp8": 107,
+        "mxfp4": 65
+      }
+    },
+    "exact_duplicates": {
+      "duplicate_groups": 0,
+      "rows_in_duplicate_groups": 0
+    },
+    "nulls": {
+      "activated_params_billions": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "architecture": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "avg_batch_size": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "avg_output_len": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "avg_power_watts": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "data_parallel": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "energy_per_request_joules": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "energy_per_token_joules": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "expert_parallel": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "gpu_model": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "max_num_seqs": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "median_itl_ms": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "model_id": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "nickname": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "num_gpus": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "output_throughput_tokens_per_sec": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "p90_itl_ms": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "p95_itl_ms": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "p99_itl_ms": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "task": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "tensor_parallel": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "total_params_billions": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "weight_precision": {
+        "count": 0,
+        "rate": 0.0
+      }
+    },
+    "row_count": 565
+  },
+  "scope": {
+    "domain": "text-only LLM inference",
+    "measurement_boundary": "aggregate GPU-side steady-state metrics",
+    "raw_timeline_downloaded": false,
+    "source_files": {
+      "gpqa.json": {
+        "bytes": 166023,
+        "sha256": "640e92a4bdf88512840f8369febca5bf26218fade225e7184458fa1035e41371"
+      },
+      "lm-arena-chat.json": {
+        "bytes": 294004,
+        "sha256": "1461ab6d008e4ee06c1c7ed03a308c437b0dadbee4b4042103120723bb059426"
+      },
+      "sourcegraph-fim.json": {
+        "bytes": 44788,
+        "sha256": "c4de9f316e6d30984fdc02a627f33007484bac390bbc37fca5b3f8a3d3ad116b"
+      }
+    },
+    "source_snapshot_last_updated": "2026-02-16"
+  }
+}

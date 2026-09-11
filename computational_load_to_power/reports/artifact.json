@@ -1,0 +1,289 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "ML.ENERGY V3 文本 LLM inference 数据审计",
+    "description": "第一阶段：公开稳定配置快照的数据质量、测量口径、泄漏边界与建模可行性判断",
+    "generatedAt": "2026-09-10T08:30:00Z",
+    "cards": [
+      {
+        "id": "scope_card",
+        "description": "本次实际审计的公开稳定 leaderboard 快照。",
+        "dataset": "headline",
+        "sourceId": "report_snapshot",
+        "metrics": [
+          { "label": "配置记录", "field": "records", "format": "number" },
+          { "label": "模型", "field": "models", "format": "number" },
+          { "label": "文本任务", "field": "tasks", "format": "number" },
+          { "label": "GPU 型号", "field": "gpu_models", "format": "number" }
+        ]
+      },
+      {
+        "id": "quality_card",
+        "description": "公开字段完整性与跨 GPU 可比覆盖。",
+        "dataset": "headline",
+        "sourceId": "report_snapshot",
+        "metrics": [
+          { "label": "公开字段", "field": "public_fields", "format": "number" },
+          { "label": "空值单元", "field": "null_cells", "format": "number" },
+          { "label": "跨 H100/B200 配对键", "field": "paired_keys", "format": "number" },
+          { "label": "配对覆盖率", "field": "paired_rate", "format": "percent" }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "task_gpu_chart",
+        "title": "任务与 GPU 覆盖并不完全均衡",
+        "subtitle": "每条记录是一组稳定运行配置，不是单个请求。",
+        "headerMarkdown": "`lm-arena-chat` 占 328/565；`sourcegraph-fim` 只有 50 条。",
+        "intent": "comparison",
+        "question": "三个文本任务在 H100 与 B200 上各覆盖多少配置？",
+        "rationale": "分组柱状图同时显示任务规模差异和 GPU 构成。",
+        "type": "bar",
+        "dataset": "task_gpu",
+        "sourceId": "report_snapshot",
+        "encodings": {
+          "x": { "field": "task", "type": "nominal", "label": "任务" },
+          "y": { "field": "count", "type": "quantitative", "label": "稳定配置记录数" },
+          "color": { "field": "gpu", "type": "nominal", "label": "GPU" },
+          "tooltip": [
+            { "field": "task", "type": "nominal", "label": "任务" },
+            { "field": "gpu", "type": "nominal", "label": "GPU" },
+            { "field": "count", "type": "quantitative", "label": "记录数", "format": "number" }
+          ]
+        },
+        "settings": { "groupMode": "grouped", "showValues": true, "sort": "none" },
+        "palette": { "kind": "identity" },
+        "legend": { "position": "bottom", "title": "GPU" },
+        "valueFormat": "number"
+      },
+      {
+        "id": "num_gpus_chart",
+        "title": "单卡配置最多，多卡覆盖存在但不均匀",
+        "subtitle": "1/2/4/8 卡均有记录；不能把聚合功率当作单卡功率。",
+        "intent": "distribution",
+        "question": "配置记录在不同 GPU 卡数上如何分布？",
+        "rationale": "四个离散卡数适合直接比较计数。",
+        "type": "bar",
+        "dataset": "num_gpus",
+        "sourceId": "report_snapshot",
+        "encodings": {
+          "x": { "field": "num_gpus", "type": "ordinal", "label": "GPU 卡数" },
+          "y": { "field": "count", "type": "quantitative", "label": "稳定配置记录数" },
+          "tooltip": [
+            { "field": "num_gpus", "type": "ordinal", "label": "GPU 卡数" },
+            { "field": "count", "type": "quantitative", "label": "记录数", "format": "number" }
+          ]
+        },
+        "settings": { "showValues": true, "sort": "none" },
+        "valueFormat": "number"
+      }
+    ],
+    "tables": [
+      {
+        "id": "quality_table",
+        "title": "公开快照质量检查",
+        "subtitle": "代数检查验证字段内部一致性，不等同于独立传感器交叉验证。",
+        "dataset": "quality_checks",
+        "sourceId": "report_snapshot",
+        "columns": [
+          { "field": "check", "label": "检查", "type": "text" },
+          { "field": "checked", "label": "检查量", "format": "number" },
+          { "field": "failures", "label": "失败/问题", "format": "number" },
+          { "field": "interpretation", "label": "解释", "type": "text" }
+        ]
+      },
+      {
+        "id": "numeric_table",
+        "title": "关键数值字段范围",
+        "subtitle": "功率是跨本次运行全部 GPU 聚合的稳态 GPU 侧功率。",
+        "dataset": "numeric_ranges",
+        "sourceId": "report_snapshot",
+        "columns": [
+          { "field": "metric", "label": "指标", "type": "text" },
+          { "field": "minimum", "label": "最小值", "format": "number" },
+          { "field": "median", "label": "中位数", "format": "number" },
+          { "field": "maximum", "label": "最大值", "format": "number" },
+          { "field": "unit", "label": "单位", "type": "text" }
+        ]
+      },
+      {
+        "id": "feature_table",
+        "title": "建模字段分级",
+        "subtitle": "判定标准是运行前是否可知，而不是公开表中是否有值。",
+        "dataset": "feature_decisions",
+        "sourceId": "report_snapshot",
+        "columns": [
+          { "field": "class", "label": "类别", "type": "text" },
+          { "field": "fields", "label": "字段", "type": "text" },
+          { "field": "decision", "label": "本阶段决定", "type": "text" }
+        ]
+      },
+      {
+        "id": "limits_table",
+        "title": "证据缺口与影响",
+        "subtitle": "以下缺口决定了当前可行结论的边界。",
+        "dataset": "limitations",
+        "sourceId": "report_snapshot",
+        "columns": [
+          { "field": "gap", "label": "缺口", "type": "text" },
+          { "field": "impact", "label": "影响", "type": "text" },
+          { "field": "next_check", "label": "下一阶段最小补充", "type": "text" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "report_snapshot",
+        "label": "报告快照 SQL",
+        "path": "queries/report_snapshot.sql",
+        "description": "把 analysis/audit_results.json 的已核数字段固定为报告数据集；用于逐项复核报告图表和表格。"
+      },
+      {
+        "id": "audit_results",
+        "label": "可复现审计结果",
+        "path": "analysis/audit_results.json",
+        "description": "由 scripts/audit_mlenergy_v3_llm.py 对三个官方文本 LLM compact JSON 生成。"
+      },
+      {
+        "id": "official_methods",
+        "label": "官方计量与字段实现",
+        "href": "https://github.com/ml-energy/benchmark/blob/c1d6557fbf7c7c495749b0fcf649f71774eabde9/mlenergy/benchmark/llm/benchmark.py#L946-L965",
+        "description": "ML.ENERGY benchmark 稳态窗口与 GPU 能量聚合代码，以及 data 工具的派生字段实现。"
+      },
+      {
+        "id": "field_dictionary",
+        "label": "字段字典与泄漏分级",
+        "path": "docs/field_dictionary.md"
+      },
+      {
+        "id": "scope_notes",
+        "label": "数据来源与证据边界",
+        "path": "docs/source_and_scope.md"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "sourceId": "audit_results",
+        "body": "## 技术结论\n\n**有条件可行，但不能直接进入正式模型训练。** 565 条公开稳定配置足以支持一个限定在 **H100/B200 + vLLM + 三个 V3 文本任务 + 已观测模型/配置域** 内的原型，首选目标是 GPU 侧稳态 `energy_per_token_joules`，其次是跨卡聚合 `avg_power_watts`。它不足以支持可泛化的事前单请求或整任务总能耗预测，因为关键工作量特征与稳态总量字段不在公开快照中，而多个看似有用的字段实际是运行后结果。"
+      },
+      { "id": "scope_metrics", "type": "metric-strip", "cardIds": ["scope_card"] },
+      {
+        "id": "measurement_boundary",
+        "type": "markdown",
+        "sourceId": "official_methods",
+        "body": "## 测量口径：GPU 侧、稳态、跨卡聚合\n\n官方实现以请求进入稳定并发后开始计量、在回落前结束；`steady_state_energy` 是窗口内所有 GPU 的能量求和，`avg_power_watts` 再由能量除以持续时间得到。因此报告中的功率不是单卡功率，也不是 CPU、节点输入或 PDU 功率；跨不同 `num_gpus` 比较时必须把卡数纳入条件。实现中未见空闲基线扣除，故应按稳态窗口 GPU 总量理解。"
+      },
+      { "id": "task_gpu", "type": "chart", "chartId": "task_gpu_chart" },
+      { "id": "num_gpus", "type": "chart", "chartId": "num_gpus_chart" },
+      { "id": "quality_metrics", "type": "metric-strip", "cardIds": ["quality_card"] },
+      { "id": "quality", "type": "table", "tableId": "quality_table" },
+      {
+        "id": "quality_interpretation",
+        "type": "markdown",
+        "sourceId": "audit_results",
+        "body": "### 质量判断\n\n23 个公开字段在 565 条记录中均无空值，且没有完全重复行。`avg_power = energy/token × throughput`、`energy/request = energy/token × avg_output_len`、ITL 分位顺序均 565/565 通过。候选配置键仍有 3 组重复（6 行），同键指标不同，说明公开字段隐藏了 seed/重复轮次等区分信息；后续不能静默删重，应先取得 parquet 中的 `seed` 与 `num_request_repeats`，再决定按重复实验聚合或作为独立观测。"
+      },
+      { "id": "numeric", "type": "table", "tableId": "numeric_table" },
+      {
+        "id": "coverage_interpretation",
+        "type": "markdown",
+        "sourceId": "audit_results",
+        "body": "## 覆盖与可比性\n\n任务记录数为 328 / 187 / 50（lm-arena-chat / gpqa / sourcegraph-fim），模型覆盖分别为 18 / 12 / 3，存在明显任务不平衡。27 个模型中 20 个同时出现在 H100 与 B200；按任务、模型、卡数、max_num_seqs 与并行配置完全一致后，454 个去 GPU 配置键中只有 108 个同时覆盖两种 GPU（23.8%）。这足以做受控配对分析，但不足以把 GPU 差异与模型/配置差异完全解耦。"
+      },
+      { "id": "feature", "type": "table", "tableId": "feature_table" },
+      {
+        "id": "target_recommendation",
+        "type": "markdown",
+        "sourceId": "field_dictionary",
+        "body": "## 建模可行性判断\n\n**可以做：**以任务类别、模型结构/参数量/精度、GPU 型号/卡数、`max_num_seqs` 与并行配置为事前特征，预测配置级稳态每输出 token GPU 能耗或聚合功率，并采用按模型分组的验证。\n\n**现在不能可靠做：**把实际 `avg_output_len`、`avg_batch_size`、吞吐或 ITL 当输入来预测能耗；把 `energy_per_request_joules` 当作独立实测标签；或声称模型能预测任意新任务、新 GPU、其他推理框架、CPU/节点功耗与整任务总能耗。`model_id` 应只用于分组和留一模型外验证，避免记忆式泄漏。"
+      },
+      { "id": "limits", "type": "table", "tableId": "limits_table" },
+      {
+        "id": "next_steps",
+        "type": "markdown",
+        "body": "## 下一阶段建议（仍不进入正式训练）\n\n1. 在取得 gated `runs/llm.parquet` 授权后，只下载该小型汇总文件，补审 `seed`、重复轮次、稳态总能量/时长、稳定标志与路径；仍不下载 raw timeline。\n2. 构造运行前工作量特征：输入 token 数分布、计划请求数、最大输出 token 预算、采样参数与任务混合；严格区分计划量与实际完成量。\n3. 预注册评估切分：GroupKFold/留一模型外、留一任务外，以及 108 个 H100/B200 配对键的受控对比；禁止随机逐行切分作为主结果。\n4. 先定义两个窄目标：`energy_per_token_joules` 与聚合 `avg_power_watts`；只有补齐计划工作量后再讨论单请求或整任务总能耗。\n5. 上述补审完成后再决定是否进入第二阶段原型，本报告到此停止。"
+      },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## 尚需回答的问题\n\n- gated parquet 中 565 条稳定记录与公开快照是否一一对应，3 组重复键能否由 seed/重复轮次解释？\n- 计划输入长度、输出上限和请求量能否从配置或工作负载定义中稳定提取，而不接触运行后结果？\n- 在按模型或按任务外推时，现有 27 模型/3 任务的支持范围是否仍足够？\n- 若最终业务目标是节点侧电力，GPU 侧标签与 CPU/网络/散热等残余功耗之间需要怎样的独立测量桥接？后一个问题不在本阶段实施范围。"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-10T08:30:00Z",
+    "status": "partial",
+    "datasets": {
+      "headline": [
+        {
+          "records": 565,
+          "models": 27,
+          "tasks": 3,
+          "gpu_models": 2,
+          "public_fields": 23,
+          "null_cells": 0,
+          "paired_keys": 108,
+          "paired_rate": 0.2378854626
+        }
+      ],
+      "task_gpu": [
+        { "task": "gpqa", "gpu": "H100", "count": 81 },
+        { "task": "gpqa", "gpu": "B200", "count": 106 },
+        { "task": "lm-arena-chat", "gpu": "H100", "count": 177 },
+        { "task": "lm-arena-chat", "gpu": "B200", "count": 151 },
+        { "task": "sourcegraph-fim", "gpu": "H100", "count": 16 },
+        { "task": "sourcegraph-fim", "gpu": "B200", "count": 34 }
+      ],
+      "num_gpus": [
+        { "num_gpus": "1", "count": 250 },
+        { "num_gpus": "2", "count": 104 },
+        { "num_gpus": "4", "count": 83 },
+        { "num_gpus": "8", "count": 128 }
+      ],
+      "quality_checks": [
+        { "check": "公开字段空值", "checked": 12995, "failures": 0, "interpretation": "23×565 个单元均非空" },
+        { "check": "完全重复行", "checked": 565, "failures": 0, "interpretation": "没有逐字段完全相同的行" },
+        { "check": "候选配置键重复组", "checked": 562, "failures": 3, "interpretation": "6 行；需用 parquet 的 seed/重复轮次解释" },
+        { "check": "功率代数恒等式", "checked": 565, "failures": 0, "interpretation": "最大相对误差 2.48e-16" },
+        { "check": "单请求能耗派生恒等式", "checked": 565, "failures": 0, "interpretation": "证实该列由实际输出长度派生" },
+        { "check": "ITL 分位顺序", "checked": 565, "failures": 0, "interpretation": "median ≤ p90 ≤ p95 ≤ p99" },
+        { "check": "batch 利用率低于 0.85", "checked": 565, "failures": 0, "interpretation": "最低 0.8540；仅复核公开可见稳定条件" }
+      ],
+      "numeric_ranges": [
+        { "metric": "total_params_billions", "minimum": 8, "median": 32, "maximum": 671, "unit": "十亿参数" },
+        { "metric": "activated_params_billions", "minimum": 3, "median": 17, "maximum": 405, "unit": "十亿参数" },
+        { "metric": "avg_power_watts", "minimum": 293.91, "median": 1021.969, "maximum": 7710.25, "unit": "W（跨卡聚合）" },
+        { "metric": "energy_per_token_joules", "minimum": 0.02845, "median": 0.46724, "maximum": 34.3336, "unit": "J/output token" },
+        { "metric": "energy_per_request_joules", "minimum": 18.472, "median": 444.043, "maximum": 117113.047, "unit": "J/request（估算）" },
+        { "metric": "avg_output_len", "minimum": 229.622, "median": 861.154, "maximum": 11860.874, "unit": "实际 output tokens" }
+      ],
+      "feature_decisions": [
+        { "class": "候选事前输入", "fields": "task；architecture；total/activated params；weight_precision", "decision": "可用，但 task 只是粗粒度工作负载代理" },
+        { "class": "候选事前输入", "fields": "gpu_model；num_gpus；max_num_seqs；TP/EP/DP", "decision": "可用；max_num_seqs 不是实际平均 batch" },
+        { "class": "首选目标", "fields": "energy_per_token_joules；avg_power_watts", "decision": "二者分开建模；功率为跨卡聚合" },
+        { "class": "条件目标", "fields": "energy_per_request_joules；steady_state_energy_joules", "decision": "需计划工作量/时长；前者当前为派生估算" },
+        { "class": "明确泄漏", "fields": "avg_output_len；avg_batch_size；throughput；ITL；duration；实际 token/requests", "decision": "全部禁作事前输入" },
+        { "class": "标识风险", "fields": "model_id；nickname", "decision": "仅分组、去重和外推验证，不作默认输入" },
+        { "class": "诊断/追溯", "fields": "seed；num_request_repeats；is_stable/reason；paths", "decision": "质量控制，不作主预测特征" }
+      ],
+      "limitations": [
+        { "gap": "gated parquet 未授权", "impact": "无法实审稳态总能量/时长、seed、重复轮次和稳定原因", "next_check": "授权后只下载 runs/llm.parquet" },
+        { "gap": "缺少输入长度与计划输出/请求量", "impact": "无法形成真正的任务事前工作量描述，也无法稳健预测总能耗", "next_check": "从工作负载配置提取计划特征" },
+        { "gap": "仅 3 任务、27 模型、H100/B200", "impact": "对新任务、新模型、新 GPU 的外推证据薄弱", "next_check": "采用留一组外验证并报告支持域" },
+        { "gap": "公开快照只含稳定记录", "impact": "存在选择偏差，且无法分析失败/不稳定边界", "next_check": "用 parquet 的稳定标志复核筛选前后分布" },
+        { "gap": "只有 GPU 侧稳态口径", "impact": "不能回答 CPU、节点/PDU 或 Node Residual", "next_check": "另立阶段设计独立节点侧测量，不在当前范围" },
+        { "gap": "运行环境/硬件细节有限", "impact": "功率上限、频率、拓扑、服务器与框架版本变化可能造成域偏移", "next_check": "补齐可审计的执行前环境元数据" }
+      ]
+    }
+  },
+  "package_info": {
+    "originUrl": "artifact://mlenergy-v3-llm-audit",
+    "controls": { "edit": false, "refresh": false }
+  }
+}

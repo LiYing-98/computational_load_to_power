@@ -1,0 +1,44 @@
+{
+  "artifact": "reports/mlenergy_v3_llm_audit.html",
+  "verified_at": "2026-09-10T08:39:00Z",
+  "builder": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "structural_only",
+    "counts": {
+      "blocks": 15,
+      "charts": 2,
+      "metrics": 2,
+      "tables": 4
+    },
+    "limitation": "The packaged verifier could not find its supported Chromium headless-shell, so source-dialog and automated viewport interaction probes were not run."
+  },
+  "manual_headless_edge_render": {
+    "status": "passed",
+    "browser": "Microsoft Edge (preinstalled)",
+    "viewports": [
+      "1440x1200",
+      "1440x8000"
+    ],
+    "virtual_time_budget_ms": 6000,
+    "observed": [
+      "Chinese text and inline code rendered correctly",
+      "Both charts rendered with labels, values, axes and legend",
+      "All four tables and all report sections were visible in the full-page capture",
+      "No content clipping was observed"
+    ]
+  },
+  "notebook": {
+    "status": "passed",
+    "code_cells": 5,
+    "executed_code_cells": 5,
+    "error_outputs": 0,
+    "missing_cell_ids": 0
+  },
+  "tests": {
+    "status": "passed",
+    "tests_run": 8,
+    "failures": 0,
+    "errors": 0
+  }
+}
