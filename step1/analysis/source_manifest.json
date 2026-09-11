@@ -1,0 +1,47 @@
+{
+  "dataset": "ml-energy/benchmark-v3",
+  "file": "runs/llm.parquet",
+  "dataset_revision": "fea6cb99d037d11f86f9c45a6991b9e5764f4529",
+  "source_url": "https://huggingface.co/datasets/ml-energy/benchmark-v3/blob/main/runs/llm.parquet",
+  "retrieved_at_utc": "2026-09-11T02:19:33.9944085Z",
+  "authentication": {
+    "whoami_verified": true,
+    "credential_persisted": false,
+    "credential_recorded_in_repository": false
+  },
+  "local_file": "step1/data/runs/llm.parquet",
+  "tracked_by_git": false,
+  "bytes": 231706,
+  "sha256": "132195151f9f7f4de1821f96055a7e640c39df70521f727a8e56e6e92a3009a9",
+  "parquet_metadata": {
+    "rows_all_llm_and_mllm": 1138,
+    "columns": 37,
+    "row_groups": 1,
+    "contains_tasks": [
+      "gpqa",
+      "image-chat",
+      "lm-arena-chat",
+      "sourcegraph-fim",
+      "video-chat"
+    ],
+    "scope_filter": [
+      "gpqa",
+      "lm-arena-chat",
+      "sourcegraph-fim"
+    ],
+    "excluded_as_mllm": [
+      "image-chat",
+      "video-chat"
+    ]
+  },
+  "raw_timeline_retained": false,
+  "prometheus_downloaded": false,
+  "bounded_run_metadata": {
+    "selected_runs": 11,
+    "retained_files": 11,
+    "retained_bytes": 16624,
+    "method": "read only the JSON prefix before the embedded timeline key",
+    "timeline_keys_retained": 0
+  },
+  "transient_cleanup_note": "The first two results.json requests exposed that timeline data is embedded in the file. Those two complete local copies (50,024,517 and 71,421,526 bytes) were immediately deleted; the acquisition method was then replaced with bounded prefix reads."
+}

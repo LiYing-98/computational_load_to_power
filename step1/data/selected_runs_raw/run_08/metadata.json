@@ -1,0 +1,45 @@
+{
+  "date": "20251125-192118",
+  "endpoint_type": "openai-chat",
+  "model_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2",
+  "seed": 48105,
+  "num_unique_prompts": 198,
+  "num_prompts": 198,
+  "num_request_repeats": 1,
+  "gpu_model": "B200",
+  "num_gpus": 1,
+  "max_num_seqs": 128,
+  "max_num_batched_tokens": null,
+  "request_rate": "inf",
+  "burstiness": 1.0,
+  "max_concurrency": null,
+  "max_output_tokens": 32768,
+  "duration": 1023.425995349884,
+  "completed": 198,
+  "steady_state_duration": 147.5204906463623,
+  "steady_state_energy": 91096.67700000107,
+  "steady_state_energy_per_token": 0.17871064102765521,
+  "total_input_tokens": 43155,
+  "total_output_tokens": 1061824,
+  "request_throughput": 0.1934678236625294,
+  "output_throughput": 1037.5190827911192,
+  "total_token_throughput": 1079.686274357566,
+  "steady_state_measurement": {
+    "time": 147.5204906463623,
+    "gpu_energy": {
+      "0": 91096.67700000107
+    },
+    "cpu_energy": null,
+    "dram_energy": null,
+    "soc_energy": null
+  },
+  "entire_benchmark_measurement": {
+    "time": 1023.4140069484711,
+    "gpu_energy": {
+      "0": 412677.1439999938
+    },
+    "cpu_energy": null,
+    "dram_energy": null,
+    "soc_energy": null
+  }
+}

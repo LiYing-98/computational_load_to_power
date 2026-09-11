@@ -1,0 +1,51 @@
+{
+  "date": "20251125-012538",
+  "endpoint_type": "openai-chat",
+  "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+  "seed": 48105,
+  "num_unique_prompts": 198,
+  "num_prompts": 198,
+  "num_request_repeats": 1,
+  "gpu_model": "B200",
+  "num_gpus": 4,
+  "max_num_seqs": 128,
+  "max_num_batched_tokens": null,
+  "request_rate": "inf",
+  "burstiness": 1.0,
+  "max_concurrency": null,
+  "max_output_tokens": 32768,
+  "duration": 1051.6034035682678,
+  "completed": 198,
+  "steady_state_duration": 328.5566611289978,
+  "steady_state_energy": 1008498.0270000026,
+  "steady_state_energy_per_token": 1.0629273476933352,
+  "total_input_tokens": 44473,
+  "total_output_tokens": 1781361,
+  "request_throughput": 0.18828390943596474,
+  "output_throughput": 1693.9475413977755,
+  "total_token_throughput": 1736.2381995005314,
+  "steady_state_measurement": {
+    "time": 328.5566611289978,
+    "gpu_energy": {
+      "0": 242662.1550000012,
+      "1": 260654.65799999982,
+      "2": 257463.01400000602,
+      "3": 247718.19999999553
+    },
+    "cpu_energy": null,
+    "dram_energy": null,
+    "soc_energy": null
+  },
+  "entire_benchmark_measurement": {
+    "time": 1051.5573201179504,
+    "gpu_energy": {
+      "0": 757329.9600000009,
+      "1": 807583.5450000018,
+      "2": 798047.5700000003,
+      "3": 761892.8320000023
+    },
+    "cpu_energy": null,
+    "dram_energy": null,
+    "soc_energy": null
+  }
+}

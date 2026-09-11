@@ -1,0 +1,61 @@
+{
+  "date": "20251122-091553",
+  "endpoint_type": "openai-chat",
+  "model_id": "openai/gpt-oss-120b",
+  "seed": 48105,
+  "num_unique_prompts": 198,
+  "num_prompts": 1188,
+  "num_request_repeats": 6,
+  "gpu_model": "H100",
+  "num_gpus": 2,
+  "max_num_seqs": 1024,
+  "max_num_batched_tokens": null,
+  "request_rate": "inf",
+  "burstiness": 1.0,
+  "max_concurrency": null,
+  "max_output_tokens": 32768,
+  "duration": 413.48613476753235,
+  "completed": 1188,
+  "steady_state_duration": 60.085633754730225,
+  "steady_state_energy": 68434.66600000858,
+  "steady_state_energy_per_token": 0.09540020046199459,
+  "total_input_tokens": 259650,
+  "total_output_tokens": 2108984,
+  "request_throughput": 2.8731314066139366,
+  "output_throughput": 5100.4950896012515,
+  "total_token_throughput": 5728.448431122555,
+  "steady_state_measurement": {
+    "time": 60.085633754730225,
+    "gpu_energy": {
+      "0": 34833.91400000453,
+      "1": 33600.75200000405
+    },
+    "cpu_energy": {
+      "0": 16987.293670000014,
+      "1": 298687.0,
+      "2": 15741.61656200001
+    },
+    "dram_energy": {
+      "0": 320.38640699999814,
+      "2": 300.6674600000006
+    },
+    "soc_energy": null
+  },
+  "entire_benchmark_measurement": {
+    "time": 413.47928953170776,
+    "gpu_energy": {
+      "0": 196137.06700000167,
+      "1": 186078.16899999976
+    },
+    "cpu_energy": {
+      "0": 115219.83619999999,
+      "1": 2261026.0,
+      "2": 111533.217037
+    },
+    "dram_energy": {
+      "0": 2226.8235669999995,
+      "2": 2287.174370999999
+    },
+    "soc_energy": null
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "date": "20251120-120348",
+  "endpoint_type": "openai",
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "seed": 48105,
+  "num_prompts": 1024,
+  "gpu_model": "H100",
+  "num_gpus": 1,
+  "max_num_seqs": 16,
+  "max_num_batched_tokens": null,
+  "request_rate": "inf",
+  "burstiness": 1.0,
+  "max_concurrency": null,
+  "max_output_tokens": 2048,
+  "duration": 325.22917222976685,
+  "completed": 1024,
+  "steady_state_duration": 310.0495693683624,
+  "steady_state_energy": 170316.0140000023,
+  "steady_state_energy_per_token": 0.6488377410531376,
+  "total_input_tokens": 1407050,
+  "total_output_tokens": 268079,
+  "request_throughput": 3.1485490461371275,
+  "output_throughput": 824.2772263080029,
+  "total_token_throughput": 5150.611147565079,
+  "steady_state_measurement": {
+    "time": 310.0495693683624,
+    "gpu_energy": {
+      "0": 170316.0140000023
+    },
+    "cpu_energy": {
+      "0": 85164.354671,
+      "1": 1715950.0,
+      "2": 82015.01599300001
+    },
+    "dram_energy": {
+      "0": 1623.1302129999985,
+      "2": 1650.984626999998
+    },
+    "soc_energy": null
+  },
+  "entire_benchmark_measurement": {
+    "time": 325.2260196208954,
+    "gpu_energy": {
+      "0": 176610.33399999887
+    },
+    "cpu_energy": {
+      "0": 89414.141033,
+      "1": 1799276.0,
+      "2": 86095.56426199997
+    },
+    "dram_energy": {
+      "0": 1704.2742220000018,
+      "2": 1732.8350680000076
+    },
+    "soc_energy": null
+  }
+}

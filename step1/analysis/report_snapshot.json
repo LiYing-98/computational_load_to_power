@@ -1,0 +1,381 @@
+{
+  "surface": "report",
+  "title": "现有 ML.ENERGY 数据可靠，但正式建模前还缺事前工作量特征",
+  "generatedAt": "2026-09-11T03:09:45.708448+00:00",
+  "status": "reviewed",
+  "buildStatus": "complete",
+  "filters": [],
+  "queries": {
+    "headline": {
+      "rows": [
+        {
+          "textLlmRows": 694,
+          "stableRows": 565,
+          "unstableRows": 129,
+          "models": 27,
+          "selectedRuns": 11,
+          "decision": "B",
+          "phase1Difference": 0
+        }
+      ],
+      "source": {
+        "label": "Reviewed Phase 1.5 headline checks",
+        "tables": [],
+        "filters": [
+          "Text LLM inference tasks only",
+          "GPU-side measurements"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Text LLM run rows",
+            "definition": "Rows after limiting runs/llm.parquet to GPQA, LM Arena Chat and Sourcegraph FIM.",
+            "componentIds": [
+              "report-executive-summary",
+              "report-scope",
+              "report-metric-rows"
+            ]
+          },
+          {
+            "label": "Stable rows",
+            "definition": "Text LLM rows with is_stable=true.",
+            "componentIds": [
+              "report-executive-summary",
+              "report-stability",
+              "report-metric-stable"
+            ]
+          }
+        ]
+      }
+    },
+    "stability_by_task": {
+      "rows": [
+        {
+          "task": "gpqa",
+          "stable": 187,
+          "unstable": 60,
+          "total": 247,
+          "stableRate": 0.757085020242915
+        },
+        {
+          "task": "lm-arena-chat",
+          "stable": 328,
+          "unstable": 60,
+          "total": 388,
+          "stableRate": 0.845360824742268
+        },
+        {
+          "task": "sourcegraph-fim",
+          "stable": 50,
+          "unstable": 9,
+          "total": 59,
+          "stableRate": 0.847457627118644
+        }
+      ],
+      "source": {
+        "label": "Full gated parquet stability profile",
+        "tables": [],
+        "filters": [
+          "Tasks: gpqa, lm-arena-chat, sourcegraph-fim"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Stable rate",
+            "definition": "Stable rows divided by all text LLM rows within task.",
+            "formula": "stable / (stable + unstable)",
+            "componentIds": [
+              "report-stability"
+            ]
+          }
+        ]
+      }
+    },
+    "unstable_reasons": {
+      "rows": [
+        {
+          "reason": "cascade_from_unstable_batch",
+          "runs": 2
+        },
+        {
+          "reason": "low_batch_utilization",
+          "runs": 122
+        },
+        {
+          "reason": "short_steady_state",
+          "runs": 5
+        }
+      ],
+      "source": {
+        "label": "Post-run stability diagnostics",
+        "tables": [],
+        "filters": [
+          "Unstable text LLM rows only"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Unstable runs",
+            "definition": "Rows with is_stable=false grouped by normalized unstable reason prefix.",
+            "componentIds": [
+              "report-stability"
+            ]
+          }
+        ]
+      }
+    },
+    "selected_runs": {
+      "rows": [
+        {
+          "task": "gpqa",
+          "gpu_model": "B200",
+          "architecture": "Dense Transformer",
+          "model_scale": "small",
+          "num_gpus": 1,
+          "max_num_seqs": 128,
+          "tensor_parallel": 1,
+          "expert_parallel": 1,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "gpqa",
+          "gpu_model": "H100",
+          "architecture": "MoE",
+          "model_scale": "large",
+          "num_gpus": 2,
+          "max_num_seqs": 1024,
+          "tensor_parallel": 2,
+          "expert_parallel": 1,
+          "data_parallel": 1,
+          "weight_precision": "mxfp4"
+        },
+        {
+          "task": "lm-arena-chat",
+          "gpu_model": "B200",
+          "architecture": "MoE",
+          "model_scale": "large",
+          "num_gpus": 2,
+          "max_num_seqs": 16,
+          "tensor_parallel": 1,
+          "expert_parallel": 2,
+          "data_parallel": 1,
+          "weight_precision": "fp8"
+        },
+        {
+          "task": "lm-arena-chat",
+          "gpu_model": "H100",
+          "architecture": "Dense Transformer",
+          "model_scale": "medium",
+          "num_gpus": 4,
+          "max_num_seqs": 1024,
+          "tensor_parallel": 4,
+          "expert_parallel": 1,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "sourcegraph-fim",
+          "gpu_model": "B200",
+          "architecture": "MoE",
+          "model_scale": "large",
+          "num_gpus": 8,
+          "max_num_seqs": 1024,
+          "tensor_parallel": 1,
+          "expert_parallel": 8,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "sourcegraph-fim",
+          "gpu_model": "H100",
+          "architecture": "MoE",
+          "model_scale": "medium",
+          "num_gpus": 1,
+          "max_num_seqs": 16,
+          "tensor_parallel": 1,
+          "expert_parallel": 1,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "gpqa",
+          "gpu_model": "B200",
+          "architecture": "MoE",
+          "model_scale": "large",
+          "num_gpus": 4,
+          "max_num_seqs": 128,
+          "tensor_parallel": 1,
+          "expert_parallel": 4,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "gpqa",
+          "gpu_model": "B200",
+          "architecture": "Mamba-Transformer Hybrid",
+          "model_scale": "small",
+          "num_gpus": 1,
+          "max_num_seqs": 128,
+          "tensor_parallel": 1,
+          "expert_parallel": 1,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "lm-arena-chat",
+          "gpu_model": "B200",
+          "architecture": "Dense Transformer",
+          "model_scale": "large",
+          "num_gpus": 8,
+          "max_num_seqs": 1024,
+          "tensor_parallel": 8,
+          "expert_parallel": 1,
+          "data_parallel": 1,
+          "weight_precision": "bfloat16"
+        },
+        {
+          "task": "sourcegraph-fim",
+          "gpu_model": "B200",
+          "architecture": "MoE",
+          "model_scale": "large",
+          "num_gpus": 4,
+          "max_num_seqs": 128,
+          "tensor_parallel": 1,
+          "expert_parallel": 4,
+          "data_parallel": 4,
+          "weight_precision": "fp8"
+        },
+        {
+          "task": "sourcegraph-fim",
+          "gpu_model": "B200",
+          "architecture": "MoE",
+          "model_scale": "large",
+          "num_gpus": 8,
+          "max_num_seqs": 1024,
+          "tensor_parallel": 1,
+          "expert_parallel": 8,
+          "data_parallel": 8,
+          "weight_precision": "fp8"
+        }
+      ],
+      "source": {
+        "label": "Deterministic representative run selection",
+        "tables": [],
+        "filters": [
+          "6–12 files",
+          "results metadata prefix only",
+          "no timeline or Prometheus retained"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Representative runs",
+            "definition": "Stable text LLM runs selected coverage-first across task, GPU, architecture, scale, card count, batch, precision and parallelism facets.",
+            "componentIds": [
+              "report-selected-runs"
+            ]
+          }
+        ]
+      }
+    },
+    "workload_tasks": {
+      "rows": [
+        {
+          "task": "gpqa",
+          "dataset": "Idavidrein/gpqa",
+          "numUniquePrompts": 198,
+          "maxOutputTokens": 32768,
+          "endpointType": "openai-chat",
+          "inputFeatureStatus": "not present precomputed; derivable before execution only with frozen requests + exact tokenizer/template"
+        },
+        {
+          "task": "lm-arena-chat",
+          "dataset": "lmarena-ai/arena-human-preference-100k",
+          "numUniquePrompts": 1024,
+          "maxOutputTokens": 4096,
+          "endpointType": "openai-chat",
+          "inputFeatureStatus": "not present precomputed; derivable before execution only with frozen requests + exact tokenizer/template"
+        },
+        {
+          "task": "sourcegraph-fim",
+          "dataset": "sourcegraph/context-aware-fim-code-completions",
+          "numUniquePrompts": 1024,
+          "maxOutputTokens": 2048,
+          "endpointType": "openai",
+          "inputFeatureStatus": "not present precomputed; derivable before execution only with frozen requests + exact tokenizer/template"
+        }
+      ],
+      "source": {
+        "label": "Official benchmark task definitions and bounded metadata",
+        "tables": [],
+        "filters": [
+          "Benchmark commit c1d6557fbf7c7c495749b0fcf649f71774eabde9"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Unique prompts",
+            "definition": "Configured unique request count before request-sequence repetition.",
+            "componentIds": [
+              "report-workload"
+            ]
+          },
+          {
+            "label": "Maximum output tokens",
+            "definition": "Configured per-request generation cap; not actual or expected generated length.",
+            "componentIds": [
+              "report-workload",
+              "report-gap"
+            ]
+          }
+        ]
+      }
+    },
+    "consistency_checks": {
+      "rows": [
+        {
+          "check": "actual_average_output_length",
+          "checked": 694,
+          "failed": 0,
+          "maxRelativeError": 0.0
+        },
+        {
+          "check": "energy_power_duration",
+          "checked": 694,
+          "failed": 0,
+          "maxRelativeError": 0.0
+        },
+        {
+          "check": "itl_percentile_order",
+          "checked": 694,
+          "failed": 0,
+          "maxRelativeError": null
+        },
+        {
+          "check": "power_from_energy_intensity_and_throughput",
+          "checked": 694,
+          "failed": 0,
+          "maxRelativeError": 2.483118554175566e-16
+        },
+        {
+          "check": "request_energy_from_actual_output",
+          "checked": 694,
+          "failed": 0,
+          "maxRelativeError": 0.0
+        }
+      ],
+      "source": {
+        "label": "Independent arithmetic checks on all text LLM rows",
+        "tables": [],
+        "filters": [
+          "All 694 text LLM rows"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Consistency failures",
+            "definition": "Rows failing an independently recomputed published identity.",
+            "componentIds": [
+              "report-quality"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

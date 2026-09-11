@@ -1,0 +1,65 @@
+{
+  "date": "20251122-071653",
+  "endpoint_type": "openai-chat",
+  "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+  "seed": 48105,
+  "num_unique_prompts": 1024,
+  "num_prompts": 2048,
+  "num_request_repeats": 2,
+  "gpu_model": "H100",
+  "num_gpus": 4,
+  "max_num_seqs": 1024,
+  "max_num_batched_tokens": null,
+  "request_rate": "inf",
+  "burstiness": 1.0,
+  "max_concurrency": null,
+  "max_output_tokens": 4096,
+  "duration": 184.39530277252197,
+  "completed": 2048,
+  "steady_state_duration": 53.79973864555359,
+  "steady_state_energy": 137055.80700016022,
+  "steady_state_energy_per_token": 0.3731420112064737,
+  "total_input_tokens": 1306650,
+  "total_output_tokens": 718403,
+  "request_throughput": 11.106573590578398,
+  "output_throughput": 3895.9940367149866,
+  "total_token_throughput": 10982.12898892654,
+  "steady_state_measurement": {
+    "time": 53.79973864555359,
+    "gpu_energy": {
+      "0": 35643.548000097275,
+      "1": 35234.608999967575,
+      "2": 30749.578000068665,
+      "3": 35428.0720000267
+    },
+    "cpu_energy": {
+      "0": 14488.053242000009,
+      "1": 444321.0,
+      "2": 13729.461800999998
+    },
+    "dram_energy": {
+      "0": 311.9483640000035,
+      "2": 245.03343200000018
+    },
+    "soc_energy": null
+  },
+  "entire_benchmark_measurement": {
+    "time": 184.37527632713318,
+    "gpu_energy": {
+      "0": 109370.41400003433,
+      "1": 108900.52300000191,
+      "2": 95289.61400008202,
+      "3": 109335.94199991226
+    },
+    "cpu_energy": {
+      "0": 49299.756788,
+      "1": 1477446.0,
+      "2": 47061.110479999974
+    },
+    "dram_energy": {
+      "0": 940.1957709999915,
+      "2": 841.6839980000004
+    },
+    "soc_energy": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date": "20251125-162658",
+  "endpoint_type": "openai-chat",
+  "model_id": "Qwen/Qwen3-14B",
+  "seed": 48105,
+  "num_unique_prompts": 198,
+  "num_prompts": 198,
+  "num_request_repeats": 1,
+  "gpu_model": "B200",
+  "num_gpus": 1,
+  "max_num_seqs": 128,
+  "max_num_batched_tokens": null,
+  "request_rate": "inf",
+  "burstiness": 1.0,
+  "max_concurrency": null,
+  "max_output_tokens": 32768,
+  "duration": 933.1770403385162,
+  "completed": 198,
+  "steady_state_duration": 298.17371940612793,
+  "steady_state_energy": 152443.9129999876,
+  "steady_state_energy_per_token": 0.18257543199465798,
+  "total_input_tokens": 44473,
+  "total_output_tokens": 1450748,
+  "request_throughput": 0.2121783878525067,
+  "output_throughput": 1554.6331910113556,
+  "total_token_throughput": 1602.2908144606713,
+  "steady_state_measurement": {
+    "time": 298.17371940612793,
+    "gpu_energy": {
+      "0": 152443.9129999876
+    },
+    "cpu_energy": null,
+    "dram_energy": null,
+    "soc_energy": null
+  },
+  "entire_benchmark_measurement": {
+    "time": 933.1733644008636,
+    "gpu_energy": {
+      "0": 441346.70299999416
+    },
+    "cpu_energy": null,
+    "dram_energy": null,
+    "soc_energy": null
+  }
+}
