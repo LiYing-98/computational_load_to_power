@@ -1,0 +1,323 @@
+{
+  "generated_at_utc": "2026-09-15T01:55:35.801192+00:00",
+  "scope": "694 ML.ENERGY V3 text-LLM inference runs",
+  "runs": 694,
+  "metadata_available": 694,
+  "acquisition": {
+    "total_source_bytes_read": 5685248,
+    "total_source_bytes_received": 5685248,
+    "total_metadata_source_bytes_before_timeline": 1007051,
+    "total_timeline_member_bytes_received_and_discarded": 4678197,
+    "total_metadata_bytes_retained": 811669,
+    "timeline_member_touched": true,
+    "raw_timeline_retained": false,
+    "prometheus_downloaded": false
+  },
+  "overall_coverage": {
+    "steady_cpu": {
+      "present": 373,
+      "total": 694,
+      "coverage": 0.537463976945245
+    },
+    "steady_dram": {
+      "present": 373,
+      "total": 694,
+      "coverage": 0.537463976945245
+    },
+    "entire_cpu": {
+      "present": 373,
+      "total": 694,
+      "coverage": 0.537463976945245
+    },
+    "entire_dram": {
+      "present": 373,
+      "total": 694,
+      "coverage": 0.537463976945245
+    }
+  },
+  "raw_container_types": {
+    "steady_cpu": {
+      "dict": 373,
+      "missing": 321
+    },
+    "steady_dram": {
+      "dict": 373,
+      "missing": 321
+    },
+    "entire_cpu": {
+      "dict": 373,
+      "missing": 321
+    },
+    "entire_dram": {
+      "dict": 373,
+      "missing": 321
+    }
+  },
+  "zone_key_patterns": {
+    "steady_cpu_zone_keys": {
+      "0|1|2": 373,
+      "missing": 321
+    },
+    "steady_dram_zone_keys": {
+      "0|2": 373,
+      "missing": 321
+    },
+    "entire_cpu_zone_keys": {
+      "0|1|2": 373,
+      "missing": 321
+    },
+    "entire_dram_zone_keys": {
+      "0|2": 373,
+      "missing": 321
+    }
+  },
+  "gpu_by_date_day": {
+    "20251118": {
+      "B200": 0,
+      "H100": 120
+    },
+    "20251119": {
+      "B200": 0,
+      "H100": 133
+    },
+    "20251120": {
+      "B200": 0,
+      "H100": 84
+    },
+    "20251121": {
+      "B200": 0,
+      "H100": 2
+    },
+    "20251122": {
+      "B200": 0,
+      "H100": 34
+    },
+    "20251123": {
+      "B200": 7,
+      "H100": 0
+    },
+    "20251124": {
+      "B200": 61,
+      "H100": 0
+    },
+    "20251125": {
+      "B200": 216,
+      "H100": 0
+    },
+    "20251126": {
+      "B200": 37,
+      "H100": 0
+    }
+  },
+  "quantity_diagnostics": {
+    "steady_cpu_energy_j": {
+      "count": 373,
+      "min": 21550.739331999997,
+      "p25": 575801.450474,
+      "median": 1368825.303274,
+      "p75": 3865950.998714,
+      "max": 56759387.93301,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 13736399.643434,
+      "above_robust_high_threshold": 12
+    },
+    "steady_dram_energy_j": {
+      "count": 373,
+      "min": 59.77189699999872,
+      "p25": 902.4431590000013,
+      "median": 2096.584336,
+      "p75": 5774.348657000004,
+      "max": 74249.782763,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 20390.06515100001,
+      "above_robust_high_threshold": 14
+    },
+    "steady_cpu_power_w": {
+      "count": 373,
+      "min": 3145.1867446280085,
+      "p25": 5713.860293373171,
+      "median": 6446.873121089011,
+      "p75": 7614.813030151588,
+      "max": 9126.835857487216,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 13317.671240486838,
+      "above_robust_high_threshold": 0
+    },
+    "steady_dram_power_w": {
+      "count": 373,
+      "min": 8.723309917563743,
+      "p25": 9.283048224296053,
+      "median": 9.868590536454843,
+      "p75": 10.778908349559446,
+      "max": 14.374841505455278,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 15.266488725349625,
+      "above_robust_high_threshold": 0
+    },
+    "steady_cpu_energy_with_dram_zone_j": {
+      "count": 373,
+      "min": 3284.7393319999974,
+      "p25": 48015.32636099999,
+      "median": 109025.65052099999,
+      "p75": 298169.17015699996,
+      "max": 4043484.9330099993,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 1048630.7015449998,
+      "above_robust_high_threshold": 16
+    },
+    "steady_cpu_energy_without_dram_zone_j": {
+      "count": 373,
+      "min": 18266.0,
+      "p25": 523827.0,
+      "median": 1247434.0,
+      "p75": 3525948.0,
+      "max": 52715903.0,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 12532311.0,
+      "above_robust_high_threshold": 11
+    },
+    "steady_cpu_power_with_dram_zone_w": {
+      "count": 373,
+      "min": 479.3858088768354,
+      "p25": 515.432006701339,
+      "median": 536.1533306077437,
+      "p75": 551.8278884340824,
+      "max": 587.2800982527904,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 661.0155336323127,
+      "above_robust_high_threshold": 0
+    },
+    "steady_cpu_power_without_dram_zone_w": {
+      "count": 373,
+      "min": 2665.8009357511733,
+      "p25": 5167.233597889567,
+      "median": 5932.083654177734,
+      "p75": 7071.758010309346,
+      "max": 8615.443867600654,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 12785.331247568683,
+      "above_robust_high_threshold": 0
+    },
+    "entire_cpu_energy_j": {
+      "count": 373,
+      "min": 411783.160196,
+      "p25": 1212556.282782,
+      "median": 2363589.925034,
+      "p75": 5480141.329312,
+      "max": 59409842.40087,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 18282896.468902003,
+      "above_robust_high_threshold": 18
+    },
+    "entire_dram_energy_j": {
+      "count": 373,
+      "min": 694.5676890000013,
+      "p25": 1880.0702429999947,
+      "median": 3608.4595749999935,
+      "p75": 8622.304367000006,
+      "max": 78298.692877,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 28849.00673900004,
+      "above_robust_high_threshold": 15
+    },
+    "entire_cpu_power_w": {
+      "count": 373,
+      "min": 3193.6042908246636,
+      "p25": 5716.6061285231035,
+      "median": 6391.226752918245,
+      "p75": 7527.146882353865,
+      "max": 8657.804770744366,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 12958.769143846152,
+      "above_robust_high_threshold": 0
+    },
+    "entire_dram_power_w": {
+      "count": 373,
+      "min": 8.734069923558904,
+      "p25": 9.298327174107815,
+      "median": 9.80799990345088,
+      "p75": 10.699450334902844,
+      "max": 14.032913699133807,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 14.90281981728793,
+      "above_robust_high_threshold": 0
+    },
+    "entire_cpu_energy_with_dram_zone_j": {
+      "count": 373,
+      "min": 37912.83806300002,
+      "p25": 96360.86726799997,
+      "median": 188990.531686,
+      "p75": 473502.6776,
+      "max": 4246153.40087,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 1604928.1085960001,
+      "above_robust_high_threshold": 14
+    },
+    "entire_cpu_energy_without_dram_zone_j": {
+      "count": 373,
+      "min": 370290.0,
+      "p25": 1129112.0,
+      "median": 2149432.0,
+      "p75": 4928096.0,
+      "max": 55163689.0,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 16325048.0,
+      "above_robust_high_threshold": 19
+    },
+    "entire_cpu_power_with_dram_zone_w": {
+      "count": 373,
+      "min": 480.7476003324389,
+      "p25": 514.5549035241745,
+      "median": 535.3705909996553,
+      "p75": 550.6456207466952,
+      "max": 584.3648652774082,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 658.9177724142571,
+      "above_robust_high_threshold": 0
+    },
+    "entire_cpu_power_without_dram_zone_w": {
+      "count": 373,
+      "min": 2710.8158292165376,
+      "p25": 5165.701864744184,
+      "median": 5877.308449868394,
+      "p75": 6978.548834982616,
+      "max": 8116.876533702163,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 12417.089745697915,
+      "above_robust_high_threshold": 0
+    }
+  },
+  "measurement_boundary": {
+    "benchmark_commit": "c1d6557fbf7c7c495749b0fcf649f71774eabde9",
+    "zeus_version": "0.13.1",
+    "source_hashes": {
+      "benchmark.py": "c8c0f55d5d542c2da851aa0f9023c2f263f383587d598b16affce54b3e8035c1",
+      "zeus/monitor/energy.py": "e59ba55570c6f55afff63fdb7fac4ff77fff02acb79ef0c4cb724503a9570248",
+      "zeus/device/cpu/rapl.py": "969cba2ecc862f37477e878d117a8d385af6c9e38aab6394a0fb7a203ebe821d"
+    },
+    "cpu_dram_mechanism": "Intel RAPL top-level power zones visible to the benchmark driver; Zeus selects every discovered top-level zone by default",
+    "zone_identity_limit": "Result metadata stores integer zone indices but not RAPL names; indices cannot be asserted to be CPU packages from results alone",
+    "observed_zone_pattern": "All 373 measured runs contain CPU zones 0|1|2 and DRAM subzones 0|2; aggregate CPU power is dominated by unmatched zone 1",
+    "cpu_aggregate_use": "Treat the all-zone CPU sum as a diagnostic only. The sum of CPU zones that also expose DRAM is a conditional package proxy, not a verified CPU-package label",
+    "hardware_batch_confounding": "H100 runs were collected on 20251118-20251122 and B200 runs on 20251123-20251126 with no overlapping day; sensor availability cannot be causally attributed to hardware rather than collection batch/configuration",
+    "window_alignment": "The same Zeus Measurement object supplies time, GPU, CPU, and DRAM energy for each named window",
+    "host_scope": "Driver and locally spawned vLLM server share the inference host in the pinned benchmark code",
+    "node_scope_limit": "No evidence identifies chassis-wide loads or remote or multi-node coverage; do not call this whole-node energy"
+  }
+}

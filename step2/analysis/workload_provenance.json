@@ -1,0 +1,399 @@
+{
+  "generated_at_utc": "2026-09-15T01:55:20.372339+00:00",
+  "benchmark_commit": "c1d6557fbf7c7c495749b0fcf649f71774eabde9",
+  "runtime_versions": {
+    "datasets": "4.4.1",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "numpy": "2.3.4",
+    "pandas": "3.0.1"
+  },
+  "benchmark_source_hashes": {
+    "datasets.py": "cfc1081a9f15d45d918986ea4253a8c675011d7918d295606897ee9c38348a9f",
+    "workloads.py": "735827578d5274e6dec58bbb89889e52b4b9a3bfcba2ffd483dc9b0ae282346e",
+    "benchmark.py": "c8c0f55d5d542c2da851aa0f9023c2f263f383587d598b16affce54b3e8035c1"
+  },
+  "tokenizer_revision_manifest": {
+    "path": "step2/config/tokenizer_revisions.json",
+    "sha256": "93f43ddd39b7311b1d8fcd4142fe2662c5342ee511804967ac3040df39f894ce",
+    "refresh_requested": false
+  },
+  "task_specs": {
+    "gpqa": {
+      "dataset": "Idavidrein/gpqa",
+      "dataset_revision": "633f5ee89ab8ad4522a9f850766b73f62147ffdd",
+      "subset": "gpqa_diamond",
+      "split": "train",
+      "num_requests": 198,
+      "max_output_tokens": 32768,
+      "construction": "GPQADataset.sample at benchmark commit"
+    },
+    "lm-arena-chat": {
+      "dataset": "lmarena-ai/arena-human-preference-100k",
+      "dataset_revision": "72e85b3ddc9c81bf7b659d6b03d4126dfd8fb34a",
+      "subset": null,
+      "split": "train",
+      "num_requests": 1024,
+      "max_output_tokens": 4096,
+      "construction": "LMArenaHumanPreferenceDataset.sample at benchmark commit"
+    },
+    "sourcegraph-fim": {
+      "dataset": "sourcegraph/context-aware-fim-code-completions",
+      "dataset_revision": "59178e2aaa628a54a99588fb61ac8d04dd03193a",
+      "subset": null,
+      "split": "train",
+      "num_requests": 1024,
+      "max_output_tokens": 2048,
+      "construction": "SourcegraphFIMDataset.sample plus render_fim_prompt at benchmark commit"
+    }
+  },
+  "task_request_failures": {
+    "gpqa": "DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+  },
+  "request_list_hashes": {
+    "lm-arena-chat": "2f801cd5bf61f0b709f74915fda9cf102be5693246304e0b0247dd9623b1df6b",
+    "sourcegraph-fim": "1799ba0b7d47e52dfe55aea544dbab9b82e5f4f1cf37b67c931fa0bbb51bc9c9"
+  },
+  "task_unique_input_counts": {
+    "lm-arena-chat": 1016,
+    "sourcegraph-fim": 1024
+  },
+  "prompt_template_hashes": {
+    "gpqa|Qwen/Qwen3-14B": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|Qwen/Qwen3-235B-A22B-Thinking-2507": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|Qwen/Qwen3-235B-A22B-Thinking-2507-FP8": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|Qwen/Qwen3-30B-A3B-Thinking-2507": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|Qwen/Qwen3-32B": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|Qwen/Qwen3-8B": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|deepseek-ai/DeepSeek-R1-0528": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|deepseek-ai/DeepSeek-V3.1": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|nvidia/NVIDIA-Nemotron-Nano-12B-v2": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|nvidia/NVIDIA-Nemotron-Nano-9B-v2": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|openai/gpt-oss-120b": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "gpqa|openai/gpt-oss-20b": "830d6dab08a0a1a18918779e5e92e6ceae39378a65c6b03d24a21976320042cb",
+    "lm-arena-chat|Qwen/Qwen3-14B": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|Qwen/Qwen3-235B-A22B-Instruct-2507": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|Qwen/Qwen3-235B-A22B-Instruct-2507-FP8": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|Qwen/Qwen3-30B-A3B-Instruct-2507": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|Qwen/Qwen3-32B": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|Qwen/Qwen3-8B": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|deepseek-ai/DeepSeek-V3.1": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|google/gemma-3-12b-it": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|google/gemma-3-27b-it": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-3.1-405B-Instruct": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-3.1-405B-Instruct-FP8": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-3.1-70B-Instruct": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-3.1-8B-Instruct": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-3.3-70B-Instruct": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|meta-llama/Llama-4-Scout-17B-16E-Instruct": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|nvidia/NVIDIA-Nemotron-Nano-12B-v2": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "lm-arena-chat|nvidia/NVIDIA-Nemotron-Nano-9B-v2": "c60419ee5dfa35fbe6c4703128412c70b84b0365b2adc5090264a7233f3ce25d",
+    "sourcegraph-fim|Qwen/Qwen3-Coder-30B-A3B-Instruct": "09a8a3b83f6455689525f72563480cbc524e802450a0e4540ed806323e3ad608",
+    "sourcegraph-fim|Qwen/Qwen3-Coder-480B-A35B-Instruct": "09a8a3b83f6455689525f72563480cbc524e802450a0e4540ed806323e3ad608",
+    "sourcegraph-fim|Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": "09a8a3b83f6455689525f72563480cbc524e802450a0e4540ed806323e3ad608"
+  },
+  "model_tokenizers": [
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-14B",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "f07f63f2bbd7540917118ebdf3812696ef303b03",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "144afc2f379b542fdd4e85a1fcd5e1f79112d95d",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-32B",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "9216db5781bf21249d130ec9da846c4624c16137",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-8B",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "deepseek-ai/DeepSeek-R1-0528",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "4236a6af538feda4548eca9ab308586007567f52",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "deepseek-ai/DeepSeek-V3.1",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "c0781d039fb7a1ba2abc4add0bdc293e92d2b8db",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "f428df0ec725fed457b89cfca54dc26500fb88c1",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "openai/gpt-oss-120b",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "gpqa",
+      "model_id": "openai/gpt-oss-20b",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "tokenizer_class": null,
+      "missing_reason": "request_list_unavailable: DatasetNotFoundError: Dataset 'Idavidrein/gpqa' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/Idavidrein/gpqa to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-14B",
+      "status": "available",
+      "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "tokenizer_revision_requested": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "status": "available",
+      "tokenizer_revision": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+      "tokenizer_revision_requested": "ac9c66cc9b46af7306746a9250f23d47083d689e",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+      "status": "available",
+      "tokenizer_revision": "e156cb4efae43fbee1a1ab073f946a1377e6b969",
+      "tokenizer_revision_requested": "e156cb4efae43fbee1a1ab073f946a1377e6b969",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "status": "available",
+      "tokenizer_revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+      "tokenizer_revision_requested": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-32B",
+      "status": "available",
+      "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "tokenizer_revision_requested": "9216db5781bf21249d130ec9da846c4624c16137",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-8B",
+      "status": "available",
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokenizer_revision_requested": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "deepseek-ai/DeepSeek-V3.1",
+      "status": "available",
+      "tokenizer_revision": "c0781d039fb7a1ba2abc4add0bdc293e92d2b8db",
+      "tokenizer_revision_requested": "c0781d039fb7a1ba2abc4add0bdc293e92d2b8db",
+      "tokenizer_class": "LlamaTokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "google/gemma-3-12b-it",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/google/gemma-3-12b-it.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/google/gemma-3-12b-it/resolve/96b6f1eccf38110c56df3a15bffe176da04bfd80/config.json.\nAccess to model google/gemma-3-12b-it is restricted and you are not in the authorized list. Visit https://huggingface.co/google/gemma-3-12b-it to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "google/gemma-3-27b-it",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "005ad3404e59d6023443cb575daa05336842228a",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/google/gemma-3-27b-it.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/google/gemma-3-27b-it/resolve/005ad3404e59d6023443cb575daa05336842228a/config.json.\nAccess to model google/gemma-3-27b-it is restricted and you are not in the authorized list. Visit https://huggingface.co/google/gemma-3-27b-it to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-405B-Instruct",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "be673f326cab4cd22ccfef76109faf68e41aa5f1",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct/resolve/be673f326cab4cd22ccfef76109faf68e41aa5f1/config.json.\nAccess to model meta-llama/Llama-3.1-405B-Instruct is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-405B-Instruct-FP8",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "64a54b704768dfd589a3e4ac05d546052f67f4fd",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct-FP8.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct-FP8/resolve/64a54b704768dfd589a3e4ac05d546052f67f4fd/config.json.\nAccess to model meta-llama/Llama-3.1-405B-Instruct-FP8 is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct-FP8 to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "1605565b47bb9346c5515c34102e054115b4f98b",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/1605565b47bb9346c5515c34102e054115b4f98b/config.json.\nAccess to model meta-llama/Llama-3.1-70B-Instruct is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/config.json.\nAccess to model meta-llama/Llama-3.1-8B-Instruct is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/resolve/6f6073b423013f6a7d4d9f39144961bfbfbc386b/config.json.\nAccess to model meta-llama/Llama-3.3-70B-Instruct is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "94125d2bd83076b21eed33119525e29eaf3894f4",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8/resolve/94125d2bd83076b21eed33119525e29eaf3894f4/config.json.\nAccess to model meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "status": "missing",
+      "tokenizer_revision": null,
+      "tokenizer_revision_requested": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+      "tokenizer_class": null,
+      "missing_reason": "OSError: You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct.\n403 Client Error.\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct/resolve/92f3b1597a195b523d8d9e5700e57e4fbb8f20d3/config.json.\nAccess to model meta-llama/Llama-4-Scout-17B-16E-Instruct is restricted and you are not in the authorized list. Visit https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct to ask for access."
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2",
+      "status": "available",
+      "tokenizer_revision": "f428df0ec725fed457b89cfca54dc26500fb88c1",
+      "tokenizer_revision_requested": "f428df0ec725fed457b89cfca54dc26500fb88c1",
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "status": "available",
+      "tokenizer_revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+      "tokenizer_revision_requested": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "sourcegraph-fim",
+      "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "status": "available",
+      "tokenizer_revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+      "tokenizer_revision_requested": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "sourcegraph-fim",
+      "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "status": "available",
+      "tokenizer_revision": "9d90cf8fca1bf7b7acca42d3fc9ae694a2194069",
+      "tokenizer_revision_requested": "9d90cf8fca1bf7b7acca42d3fc9ae694a2194069",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    },
+    {
+      "task": "sourcegraph-fim",
+      "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "status": "available",
+      "tokenizer_revision": "003f183a92fbe5b9a8325aaa8b2ae797c91dd90f",
+      "tokenizer_revision_requested": "003f183a92fbe5b9a8325aaa8b2ae797c91dd90f",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "missing_reason": null
+    }
+  ],
+  "method": "faithful minimal reproduction of pinned official samplers and prompt_len tokenization",
+  "known_limit": "upstream result artifacts do not record the historical tokenizer commit; this audit therefore uses the versioned Phase 1.6 revision snapshot rather than claiming those commits were used during measurement",
+  "rows": 694,
+  "available_rows": 271
+}
