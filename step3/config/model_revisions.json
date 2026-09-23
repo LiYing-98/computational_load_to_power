@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "source": "step2/config/tokenizer_revisions.json",
+  "models": {
+    "Qwen/Qwen3-14B": {"revision": "40c069824f4251a91eefaf281ebe4c544efd3e18", "access": "public", "static_only": true},
+    "Qwen/Qwen3-235B-A22B-Instruct-2507": {"revision": "ac9c66cc9b46af7306746a9250f23d47083d689e", "access": "public", "static_only": true},
+    "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8": {"revision": "e156cb4efae43fbee1a1ab073f946a1377e6b969", "access": "public", "static_only": true},
+    "Qwen/Qwen3-235B-A22B-Thinking-2507": {"revision": "6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5", "access": "public", "static_only": true},
+    "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8": {"revision": "f07f63f2bbd7540917118ebdf3812696ef303b03", "access": "public", "static_only": true},
+    "Qwen/Qwen3-30B-A3B-Instruct-2507": {"revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe", "access": "public", "static_only": true},
+    "Qwen/Qwen3-30B-A3B-Thinking-2507": {"revision": "144afc2f379b542fdd4e85a1fcd5e1f79112d95d", "access": "public", "static_only": true},
+    "Qwen/Qwen3-32B": {"revision": "9216db5781bf21249d130ec9da846c4624c16137", "access": "public", "static_only": true},
+    "Qwen/Qwen3-8B": {"revision": "b968826d9c46dd6066d109eabc6255188de91218", "access": "public", "static_only": true},
+    "Qwen/Qwen3-Coder-30B-A3B-Instruct": {"revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120", "access": "public", "static_only": true},
+    "Qwen/Qwen3-Coder-480B-A35B-Instruct": {"revision": "9d90cf8fca1bf7b7acca42d3fc9ae694a2194069", "access": "public", "static_only": true},
+    "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": {"revision": "003f183a92fbe5b9a8325aaa8b2ae797c91dd90f", "access": "public", "static_only": true},
+    "deepseek-ai/DeepSeek-R1-0528": {"revision": "4236a6af538feda4548eca9ab308586007567f52", "access": "public", "static_only": true},
+    "deepseek-ai/DeepSeek-V3.1": {"revision": "c0781d039fb7a1ba2abc4add0bdc293e92d2b8db", "access": "public", "static_only": true},
+    "google/gemma-3-12b-it": {"revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80", "access": "authorized", "static_only": true},
+    "google/gemma-3-27b-it": {"revision": "005ad3404e59d6023443cb575daa05336842228a", "access": "authorized", "static_only": true},
+    "meta-llama/Llama-3.1-405B-Instruct": {"revision": "be673f326cab4cd22ccfef76109faf68e41aa5f1", "access": "restricted", "static_only": true},
+    "meta-llama/Llama-3.1-405B-Instruct-FP8": {"revision": "64a54b704768dfd589a3e4ac05d546052f67f4fd", "access": "restricted", "static_only": true},
+    "meta-llama/Llama-3.1-70B-Instruct": {"revision": "1605565b47bb9346c5515c34102e054115b4f98b", "access": "restricted", "static_only": true},
+    "meta-llama/Llama-3.1-8B-Instruct": {"revision": "0e9e39f249a16976918f6564b8830bc894c89659", "access": "restricted", "static_only": true},
+    "meta-llama/Llama-3.3-70B-Instruct": {"revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b", "access": "restricted", "static_only": true},
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {"revision": "94125d2bd83076b21eed33119525e29eaf3894f4", "access": "restricted", "static_only": true},
+    "meta-llama/Llama-4-Scout-17B-16E-Instruct": {"revision": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3", "access": "restricted", "static_only": true},
+    "nvidia/NVIDIA-Nemotron-Nano-12B-v2": {"revision": "f428df0ec725fed457b89cfca54dc26500fb88c1", "access": "public", "static_only": true},
+    "nvidia/NVIDIA-Nemotron-Nano-9B-v2": {"revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476", "access": "public", "static_only": true},
+    "openai/gpt-oss-120b": {"revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a", "access": "public", "static_only": true},
+    "openai/gpt-oss-20b": {"revision": "6cee5e81ee83917806bbde320786a8fb61efebee", "access": "public", "static_only": true}
+  },
+  "gpqa_dataset": {
+    "repo_id": "Idavidrein/gpqa",
+    "revision": "633f5ee89ab8ad4522a9f850766b73f62147ffdd",
+    "subset": "gpqa_diamond",
+    "split": "train"
+  },
+  "benchmark": {
+    "repository": "ml-energy/benchmark",
+    "commit": "c1d6557fbf7c7c495749b0fcf649f71774eabde9"
+  },
+  "vllm": {
+    "repository": "vllm-project/vllm",
+    "version": "v0.11.1",
+    "commit": "439368496db48d8f992ba8c606a0c0b1eebbfa69"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "benchmark": {
+    "commit": "c1d6557fbf7c7c495749b0fcf649f71774eabde9",
+    "files": {
+      "benchmark.py": "c8c0f55d5d542c2da851aa0f9023c2f263f383587d598b16affce54b3e8035c1",
+      "datasets.py": "cfc1081a9f15d45d918986ea4253a8c675011d7918d295606897ee9c38348a9f",
+      "workloads.py": "735827578d5274e6dec58bbb89889e52b4b9a3bfcba2ffd483dc9b0ae282346e"
+    }
+  },
+  "vllm": {
+    "version": "v0.11.1",
+    "commit": "439368496db48d8f992ba8c606a0c0b1eebbfa69",
+    "files": {
+      "vllm/entrypoints/chat_utils.py": "75472d0e7193e87c34eb32962a7ef84e8bd3829a70fd5749a3f87b28f39c2bad",
+      "vllm/entrypoints/openai/serving_chat.py": "4ea06e2c1b5b324df16184cad08356ab7b3da0173faf9c9331fa7f85a199cbbd",
+      "vllm/entrypoints/openai/protocol.py": "df0b19ca2a725caecbf4247f9ac9c7ca6b19719370b60121c40aa2a4611d0425"
+    }
+  }
+}
