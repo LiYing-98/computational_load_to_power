@@ -1,0 +1,208 @@
+{
+  "generated_at_utc": "2026-09-18T05:14:06.625137+00:00",
+  "models": 27,
+  "config_available": 20,
+  "config_restricted": 7,
+  "fields": {
+    "architecture_family": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "total_params_billions": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "activated_params_billions": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "weight_precision": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "precision_bits": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "param_count_total": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "param_count_active": {
+      "available": 27,
+      "missing": 0,
+      "coverage": 1.0
+    },
+    "model_type": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "architecture_class": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "num_layers": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "hidden_size": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "intermediate_size": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "num_attention_heads": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "num_key_value_heads": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "vocab_size": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "context_length": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "sliding_window": {
+      "available": 4,
+      "missing": 23,
+      "coverage": 0.14814814814814814
+    },
+    "moe_intermediate_size": {
+      "available": 13,
+      "missing": 14,
+      "coverage": 0.48148148148148145
+    },
+    "shared_expert_count": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "shared_expert_intermediate_size": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "qk_nope_head_dim": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "qk_rope_head_dim": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "v_head_dim": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "mamba_head_dim": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "mamba_num_heads": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "mamba_state_size": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "expert_count": {
+      "available": 13,
+      "missing": 14,
+      "coverage": 0.48148148148148145
+    },
+    "active_expert_count": {
+      "available": 13,
+      "missing": 14,
+      "coverage": 0.48148148148148145
+    },
+    "head_dim": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "dense_layer_count": {
+      "available": 18,
+      "missing": 9,
+      "coverage": 0.6666666666666666
+    },
+    "moe_layer_count": {
+      "available": 18,
+      "missing": 9,
+      "coverage": 0.6666666666666666
+    },
+    "hybrid_pattern": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "hybrid_mamba_layer_count": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "hybrid_attention_layer_count": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "hybrid_mlp_layer_count": {
+      "available": 2,
+      "missing": 25,
+      "coverage": 0.07407407407407407
+    },
+    "attention_variant": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "mlp_structure": {
+      "available": 20,
+      "missing": 7,
+      "coverage": 0.7407407407407407
+    },
+    "quant_method_config": {
+      "available": 7,
+      "missing": 20,
+      "coverage": 0.25925925925925924
+    },
+    "runtime_dtype_config": {
+      "available": 18,
+      "missing": 9,
+      "coverage": 0.6666666666666666
+    },
+    "runtime_dtype_bits": {
+      "available": 18,
+      "missing": 9,
+      "coverage": 0.6666666666666666
+    }
+  }
+}

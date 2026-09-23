@@ -1,0 +1,109 @@
+{
+  "generated_at_utc": "2026-09-22T08:08:57.506732+00:00",
+  "status": "pass",
+  "scope": "ML.ENERGY V3 GPU-side LLM inference Phase 1.7; no formal model training",
+  "checks": [
+    {
+      "name": "master_key_target_range_eligibility",
+      "status": "pass",
+      "evidence": "694 unique / 565 stable / targets finite"
+    },
+    {
+      "name": "x_allowlist_and_post_run_denylist",
+      "status": "pass",
+      "evidence": {
+        "manifest_columns": 152,
+        "master_columns": 152,
+        "contract_x_columns": 92,
+        "manifest_x_columns": 92
+      }
+    },
+    {
+      "name": "canonical_model_population",
+      "status": "pass",
+      "evidence": {
+        "rows": 27,
+        "unique": 27
+      }
+    },
+    {
+      "name": "canonical_missingness_is_explicit",
+      "status": "pass",
+      "evidence": {
+        "available": 20,
+        "restricted": 7
+      }
+    },
+    {
+      "name": "coverage_reconciliation",
+      "status": "pass",
+      "evidence": {
+        "population": "all",
+        "dimension": "overall",
+        "value": "all",
+        "runs": 694,
+        "eligible_base_exante_runs": 694,
+        "eligible_base_exante_rate": 1.0,
+        "eligible_full_workload_runs": 464,
+        "eligible_full_workload_rate": 0.6685878962536023,
+        "eligible_physics_feature_runs": 383,
+        "eligible_physics_feature_rate": 0.5518731988472623
+      }
+    },
+    {
+      "name": "planned_result_reconciliation_enumerated",
+      "status": "pass",
+      "evidence": {
+        "runs": 562,
+        "exact_matches": 523,
+        "mismatches": 39,
+        "exact_match_rate": 0.9306049822064056
+      }
+    },
+    {
+      "name": "rapl_direct_evidence_boundary",
+      "status": "pass",
+      "evidence": {
+        "zone_index": 1,
+        "status": "unresolved",
+        "resolved_zone_name": null,
+        "neutral_label": "platform-like diagnostic",
+        "numeric_inference_used": false,
+        "observed_power_w_diagnostic_only": {
+          "count": 373,
+          "min": 2665.8009357511733,
+          "p25": 5167.233597889567,
+          "median": 5932.083654177734,
+          "p75": 7071.758010309346,
+          "max": 8615.443867600654,
+          "negative": 0,
+          "zero": 0,
+          "robust_high_threshold_q3_plus_3iqr": 12785.331247568683,
+          "above_robust_high_threshold": 0
+        },
+        "conflicting_names": null,
+        "evidence": []
+      }
+    },
+    {
+      "name": "required_deliverables",
+      "status": "pass",
+      "evidence": [
+        "step3/analysis/master_feature_table.parquet",
+        "step3/analysis/master_feature_table.csv",
+        "step3/analysis/feature_role_manifest.json",
+        "step3/docs/master_feature_dictionary.md",
+        "step3/docs/physics_feature_formulas.md",
+        "step3/reports/eligibility_coverage.json",
+        "step3/reports/rapl_zone_identity_check.md",
+        "step3/notebooks/phase1_7_feature_completion_audit.ipynb",
+        "step3/reports/phase1_7_feature_completion_report.md"
+      ]
+    },
+    {
+      "name": "no_secrets_weights_timelines_or_training",
+      "status": "pass",
+      "evidence": "no findings"
+    }
+  ]
+}
