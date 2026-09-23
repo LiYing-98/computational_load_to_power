@@ -1,0 +1,1081 @@
+model_id,canonical_field,source_field,raw_value,transform,status,reason
+Qwen/Qwen3-14B,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-14B,total_params_billions,benchmark.total_params_billions,14.0,identity,available,
+Qwen/Qwen3-14B,activated_params_billions,benchmark.activated_params_billions,14.0,identity,available,
+Qwen/Qwen3-14B,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-14B,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-14B,param_count_total,benchmark.total_params_billions,14.0,billions * 1e9,available,
+Qwen/Qwen3-14B,param_count_active,benchmark.activated_params_billions,14.0,billions * 1e9,available,
+Qwen/Qwen3-14B,model_type,config.model_type,"""qwen3""",identity,available,
+Qwen/Qwen3-14B,architecture_class,config.architectures[0],"""Qwen3ForCausalLM""",identity,available,
+Qwen/Qwen3-14B,num_layers,config.num_hidden_layers,40,identity,available,
+Qwen/Qwen3-14B,hidden_size,config.hidden_size,5120,identity,available,
+Qwen/Qwen3-14B,intermediate_size,config.intermediate_size,17408,identity,available,
+Qwen/Qwen3-14B,num_attention_heads,config.num_attention_heads,40,identity,available,
+Qwen/Qwen3-14B,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+Qwen/Qwen3-14B,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-14B,context_length,config.max_position_embeddings,40960,identity,available,
+Qwen/Qwen3-14B,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-14B,moe_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-14B,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-14B,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-14B,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-14B,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-14B,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-14B,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-14B,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-14B,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-14B,expert_count,,,identity,missing,no expert-count field
+Qwen/Qwen3-14B,active_expert_count,,,identity,missing,no active-expert field
+Qwen/Qwen3-14B,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-14B,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 40}",architecture-specific layer split,available,
+Qwen/Qwen3-14B,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 40}",architecture-specific layer split,available,
+Qwen/Qwen3-14B,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-14B,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-14B,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-14B,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-14B,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3"", ""num_attention_heads"": 40, ""num_key_value_heads"": 8}",architecture rule,available,
+Qwen/Qwen3-14B,mlp_structure,config.model_type,"""qwen3""",declarative architecture rule,available,
+Qwen/Qwen3-14B,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-14B,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-14B,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,total_params_billions,benchmark.total_params_billions,235.0,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,activated_params_billions,benchmark.activated_params_billions,22.0,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,param_count_total,benchmark.total_params_billions,235.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,param_count_active,benchmark.activated_params_billions,22.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,num_layers,config.num_hidden_layers,94,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,hidden_size,config.hidden_size,4096,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,intermediate_size,config.intermediate_size,12288,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,num_attention_heads,config.num_attention_heads,64,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,moe_intermediate_size,config.moe_intermediate_size,1536,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-235B-A22B-Instruct-2507,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 64, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-235B-A22B-Instruct-2507,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,total_params_billions,benchmark.total_params_billions,235.0,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,activated_params_billions,benchmark.activated_params_billions,22.0,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,param_count_total,benchmark.total_params_billions,235.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,param_count_active,benchmark.activated_params_billions,22.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,num_layers,config.num_hidden_layers,94,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,hidden_size,config.hidden_size,4096,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,intermediate_size,config.intermediate_size,12288,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,num_attention_heads,config.num_attention_heads,64,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,moe_intermediate_size,config.moe_intermediate_size,1536,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 64, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,quant_method_config,config.quantization_config.quant_method,"""fp8""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-235B-A22B-Instruct-2507-FP8,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,total_params_billions,benchmark.total_params_billions,235.0,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,activated_params_billions,benchmark.activated_params_billions,22.0,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,param_count_total,benchmark.total_params_billions,235.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,param_count_active,benchmark.activated_params_billions,22.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,num_layers,config.num_hidden_layers,94,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,hidden_size,config.hidden_size,4096,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,intermediate_size,config.intermediate_size,12288,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,num_attention_heads,config.num_attention_heads,64,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,moe_intermediate_size,config.moe_intermediate_size,1536,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-235B-A22B-Thinking-2507,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 64, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-235B-A22B-Thinking-2507,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,total_params_billions,benchmark.total_params_billions,235.0,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,activated_params_billions,benchmark.activated_params_billions,22.0,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,param_count_total,benchmark.total_params_billions,235.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,param_count_active,benchmark.activated_params_billions,22.0,billions * 1e9,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,num_layers,config.num_hidden_layers,94,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,hidden_size,config.hidden_size,4096,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,intermediate_size,config.intermediate_size,12288,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,num_attention_heads,config.num_attention_heads,64,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,moe_intermediate_size,config.moe_intermediate_size,1536,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 94}",architecture-specific layer split,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 64, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,quant_method_config,config.quantization_config.quant_method,"""fp8""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-235B-A22B-Thinking-2507-FP8,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,total_params_billions,benchmark.total_params_billions,30.0,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,activated_params_billions,benchmark.activated_params_billions,3.0,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,param_count_total,benchmark.total_params_billions,30.0,billions * 1e9,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,param_count_active,benchmark.activated_params_billions,3.0,billions * 1e9,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,num_layers,config.num_hidden_layers,48,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,hidden_size,config.hidden_size,2048,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,intermediate_size,config.intermediate_size,6144,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,num_attention_heads,config.num_attention_heads,32,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,moe_intermediate_size,config.moe_intermediate_size,768,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Instruct-2507,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-30B-A3B-Instruct-2507,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Instruct-2507,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Instruct-2507,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Instruct-2507,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Instruct-2507,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 32, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-30B-A3B-Instruct-2507,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-30B-A3B-Instruct-2507,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,total_params_billions,benchmark.total_params_billions,30.0,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,activated_params_billions,benchmark.activated_params_billions,3.0,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,param_count_total,benchmark.total_params_billions,30.0,billions * 1e9,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,param_count_active,benchmark.activated_params_billions,3.0,billions * 1e9,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,num_layers,config.num_hidden_layers,48,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,hidden_size,config.hidden_size,2048,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,intermediate_size,config.intermediate_size,6144,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,num_attention_heads,config.num_attention_heads,32,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,moe_intermediate_size,config.moe_intermediate_size,768,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-30B-A3B-Thinking-2507,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-30B-A3B-Thinking-2507,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Thinking-2507,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Thinking-2507,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Thinking-2507,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-30B-A3B-Thinking-2507,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 32, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-30B-A3B-Thinking-2507,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-30B-A3B-Thinking-2507,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-32B,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-32B,total_params_billions,benchmark.total_params_billions,32.0,identity,available,
+Qwen/Qwen3-32B,activated_params_billions,benchmark.activated_params_billions,32.0,identity,available,
+Qwen/Qwen3-32B,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-32B,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-32B,param_count_total,benchmark.total_params_billions,32.0,billions * 1e9,available,
+Qwen/Qwen3-32B,param_count_active,benchmark.activated_params_billions,32.0,billions * 1e9,available,
+Qwen/Qwen3-32B,model_type,config.model_type,"""qwen3""",identity,available,
+Qwen/Qwen3-32B,architecture_class,config.architectures[0],"""Qwen3ForCausalLM""",identity,available,
+Qwen/Qwen3-32B,num_layers,config.num_hidden_layers,64,identity,available,
+Qwen/Qwen3-32B,hidden_size,config.hidden_size,5120,identity,available,
+Qwen/Qwen3-32B,intermediate_size,config.intermediate_size,25600,identity,available,
+Qwen/Qwen3-32B,num_attention_heads,config.num_attention_heads,64,identity,available,
+Qwen/Qwen3-32B,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+Qwen/Qwen3-32B,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-32B,context_length,config.max_position_embeddings,40960,identity,available,
+Qwen/Qwen3-32B,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-32B,moe_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-32B,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-32B,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-32B,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-32B,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-32B,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-32B,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-32B,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-32B,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-32B,expert_count,,,identity,missing,no expert-count field
+Qwen/Qwen3-32B,active_expert_count,,,identity,missing,no active-expert field
+Qwen/Qwen3-32B,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-32B,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 64}",architecture-specific layer split,available,
+Qwen/Qwen3-32B,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 64}",architecture-specific layer split,available,
+Qwen/Qwen3-32B,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-32B,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-32B,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-32B,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-32B,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3"", ""num_attention_heads"": 64, ""num_key_value_heads"": 8}",architecture rule,available,
+Qwen/Qwen3-32B,mlp_structure,config.model_type,"""qwen3""",declarative architecture rule,available,
+Qwen/Qwen3-32B,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-32B,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-32B,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-8B,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-8B,total_params_billions,benchmark.total_params_billions,8.0,identity,available,
+Qwen/Qwen3-8B,activated_params_billions,benchmark.activated_params_billions,8.0,identity,available,
+Qwen/Qwen3-8B,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-8B,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-8B,param_count_total,benchmark.total_params_billions,8.0,billions * 1e9,available,
+Qwen/Qwen3-8B,param_count_active,benchmark.activated_params_billions,8.0,billions * 1e9,available,
+Qwen/Qwen3-8B,model_type,config.model_type,"""qwen3""",identity,available,
+Qwen/Qwen3-8B,architecture_class,config.architectures[0],"""Qwen3ForCausalLM""",identity,available,
+Qwen/Qwen3-8B,num_layers,config.num_hidden_layers,36,identity,available,
+Qwen/Qwen3-8B,hidden_size,config.hidden_size,4096,identity,available,
+Qwen/Qwen3-8B,intermediate_size,config.intermediate_size,12288,identity,available,
+Qwen/Qwen3-8B,num_attention_heads,config.num_attention_heads,32,identity,available,
+Qwen/Qwen3-8B,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+Qwen/Qwen3-8B,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-8B,context_length,config.max_position_embeddings,40960,identity,available,
+Qwen/Qwen3-8B,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-8B,moe_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-8B,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-8B,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-8B,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-8B,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-8B,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-8B,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-8B,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-8B,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-8B,expert_count,,,identity,missing,no expert-count field
+Qwen/Qwen3-8B,active_expert_count,,,identity,missing,no active-expert field
+Qwen/Qwen3-8B,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-8B,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 36}",architecture-specific layer split,available,
+Qwen/Qwen3-8B,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 36}",architecture-specific layer split,available,
+Qwen/Qwen3-8B,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-8B,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-8B,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-8B,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-8B,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3"", ""num_attention_heads"": 32, ""num_key_value_heads"": 8}",architecture rule,available,
+Qwen/Qwen3-8B,mlp_structure,config.model_type,"""qwen3""",declarative architecture rule,available,
+Qwen/Qwen3-8B,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-8B,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-8B,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,total_params_billions,benchmark.total_params_billions,30.0,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,activated_params_billions,benchmark.activated_params_billions,3.0,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,param_count_total,benchmark.total_params_billions,30.0,billions * 1e9,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,param_count_active,benchmark.activated_params_billions,3.0,billions * 1e9,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,num_layers,config.num_hidden_layers,48,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,hidden_size,config.hidden_size,2048,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,intermediate_size,config.intermediate_size,6144,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,num_attention_heads,config.num_attention_heads,32,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,num_key_value_heads,config.num_key_value_heads,4,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,moe_intermediate_size,config.moe_intermediate_size,768,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,shared_expert_intermediate_size,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-30B-A3B-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-Coder-30B-A3B-Instruct,expert_count,config.num_experts,128,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-30B-A3B-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-30B-A3B-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-30B-A3B-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-30B-A3B-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 32, ""num_key_value_heads"": 4}",architecture rule,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-Coder-30B-A3B-Instruct,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-Coder-30B-A3B-Instruct,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,total_params_billions,benchmark.total_params_billions,480.0,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,activated_params_billions,benchmark.activated_params_billions,35.0,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,param_count_total,benchmark.total_params_billions,480.0,billions * 1e9,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,param_count_active,benchmark.activated_params_billions,35.0,billions * 1e9,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,num_layers,config.num_hidden_layers,62,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,hidden_size,config.hidden_size,6144,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,intermediate_size,config.intermediate_size,8192,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,num_attention_heads,config.num_attention_heads,96,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,moe_intermediate_size,config.moe_intermediate_size,2560,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,shared_expert_intermediate_size,config.shared_expert_intermediate_size,0,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-Coder-480B-A35B-Instruct,expert_count,config.num_experts,160,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 62}",architecture-specific layer split,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 62}",architecture-specific layer split,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 96, ""num_key_value_heads"": 8}",architecture rule,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+Qwen/Qwen3-Coder-480B-A35B-Instruct,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,total_params_billions,benchmark.total_params_billions,480.0,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,activated_params_billions,benchmark.activated_params_billions,35.0,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,param_count_total,benchmark.total_params_billions,480.0,billions * 1e9,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,param_count_active,benchmark.activated_params_billions,35.0,billions * 1e9,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,model_type,config.model_type,"""qwen3_moe""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,architecture_class,config.architectures[0],"""Qwen3MoeForCausalLM""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,num_layers,config.num_hidden_layers,62,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,hidden_size,config.hidden_size,6144,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,intermediate_size,config.intermediate_size,8192,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,num_attention_heads,config.num_attention_heads,96,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,vocab_size,config.vocab_size,151936,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,context_length,config.max_position_embeddings,262144,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,sliding_window,config.sliding_window,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,moe_intermediate_size,config.moe_intermediate_size,2560,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,shared_expert_count,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,shared_expert_intermediate_size,config.shared_expert_intermediate_size,0,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,qk_nope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,qk_rope_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,v_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,mamba_head_dim,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,mamba_num_heads,,,identity,missing,source field absent
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,mamba_state_size,,,identity,missing,no Mamba state-size field
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,expert_count,config.num_experts,160,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,active_expert_count,config.num_experts_per_tok,8,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,head_dim,config.head_dim,128,identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 62}",architecture-specific layer split,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 62}",architecture-specific layer split,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,attention_variant,config.model_type + attention head fields,"{""model_type"": ""qwen3_moe"", ""num_attention_heads"": 96, ""num_key_value_heads"": 8}",architecture rule,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,mlp_structure,config.model_type,"""qwen3_moe""",declarative architecture rule,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,quant_method_config,config.quantization_config.quant_method,"""fp8""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+deepseek-ai/DeepSeek-R1-0528,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+deepseek-ai/DeepSeek-R1-0528,total_params_billions,benchmark.total_params_billions,671.0,identity,available,
+deepseek-ai/DeepSeek-R1-0528,activated_params_billions,benchmark.activated_params_billions,37.0,identity,available,
+deepseek-ai/DeepSeek-R1-0528,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+deepseek-ai/DeepSeek-R1-0528,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+deepseek-ai/DeepSeek-R1-0528,param_count_total,benchmark.total_params_billions,671.0,billions * 1e9,available,
+deepseek-ai/DeepSeek-R1-0528,param_count_active,benchmark.activated_params_billions,37.0,billions * 1e9,available,
+deepseek-ai/DeepSeek-R1-0528,model_type,config.model_type,"""deepseek_v3""",identity,available,
+deepseek-ai/DeepSeek-R1-0528,architecture_class,config.architectures[0],"""DeepseekV3ForCausalLM""",identity,available,
+deepseek-ai/DeepSeek-R1-0528,num_layers,config.num_hidden_layers,61,identity,available,
+deepseek-ai/DeepSeek-R1-0528,hidden_size,config.hidden_size,7168,identity,available,
+deepseek-ai/DeepSeek-R1-0528,intermediate_size,config.intermediate_size,18432,identity,available,
+deepseek-ai/DeepSeek-R1-0528,num_attention_heads,config.num_attention_heads,128,identity,available,
+deepseek-ai/DeepSeek-R1-0528,num_key_value_heads,config.num_key_value_heads,128,identity,available,
+deepseek-ai/DeepSeek-R1-0528,vocab_size,config.vocab_size,129280,identity,available,
+deepseek-ai/DeepSeek-R1-0528,context_length,config.max_position_embeddings,163840,identity,available,
+deepseek-ai/DeepSeek-R1-0528,sliding_window,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-R1-0528,moe_intermediate_size,config.moe_intermediate_size,2048,identity,available,
+deepseek-ai/DeepSeek-R1-0528,shared_expert_count,config.n_shared_experts,1,identity,available,
+deepseek-ai/DeepSeek-R1-0528,shared_expert_intermediate_size,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-R1-0528,qk_nope_head_dim,config.qk_nope_head_dim,128,identity,available,
+deepseek-ai/DeepSeek-R1-0528,qk_rope_head_dim,config.qk_rope_head_dim,64,identity,available,
+deepseek-ai/DeepSeek-R1-0528,v_head_dim,config.v_head_dim,128,identity,available,
+deepseek-ai/DeepSeek-R1-0528,mamba_head_dim,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-R1-0528,mamba_num_heads,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-R1-0528,mamba_state_size,,,identity,missing,no Mamba state-size field
+deepseek-ai/DeepSeek-R1-0528,expert_count,config.n_routed_experts,256,identity,available,
+deepseek-ai/DeepSeek-R1-0528,active_expert_count,config.num_experts_per_tok,8,identity,available,
+deepseek-ai/DeepSeek-R1-0528,head_dim,config.qk_nope_head_dim + config.qk_rope_head_dim,"{""qk_nope_head_dim"": 128, ""qk_rope_head_dim"": 64}",sum MLA query-key head components,available,
+deepseek-ai/DeepSeek-R1-0528,dense_layer_count,config.first_k_dense_replace,3,architecture-specific layer split,available,
+deepseek-ai/DeepSeek-R1-0528,moe_layer_count,config.first_k_dense_replace,3,architecture-specific layer split,available,
+deepseek-ai/DeepSeek-R1-0528,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-R1-0528,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-R1-0528,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-R1-0528,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-R1-0528,attention_variant,config.model_type + attention head fields,"{""model_type"": ""deepseek_v3"", ""num_attention_heads"": 128, ""num_key_value_heads"": 128}",architecture rule,available,
+deepseek-ai/DeepSeek-R1-0528,mlp_structure,config.model_type,"""deepseek_v3""",declarative architecture rule,available,
+deepseek-ai/DeepSeek-R1-0528,quant_method_config,config.quantization_config.quant_method,"""fp8""",identity,available,
+deepseek-ai/DeepSeek-R1-0528,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+deepseek-ai/DeepSeek-R1-0528,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+deepseek-ai/DeepSeek-V3.1,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+deepseek-ai/DeepSeek-V3.1,total_params_billions,benchmark.total_params_billions,671.0,identity,available,
+deepseek-ai/DeepSeek-V3.1,activated_params_billions,benchmark.activated_params_billions,37.0,identity,available,
+deepseek-ai/DeepSeek-V3.1,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+deepseek-ai/DeepSeek-V3.1,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+deepseek-ai/DeepSeek-V3.1,param_count_total,benchmark.total_params_billions,671.0,billions * 1e9,available,
+deepseek-ai/DeepSeek-V3.1,param_count_active,benchmark.activated_params_billions,37.0,billions * 1e9,available,
+deepseek-ai/DeepSeek-V3.1,model_type,config.model_type,"""deepseek_v3""",identity,available,
+deepseek-ai/DeepSeek-V3.1,architecture_class,config.architectures[0],"""DeepseekV3ForCausalLM""",identity,available,
+deepseek-ai/DeepSeek-V3.1,num_layers,config.num_hidden_layers,61,identity,available,
+deepseek-ai/DeepSeek-V3.1,hidden_size,config.hidden_size,7168,identity,available,
+deepseek-ai/DeepSeek-V3.1,intermediate_size,config.intermediate_size,18432,identity,available,
+deepseek-ai/DeepSeek-V3.1,num_attention_heads,config.num_attention_heads,128,identity,available,
+deepseek-ai/DeepSeek-V3.1,num_key_value_heads,config.num_key_value_heads,128,identity,available,
+deepseek-ai/DeepSeek-V3.1,vocab_size,config.vocab_size,129280,identity,available,
+deepseek-ai/DeepSeek-V3.1,context_length,config.max_position_embeddings,163840,identity,available,
+deepseek-ai/DeepSeek-V3.1,sliding_window,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-V3.1,moe_intermediate_size,config.moe_intermediate_size,2048,identity,available,
+deepseek-ai/DeepSeek-V3.1,shared_expert_count,config.n_shared_experts,1,identity,available,
+deepseek-ai/DeepSeek-V3.1,shared_expert_intermediate_size,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-V3.1,qk_nope_head_dim,config.qk_nope_head_dim,128,identity,available,
+deepseek-ai/DeepSeek-V3.1,qk_rope_head_dim,config.qk_rope_head_dim,64,identity,available,
+deepseek-ai/DeepSeek-V3.1,v_head_dim,config.v_head_dim,128,identity,available,
+deepseek-ai/DeepSeek-V3.1,mamba_head_dim,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-V3.1,mamba_num_heads,,,identity,missing,source field absent
+deepseek-ai/DeepSeek-V3.1,mamba_state_size,,,identity,missing,no Mamba state-size field
+deepseek-ai/DeepSeek-V3.1,expert_count,config.n_routed_experts,256,identity,available,
+deepseek-ai/DeepSeek-V3.1,active_expert_count,config.num_experts_per_tok,8,identity,available,
+deepseek-ai/DeepSeek-V3.1,head_dim,config.qk_nope_head_dim + config.qk_rope_head_dim,"{""qk_nope_head_dim"": 128, ""qk_rope_head_dim"": 64}",sum MLA query-key head components,available,
+deepseek-ai/DeepSeek-V3.1,dense_layer_count,config.first_k_dense_replace,3,architecture-specific layer split,available,
+deepseek-ai/DeepSeek-V3.1,moe_layer_count,config.first_k_dense_replace,3,architecture-specific layer split,available,
+deepseek-ai/DeepSeek-V3.1,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-V3.1,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-V3.1,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-V3.1,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+deepseek-ai/DeepSeek-V3.1,attention_variant,config.model_type + attention head fields,"{""model_type"": ""deepseek_v3"", ""num_attention_heads"": 128, ""num_key_value_heads"": 128}",architecture rule,available,
+deepseek-ai/DeepSeek-V3.1,mlp_structure,config.model_type,"""deepseek_v3""",declarative architecture rule,available,
+deepseek-ai/DeepSeek-V3.1,quant_method_config,config.quantization_config.quant_method,"""fp8""",identity,available,
+deepseek-ai/DeepSeek-V3.1,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+deepseek-ai/DeepSeek-V3.1,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+google/gemma-3-12b-it,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+google/gemma-3-12b-it,total_params_billions,benchmark.total_params_billions,12.0,identity,available,
+google/gemma-3-12b-it,activated_params_billions,benchmark.activated_params_billions,12.0,identity,available,
+google/gemma-3-12b-it,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+google/gemma-3-12b-it,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+google/gemma-3-12b-it,param_count_total,benchmark.total_params_billions,12.0,billions * 1e9,available,
+google/gemma-3-12b-it,param_count_active,benchmark.activated_params_billions,12.0,billions * 1e9,available,
+google/gemma-3-12b-it,model_type,config.text_config.model_type,"""gemma3_text""",identity,available,
+google/gemma-3-12b-it,architecture_class,config.architectures[0],"""Gemma3ForConditionalGeneration""",identity,available,
+google/gemma-3-12b-it,num_layers,config.text_config.num_hidden_layers,48,identity,available,
+google/gemma-3-12b-it,hidden_size,config.text_config.hidden_size,3840,identity,available,
+google/gemma-3-12b-it,intermediate_size,config.text_config.intermediate_size,15360,identity,available,
+google/gemma-3-12b-it,num_attention_heads,config.text_config.num_attention_heads,16,identity,available,
+google/gemma-3-12b-it,num_key_value_heads,config.text_config.num_key_value_heads,8,identity,available,
+google/gemma-3-12b-it,vocab_size,transformers_resolved.config.text_config.vocab_size,262208,Transformers 4.57.1 deterministic config default,available,
+google/gemma-3-12b-it,context_length,transformers_resolved.config.text_config.max_position_embeddings,131072,Transformers 4.57.1 deterministic config default,available,
+google/gemma-3-12b-it,sliding_window,config.text_config.sliding_window,1024,identity,available,
+google/gemma-3-12b-it,moe_intermediate_size,,,identity,missing,source field absent
+google/gemma-3-12b-it,shared_expert_count,,,identity,missing,source field absent
+google/gemma-3-12b-it,shared_expert_intermediate_size,,,identity,missing,source field absent
+google/gemma-3-12b-it,qk_nope_head_dim,,,identity,missing,source field absent
+google/gemma-3-12b-it,qk_rope_head_dim,,,identity,missing,source field absent
+google/gemma-3-12b-it,v_head_dim,,,identity,missing,source field absent
+google/gemma-3-12b-it,mamba_head_dim,,,identity,missing,source field absent
+google/gemma-3-12b-it,mamba_num_heads,,,identity,missing,source field absent
+google/gemma-3-12b-it,mamba_state_size,,,identity,missing,no Mamba state-size field
+google/gemma-3-12b-it,expert_count,,,identity,missing,no expert-count field
+google/gemma-3-12b-it,active_expert_count,,,identity,missing,no active-expert field
+google/gemma-3-12b-it,head_dim,transformers_resolved.config.text_config.head_dim,256,Transformers 4.57.1 deterministic config default,available,
+google/gemma-3-12b-it,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+google/gemma-3-12b-it,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 48}",architecture-specific layer split,available,
+google/gemma-3-12b-it,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-12b-it,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-12b-it,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-12b-it,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-12b-it,attention_variant,config.text_config.model_type + attention head fields,"{""model_type"": ""gemma3_text"", ""num_attention_heads"": 16, ""num_key_value_heads"": 8}",architecture rule,available,
+google/gemma-3-12b-it,mlp_structure,config.text_config.model_type,"""gemma3_text""",declarative architecture rule,available,
+google/gemma-3-12b-it,quant_method_config,,,identity,missing,config has no quantization method
+google/gemma-3-12b-it,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+google/gemma-3-12b-it,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+google/gemma-3-27b-it,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+google/gemma-3-27b-it,total_params_billions,benchmark.total_params_billions,27.0,identity,available,
+google/gemma-3-27b-it,activated_params_billions,benchmark.activated_params_billions,27.0,identity,available,
+google/gemma-3-27b-it,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+google/gemma-3-27b-it,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+google/gemma-3-27b-it,param_count_total,benchmark.total_params_billions,27.0,billions * 1e9,available,
+google/gemma-3-27b-it,param_count_active,benchmark.activated_params_billions,27.0,billions * 1e9,available,
+google/gemma-3-27b-it,model_type,config.text_config.model_type,"""gemma3_text""",identity,available,
+google/gemma-3-27b-it,architecture_class,config.architectures[0],"""Gemma3ForConditionalGeneration""",identity,available,
+google/gemma-3-27b-it,num_layers,config.text_config.num_hidden_layers,62,identity,available,
+google/gemma-3-27b-it,hidden_size,config.text_config.hidden_size,5376,identity,available,
+google/gemma-3-27b-it,intermediate_size,config.text_config.intermediate_size,21504,identity,available,
+google/gemma-3-27b-it,num_attention_heads,config.text_config.num_attention_heads,32,identity,available,
+google/gemma-3-27b-it,num_key_value_heads,config.text_config.num_key_value_heads,16,identity,available,
+google/gemma-3-27b-it,vocab_size,transformers_resolved.config.text_config.vocab_size,262208,Transformers 4.57.1 deterministic config default,available,
+google/gemma-3-27b-it,context_length,transformers_resolved.config.text_config.max_position_embeddings,131072,Transformers 4.57.1 deterministic config default,available,
+google/gemma-3-27b-it,sliding_window,config.text_config.sliding_window,1024,identity,available,
+google/gemma-3-27b-it,moe_intermediate_size,,,identity,missing,source field absent
+google/gemma-3-27b-it,shared_expert_count,,,identity,missing,source field absent
+google/gemma-3-27b-it,shared_expert_intermediate_size,,,identity,missing,source field absent
+google/gemma-3-27b-it,qk_nope_head_dim,,,identity,missing,source field absent
+google/gemma-3-27b-it,qk_rope_head_dim,,,identity,missing,source field absent
+google/gemma-3-27b-it,v_head_dim,,,identity,missing,source field absent
+google/gemma-3-27b-it,mamba_head_dim,,,identity,missing,source field absent
+google/gemma-3-27b-it,mamba_num_heads,,,identity,missing,source field absent
+google/gemma-3-27b-it,mamba_state_size,,,identity,missing,no Mamba state-size field
+google/gemma-3-27b-it,expert_count,,,identity,missing,no expert-count field
+google/gemma-3-27b-it,active_expert_count,,,identity,missing,no active-expert field
+google/gemma-3-27b-it,head_dim,config.text_config.head_dim,128,identity,available,
+google/gemma-3-27b-it,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 62}",architecture-specific layer split,available,
+google/gemma-3-27b-it,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": 62}",architecture-specific layer split,available,
+google/gemma-3-27b-it,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-27b-it,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-27b-it,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-27b-it,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+google/gemma-3-27b-it,attention_variant,config.text_config.model_type + attention head fields,"{""model_type"": ""gemma3_text"", ""num_attention_heads"": 32, ""num_key_value_heads"": 16}",architecture rule,available,
+google/gemma-3-27b-it,mlp_structure,config.text_config.model_type,"""gemma3_text""",declarative architecture rule,available,
+google/gemma-3-27b-it,quant_method_config,,,identity,missing,config has no quantization method
+google/gemma-3-27b-it,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+google/gemma-3-27b-it,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+meta-llama/Llama-3.1-405B-Instruct,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+meta-llama/Llama-3.1-405B-Instruct,total_params_billions,benchmark.total_params_billions,405.0,identity,available,
+meta-llama/Llama-3.1-405B-Instruct,activated_params_billions,benchmark.activated_params_billions,405.0,identity,available,
+meta-llama/Llama-3.1-405B-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+meta-llama/Llama-3.1-405B-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+meta-llama/Llama-3.1-405B-Instruct,param_count_total,benchmark.total_params_billions,405.0,billions * 1e9,available,
+meta-llama/Llama-3.1-405B-Instruct,param_count_active,benchmark.activated_params_billions,405.0,billions * 1e9,available,
+meta-llama/Llama-3.1-405B-Instruct,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-3.1-405B-Instruct,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-3.1-405B-Instruct,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,context_length,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-3.1-405B-Instruct,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-3.1-405B-Instruct,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-3.1-405B-Instruct,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-3.1-405B-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-405B-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-405B-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-3.1-405B-Instruct,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-3.1-405B-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-3.1-405B-Instruct,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-3.1-405B-Instruct,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+meta-llama/Llama-3.1-405B-Instruct-FP8,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,total_params_billions,benchmark.total_params_billions,405.0,identity,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,activated_params_billions,benchmark.activated_params_billions,405.0,identity,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,param_count_total,benchmark.total_params_billions,405.0,billions * 1e9,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,param_count_active,benchmark.activated_params_billions,405.0,billions * 1e9,available,
+meta-llama/Llama-3.1-405B-Instruct-FP8,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-3.1-405B-Instruct-FP8,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-3.1-405B-Instruct-FP8,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,context_length,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-3.1-405B-Instruct-FP8,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-3.1-405B-Instruct-FP8,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-3.1-405B-Instruct-FP8,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-3.1-405B-Instruct-FP8,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-405B-Instruct-FP8,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-405B-Instruct-FP8,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct-FP8,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct-FP8,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct-FP8,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-405B-Instruct-FP8,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-3.1-405B-Instruct-FP8,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-3.1-405B-Instruct-FP8,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-3.1-405B-Instruct-FP8,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-3.1-405B-Instruct-FP8,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+meta-llama/Llama-3.1-70B-Instruct,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+meta-llama/Llama-3.1-70B-Instruct,total_params_billions,benchmark.total_params_billions,70.0,identity,available,
+meta-llama/Llama-3.1-70B-Instruct,activated_params_billions,benchmark.activated_params_billions,70.0,identity,available,
+meta-llama/Llama-3.1-70B-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+meta-llama/Llama-3.1-70B-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+meta-llama/Llama-3.1-70B-Instruct,param_count_total,benchmark.total_params_billions,70.0,billions * 1e9,available,
+meta-llama/Llama-3.1-70B-Instruct,param_count_active,benchmark.activated_params_billions,70.0,billions * 1e9,available,
+meta-llama/Llama-3.1-70B-Instruct,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-3.1-70B-Instruct,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-3.1-70B-Instruct,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,context_length,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-70B-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-3.1-70B-Instruct,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-3.1-70B-Instruct,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-3.1-70B-Instruct,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-3.1-70B-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-70B-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-70B-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-70B-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-70B-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-70B-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-70B-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-3.1-70B-Instruct,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-3.1-70B-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-3.1-70B-Instruct,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-3.1-70B-Instruct,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+meta-llama/Llama-3.1-8B-Instruct,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+meta-llama/Llama-3.1-8B-Instruct,total_params_billions,benchmark.total_params_billions,8.0,identity,available,
+meta-llama/Llama-3.1-8B-Instruct,activated_params_billions,benchmark.activated_params_billions,8.0,identity,available,
+meta-llama/Llama-3.1-8B-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+meta-llama/Llama-3.1-8B-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+meta-llama/Llama-3.1-8B-Instruct,param_count_total,benchmark.total_params_billions,8.0,billions * 1e9,available,
+meta-llama/Llama-3.1-8B-Instruct,param_count_active,benchmark.activated_params_billions,8.0,billions * 1e9,available,
+meta-llama/Llama-3.1-8B-Instruct,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-3.1-8B-Instruct,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-3.1-8B-Instruct,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,context_length,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.1-8B-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-3.1-8B-Instruct,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-3.1-8B-Instruct,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-3.1-8B-Instruct,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-3.1-8B-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-8B-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.1-8B-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-8B-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-8B-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-8B-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.1-8B-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-3.1-8B-Instruct,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-3.1-8B-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-3.1-8B-Instruct,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-3.1-8B-Instruct,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+meta-llama/Llama-3.3-70B-Instruct,architecture_family,benchmark.architecture,"""Dense Transformer""",benchmark architecture taxonomy,available,
+meta-llama/Llama-3.3-70B-Instruct,total_params_billions,benchmark.total_params_billions,70.0,identity,available,
+meta-llama/Llama-3.3-70B-Instruct,activated_params_billions,benchmark.activated_params_billions,70.0,identity,available,
+meta-llama/Llama-3.3-70B-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+meta-llama/Llama-3.3-70B-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+meta-llama/Llama-3.3-70B-Instruct,param_count_total,benchmark.total_params_billions,70.0,billions * 1e9,available,
+meta-llama/Llama-3.3-70B-Instruct,param_count_active,benchmark.activated_params_billions,70.0,billions * 1e9,available,
+meta-llama/Llama-3.3-70B-Instruct,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-3.3-70B-Instruct,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-3.3-70B-Instruct,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,context_length,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-3.3-70B-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-3.3-70B-Instruct,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-3.3-70B-Instruct,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-3.3-70B-Instruct,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-3.3-70B-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.3-70B-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Dense Transformer"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-3.3-70B-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.3-70B-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.3-70B-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.3-70B-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-3.3-70B-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-3.3-70B-Instruct,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-3.3-70B-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-3.3-70B-Instruct,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-3.3-70B-Instruct,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,total_params_billions,benchmark.total_params_billions,400.0,identity,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,activated_params_billions,benchmark.activated_params_billions,17.0,identity,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,weight_precision,benchmark.weight_precision,"""fp8""",identity,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,precision_bits,benchmark.weight_precision,"""fp8""",precision label to bits,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,param_count_total,benchmark.total_params_billions,400.0,billions * 1e9,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,param_count_active,benchmark.activated_params_billions,17.0,billions * 1e9,available,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,context_length,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+meta-llama/Llama-4-Scout-17B-16E-Instruct,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,total_params_billions,benchmark.total_params_billions,109.0,identity,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,activated_params_billions,benchmark.activated_params_billions,17.0,identity,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,param_count_total,benchmark.total_params_billions,109.0,billions * 1e9,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,param_count_active,benchmark.activated_params_billions,17.0,billions * 1e9,available,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,model_type,config.model_type,,identity,missing,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,architecture_class,config.architectures[0],,identity,missing,
+meta-llama/Llama-4-Scout-17B-16E-Instruct,num_layers,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,hidden_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,num_attention_heads,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,num_key_value_heads,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,vocab_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,context_length,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,sliding_window,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,moe_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,shared_expert_count,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,shared_expert_intermediate_size,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,qk_nope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,qk_rope_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,v_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,mamba_head_dim,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,mamba_num_heads,,,identity,missing,source field absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,mamba_state_size,,,identity,missing,no Mamba state-size field
+meta-llama/Llama-4-Scout-17B-16E-Instruct,expert_count,,,identity,missing,no expert-count field
+meta-llama/Llama-4-Scout-17B-16E-Instruct,active_expert_count,,,identity,missing,no active-expert field
+meta-llama/Llama-4-Scout-17B-16E-Instruct,head_dim,,,identity,missing,no explicit or architecture-safe derivation
+meta-llama/Llama-4-Scout-17B-16E-Instruct,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-4-Scout-17B-16E-Instruct,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": null}",architecture-specific layer split,missing,not a pure dense/MoE stack
+meta-llama/Llama-4-Scout-17B-16E-Instruct,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Scout-17B-16E-Instruct,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Scout-17B-16E-Instruct,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Scout-17B-16E-Instruct,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+meta-llama/Llama-4-Scout-17B-16E-Instruct,attention_variant,config.model_type + attention head fields,"{""model_type"": null, ""num_attention_heads"": null, ""num_key_value_heads"": null}",architecture rule,missing,insufficient fields
+meta-llama/Llama-4-Scout-17B-16E-Instruct,mlp_structure,config.model_type,,declarative architecture rule,missing,unsupported model_type
+meta-llama/Llama-4-Scout-17B-16E-Instruct,quant_method_config,,,identity,missing,config has no quantization method
+meta-llama/Llama-4-Scout-17B-16E-Instruct,runtime_dtype_config,,,identity,missing,runtime dtype absent
+meta-llama/Llama-4-Scout-17B-16E-Instruct,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,architecture_family,benchmark.architecture,"""Mamba-Transformer Hybrid""",benchmark architecture taxonomy,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,total_params_billions,benchmark.total_params_billions,12.0,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,activated_params_billions,benchmark.activated_params_billions,12.0,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,param_count_total,benchmark.total_params_billions,12.0,billions * 1e9,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,param_count_active,benchmark.activated_params_billions,12.0,billions * 1e9,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,model_type,config.model_type,"""nemotron_h""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,architecture_class,config.architectures[0],"""NemotronHForCausalLM""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,num_layers,config.num_hidden_layers,62,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,hidden_size,config.hidden_size,5120,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,intermediate_size,config.intermediate_size,20480,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,num_attention_heads,config.num_attention_heads,40,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,vocab_size,config.vocab_size,131072,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,context_length,config.max_position_embeddings,131072,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,sliding_window,config.sliding_window,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,moe_intermediate_size,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,shared_expert_count,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,shared_expert_intermediate_size,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,qk_nope_head_dim,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,qk_rope_head_dim,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,v_head_dim,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,mamba_head_dim,config.mamba_head_dim,80,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,mamba_num_heads,config.mamba_num_heads,128,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,mamba_state_size,config.ssm_state_size,128,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,expert_count,,,identity,missing,no expert-count field
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,active_expert_count,,,identity,missing,no active-expert field
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,head_dim,config.head_dim,128,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Mamba-Transformer Hybrid"", ""num_hidden_layers"": 62}",architecture-specific layer split,missing,not a pure dense/MoE stack
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Mamba-Transformer Hybrid"", ""num_hidden_layers"": 62}",architecture-specific layer split,missing,not a pure dense/MoE stack
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,hybrid_pattern,config.hybrid_override_pattern,"""M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M-""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,hybrid_mamba_layer_count,config.hybrid_override_pattern,"""M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M-""",count 'M' symbols,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,hybrid_attention_layer_count,config.hybrid_override_pattern,"""M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M-""",count '*' symbols,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,hybrid_mlp_layer_count,config.hybrid_override_pattern,"""M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M*-M-M-M-M-""",count '-' symbols,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,attention_variant,config.model_type + attention head fields,"{""model_type"": ""nemotron_h"", ""num_attention_heads"": 40, ""num_key_value_heads"": 8}",architecture rule,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,mlp_structure,config.model_type,"""nemotron_h""",declarative architecture rule,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,quant_method_config,,,identity,missing,config has no quantization method
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-12B-v2,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,architecture_family,benchmark.architecture,"""Mamba-Transformer Hybrid""",benchmark architecture taxonomy,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,total_params_billions,benchmark.total_params_billions,9.0,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,activated_params_billions,benchmark.activated_params_billions,9.0,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,weight_precision,benchmark.weight_precision,"""bfloat16""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,precision_bits,benchmark.weight_precision,"""bfloat16""",precision label to bits,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,param_count_total,benchmark.total_params_billions,9.0,billions * 1e9,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,param_count_active,benchmark.activated_params_billions,9.0,billions * 1e9,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,model_type,config.model_type,"""nemotron_h""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,architecture_class,config.architectures[0],"""NemotronHForCausalLM""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,num_layers,config.num_hidden_layers,56,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,hidden_size,config.hidden_size,4480,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,intermediate_size,config.intermediate_size,15680,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,num_attention_heads,config.num_attention_heads,40,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,vocab_size,config.vocab_size,131072,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,context_length,config.max_position_embeddings,131072,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,sliding_window,config.sliding_window,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,moe_intermediate_size,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,shared_expert_count,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,shared_expert_intermediate_size,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,qk_nope_head_dim,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,qk_rope_head_dim,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,v_head_dim,,,identity,missing,source field absent
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,mamba_head_dim,config.mamba_head_dim,80,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,mamba_num_heads,config.mamba_num_heads,128,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,mamba_state_size,config.mamba_state_dim,128,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,expert_count,,,identity,missing,no expert-count field
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,active_expert_count,,,identity,missing,no active-expert field
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,head_dim,config.head_dim,128,identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Mamba-Transformer Hybrid"", ""num_hidden_layers"": 56}",architecture-specific layer split,missing,not a pure dense/MoE stack
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""Mamba-Transformer Hybrid"", ""num_hidden_layers"": 56}",architecture-specific layer split,missing,not a pure dense/MoE stack
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,hybrid_pattern,config.hybrid_override_pattern,"""M-M-M-MM-M-M-M*-M-M-M*-M-M-M-M*-M-M-M-M*-M-MM-M-M-M-M-M-""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,hybrid_mamba_layer_count,config.hybrid_override_pattern,"""M-M-M-MM-M-M-M*-M-M-M*-M-M-M-M*-M-M-M-M*-M-MM-M-M-M-M-M-""",count 'M' symbols,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,hybrid_attention_layer_count,config.hybrid_override_pattern,"""M-M-M-MM-M-M-M*-M-M-M*-M-M-M-M*-M-M-M-M*-M-MM-M-M-M-M-M-""",count '*' symbols,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,hybrid_mlp_layer_count,config.hybrid_override_pattern,"""M-M-M-MM-M-M-M*-M-M-M*-M-M-M-M*-M-M-M-M*-M-MM-M-M-M-M-M-""",count '-' symbols,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,attention_variant,config.model_type + attention head fields,"{""model_type"": ""nemotron_h"", ""num_attention_heads"": 40, ""num_key_value_heads"": 8}",architecture rule,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,mlp_structure,config.model_type,"""nemotron_h""",declarative architecture rule,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,quant_method_config,,,identity,missing,config has no quantization method
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,runtime_dtype_config,config.torch_dtype,"""bfloat16""",identity,available,
+nvidia/NVIDIA-Nemotron-Nano-9B-v2,runtime_dtype_bits,config.torch_dtype,"""bfloat16""",dtype label to bits,available,
+openai/gpt-oss-120b,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+openai/gpt-oss-120b,total_params_billions,benchmark.total_params_billions,117.0,identity,available,
+openai/gpt-oss-120b,activated_params_billions,benchmark.activated_params_billions,5.0,identity,available,
+openai/gpt-oss-120b,weight_precision,benchmark.weight_precision,"""mxfp4""",identity,available,
+openai/gpt-oss-120b,precision_bits,benchmark.weight_precision,"""mxfp4""",precision label to bits,available,
+openai/gpt-oss-120b,param_count_total,benchmark.total_params_billions,117.0,billions * 1e9,available,
+openai/gpt-oss-120b,param_count_active,benchmark.activated_params_billions,5.0,billions * 1e9,available,
+openai/gpt-oss-120b,model_type,config.model_type,"""gpt_oss""",identity,available,
+openai/gpt-oss-120b,architecture_class,config.architectures[0],"""GptOssForCausalLM""",identity,available,
+openai/gpt-oss-120b,num_layers,config.num_hidden_layers,36,identity,available,
+openai/gpt-oss-120b,hidden_size,config.hidden_size,2880,identity,available,
+openai/gpt-oss-120b,intermediate_size,config.intermediate_size,2880,identity,available,
+openai/gpt-oss-120b,num_attention_heads,config.num_attention_heads,64,identity,available,
+openai/gpt-oss-120b,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+openai/gpt-oss-120b,vocab_size,config.vocab_size,201088,identity,available,
+openai/gpt-oss-120b,context_length,config.max_position_embeddings,131072,identity,available,
+openai/gpt-oss-120b,sliding_window,config.sliding_window,128,identity,available,
+openai/gpt-oss-120b,moe_intermediate_size,config.intermediate_size,2880,gpt_oss expert MLP field mapping,available,
+openai/gpt-oss-120b,shared_expert_count,,,identity,missing,source field absent
+openai/gpt-oss-120b,shared_expert_intermediate_size,,,identity,missing,source field absent
+openai/gpt-oss-120b,qk_nope_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-120b,qk_rope_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-120b,v_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-120b,mamba_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-120b,mamba_num_heads,,,identity,missing,source field absent
+openai/gpt-oss-120b,mamba_state_size,,,identity,missing,no Mamba state-size field
+openai/gpt-oss-120b,expert_count,config.num_local_experts,128,identity,available,
+openai/gpt-oss-120b,active_expert_count,config.num_experts_per_tok,4,identity,available,
+openai/gpt-oss-120b,head_dim,config.head_dim,64,identity,available,
+openai/gpt-oss-120b,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 36}",architecture-specific layer split,available,
+openai/gpt-oss-120b,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 36}",architecture-specific layer split,available,
+openai/gpt-oss-120b,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-120b,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-120b,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-120b,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-120b,attention_variant,config.model_type + attention head fields,"{""model_type"": ""gpt_oss"", ""num_attention_heads"": 64, ""num_key_value_heads"": 8}",architecture rule,available,
+openai/gpt-oss-120b,mlp_structure,config.model_type,"""gpt_oss""",declarative architecture rule,available,
+openai/gpt-oss-120b,quant_method_config,config.quantization_config.quant_method,"""mxfp4""",identity,available,
+openai/gpt-oss-120b,runtime_dtype_config,,,identity,missing,runtime dtype absent
+openai/gpt-oss-120b,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported
+openai/gpt-oss-20b,architecture_family,benchmark.architecture,"""MoE""",benchmark architecture taxonomy,available,
+openai/gpt-oss-20b,total_params_billions,benchmark.total_params_billions,21.0,identity,available,
+openai/gpt-oss-20b,activated_params_billions,benchmark.activated_params_billions,4.0,identity,available,
+openai/gpt-oss-20b,weight_precision,benchmark.weight_precision,"""mxfp4""",identity,available,
+openai/gpt-oss-20b,precision_bits,benchmark.weight_precision,"""mxfp4""",precision label to bits,available,
+openai/gpt-oss-20b,param_count_total,benchmark.total_params_billions,21.0,billions * 1e9,available,
+openai/gpt-oss-20b,param_count_active,benchmark.activated_params_billions,4.0,billions * 1e9,available,
+openai/gpt-oss-20b,model_type,config.model_type,"""gpt_oss""",identity,available,
+openai/gpt-oss-20b,architecture_class,config.architectures[0],"""GptOssForCausalLM""",identity,available,
+openai/gpt-oss-20b,num_layers,config.num_hidden_layers,24,identity,available,
+openai/gpt-oss-20b,hidden_size,config.hidden_size,2880,identity,available,
+openai/gpt-oss-20b,intermediate_size,config.intermediate_size,2880,identity,available,
+openai/gpt-oss-20b,num_attention_heads,config.num_attention_heads,64,identity,available,
+openai/gpt-oss-20b,num_key_value_heads,config.num_key_value_heads,8,identity,available,
+openai/gpt-oss-20b,vocab_size,config.vocab_size,201088,identity,available,
+openai/gpt-oss-20b,context_length,config.max_position_embeddings,131072,identity,available,
+openai/gpt-oss-20b,sliding_window,config.sliding_window,128,identity,available,
+openai/gpt-oss-20b,moe_intermediate_size,config.intermediate_size,2880,gpt_oss expert MLP field mapping,available,
+openai/gpt-oss-20b,shared_expert_count,,,identity,missing,source field absent
+openai/gpt-oss-20b,shared_expert_intermediate_size,,,identity,missing,source field absent
+openai/gpt-oss-20b,qk_nope_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-20b,qk_rope_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-20b,v_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-20b,mamba_head_dim,,,identity,missing,source field absent
+openai/gpt-oss-20b,mamba_num_heads,,,identity,missing,source field absent
+openai/gpt-oss-20b,mamba_state_size,,,identity,missing,no Mamba state-size field
+openai/gpt-oss-20b,expert_count,config.num_local_experts,32,identity,available,
+openai/gpt-oss-20b,active_expert_count,config.num_experts_per_tok,4,identity,available,
+openai/gpt-oss-20b,head_dim,config.head_dim,64,identity,available,
+openai/gpt-oss-20b,dense_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 24}",architecture-specific layer split,available,
+openai/gpt-oss-20b,moe_layer_count,benchmark.architecture + config.num_hidden_layers,"{""architecture"": ""MoE"", ""num_hidden_layers"": 24}",architecture-specific layer split,available,
+openai/gpt-oss-20b,hybrid_pattern,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-20b,hybrid_mamba_layer_count,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-20b,hybrid_attention_layer_count,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-20b,hybrid_mlp_layer_count,,,identity,missing,not a declared hybrid pattern
+openai/gpt-oss-20b,attention_variant,config.model_type + attention head fields,"{""model_type"": ""gpt_oss"", ""num_attention_heads"": 64, ""num_key_value_heads"": 8}",architecture rule,available,
+openai/gpt-oss-20b,mlp_structure,config.model_type,"""gpt_oss""",declarative architecture rule,available,
+openai/gpt-oss-20b,quant_method_config,config.quantization_config.quant_method,"""mxfp4""",identity,available,
+openai/gpt-oss-20b,runtime_dtype_config,,,identity,missing,runtime dtype absent
+openai/gpt-oss-20b,runtime_dtype_bits,,,dtype label to bits,missing,runtime dtype absent or unsupported

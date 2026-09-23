@@ -1,0 +1,376 @@
+{
+  "generated_at_utc": "2026-09-18T05:04:34.289320+00:00",
+  "benchmark_commit": "c1d6557fbf7c7c495749b0fcf649f71774eabde9",
+  "vllm_commit": "439368496db48d8f992ba8c606a0c0b1eebbfa69",
+  "vllm_defaults": {
+    "add_generation_prompt": true,
+    "continue_final_message": false,
+    "add_special_tokens": false
+  },
+  "benchmark_message_builder": "typed text parts; alternating user/assistant; optional system message prepended",
+  "content_format_detection": "vendored vLLM v0.11.1 Jinja AST rule",
+  "rows": 694,
+  "available_rows": 492,
+  "pair_records": [
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-14B",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "benchmark_config_source": "configs/vllm/gpqa/Qwen/Qwen3-14B/{gpu_model}/extra_body.json",
+      "vector_sha256": "92db2319450a47dffd0ca08327810bc8cd53fb32eed7e1d08a0ce5601fc31199"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "3802169b2a02b81e6adb7ab4f64f91ff02db753c8c3a64a01c35192d3a61d8d7",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "c2ce606708d55ff37f1bba4fe239fb7950ad0015d4abd8dae9fd4a2bb85cee80"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "3802169b2a02b81e6adb7ab4f64f91ff02db753c8c3a64a01c35192d3a61d8d7",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "c2ce606708d55ff37f1bba4fe239fb7950ad0015d4abd8dae9fd4a2bb85cee80"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "3802169b2a02b81e6adb7ab4f64f91ff02db753c8c3a64a01c35192d3a61d8d7",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "c2ce606708d55ff37f1bba4fe239fb7950ad0015d4abd8dae9fd4a2bb85cee80"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-32B",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "benchmark_config_source": "configs/vllm/gpqa/Qwen/Qwen3-32B/{gpu_model}/extra_body.json",
+      "vector_sha256": "92db2319450a47dffd0ca08327810bc8cd53fb32eed7e1d08a0ce5601fc31199"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-8B",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "enable_thinking": true
+      },
+      "benchmark_config_source": "configs/vllm/gpqa/Qwen/Qwen3-8B/{gpu_model}/extra_body.json",
+      "vector_sha256": "92db2319450a47dffd0ca08327810bc8cd53fb32eed7e1d08a0ce5601fc31199"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "deepseek-ai/DeepSeek-R1-0528",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "53671bac29bcb3e1f95f51b8c77d85a6011b66dc38bd23dce64eef04384a976b",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "4d0814da242bbd52fa3fda70de8b86bac85b2f937ef33083d6c2efe4952d0a47"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "deepseek-ai/DeepSeek-V3.1",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "45690185067ea25c073bff2d3e425a45ee2564d2bbf6cdf7d885e139d460b8e0",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "thinking": true
+      },
+      "benchmark_config_source": "configs/vllm/gpqa/deepseek-ai/DeepSeek-V3.1/{gpu_model}/extra_body.json",
+      "vector_sha256": "c0788f49c63c24f2c9bfbbcefb28a2a3d8079c24742847fc4dfc4ead935806c1"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "b7a3a520a4bc1beae6a25d615f9215580df8eea926f488256c2bef74039433c0",
+      "system_prompt": "/think",
+      "chat_template_kwargs": {},
+      "benchmark_config_source": "configs/vllm/gpqa/nvidia/NVIDIA-Nemotron-Nano-12B-v2/{gpu_model}/system_prompt.txt",
+      "vector_sha256": "0481823b262c41f826720f83afa5e3379fa72d6f0c924002882e79c653850424"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "status": "available",
+      "request_count": 198,
+      "content_format": "string",
+      "chat_template_sha256": "b7a3a520a4bc1beae6a25d615f9215580df8eea926f488256c2bef74039433c0",
+      "system_prompt": "/think",
+      "chat_template_kwargs": {},
+      "benchmark_config_source": "configs/vllm/gpqa/nvidia/NVIDIA-Nemotron-Nano-9B-v2/{gpu_model}/system_prompt.txt",
+      "vector_sha256": "0481823b262c41f826720f83afa5e3379fa72d6f0c924002882e79c653850424"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "openai/gpt-oss-120b",
+      "status": "unresolved",
+      "reason": "unresolved_vllm_harmony_path: v0.11.1 bypasses the Hugging Face chat template and the container-resolved openai-harmony version is not recorded",
+      "benchmark_config_source": "configs/vllm/gpqa/openai/gpt-oss-120b/{gpu_model}/extra_body.json"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "openai/gpt-oss-20b",
+      "status": "unresolved",
+      "reason": "unresolved_vllm_harmony_path: v0.11.1 bypasses the Hugging Face chat template and the container-resolved openai-harmony version is not recorded",
+      "benchmark_config_source": "configs/vllm/gpqa/openai/gpt-oss-20b/{gpu_model}/extra_body.json"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-14B",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "benchmark_config_source": "configs/vllm/lm-arena-chat/Qwen/Qwen3-14B/{gpu_model}/extra_body.json",
+      "vector_sha256": "b34057d59c280781edb19eb4f7e6b6adef60d526dcb77f0147a7ff433c8ce729"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "119514254eedaa3a7a9ed1b8eb1545fcd5d602744b4b953324aea4d81d670834"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "119514254eedaa3a7a9ed1b8eb1545fcd5d602744b4b953324aea4d81d670834"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "119514254eedaa3a7a9ed1b8eb1545fcd5d602744b4b953324aea4d81d670834"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-32B",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "benchmark_config_source": "configs/vllm/lm-arena-chat/Qwen/Qwen3-32B/{gpu_model}/extra_body.json",
+      "vector_sha256": "b34057d59c280781edb19eb4f7e6b6adef60d526dcb77f0147a7ff433c8ce729"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "Qwen/Qwen3-8B",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "benchmark_config_source": "configs/vllm/lm-arena-chat/Qwen/Qwen3-8B/{gpu_model}/extra_body.json",
+      "vector_sha256": "b34057d59c280781edb19eb4f7e6b6adef60d526dcb77f0147a7ff433c8ce729"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "deepseek-ai/DeepSeek-V3.1",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "45690185067ea25c073bff2d3e425a45ee2564d2bbf6cdf7d885e139d460b8e0",
+      "system_prompt": null,
+      "chat_template_kwargs": {
+        "thinking": false
+      },
+      "benchmark_config_source": "configs/vllm/lm-arena-chat/deepseek-ai/DeepSeek-V3.1/{gpu_model}/extra_body.json",
+      "vector_sha256": "d2f7bb9768a13611ac31b798a82967cdfbd100839fe4dd24a92eeb71019e6878"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "google/gemma-3-12b-it",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "openai",
+      "chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "bd802329c2d14f9748c06167210caba65e3b55aa853a40c50607144fba64b2dc"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "google/gemma-3-27b-it",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "openai",
+      "chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "bd802329c2d14f9748c06167210caba65e3b55aa853a40c50607144fba64b2dc"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-405B-Instruct",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-405B-Instruct-FP8",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "status": "missing",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "b7a3a520a4bc1beae6a25d615f9215580df8eea926f488256c2bef74039433c0",
+      "system_prompt": "/no_think",
+      "chat_template_kwargs": {},
+      "benchmark_config_source": "configs/vllm/lm-arena-chat/nvidia/NVIDIA-Nemotron-Nano-12B-v2/{gpu_model}/system_prompt.txt",
+      "vector_sha256": "9551c74c5e8a9049e197799492af68ccf6b2928ce24f81163b91ae56f9b44d16"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "string",
+      "chat_template_sha256": "b7a3a520a4bc1beae6a25d615f9215580df8eea926f488256c2bef74039433c0",
+      "system_prompt": "/no_think",
+      "chat_template_kwargs": {},
+      "benchmark_config_source": "configs/vllm/lm-arena-chat/nvidia/NVIDIA-Nemotron-Nano-9B-v2/{gpu_model}/system_prompt.txt",
+      "vector_sha256": "9551c74c5e8a9049e197799492af68ccf6b2928ce24f81163b91ae56f9b44d16"
+    },
+    {
+      "task": "sourcegraph-fim",
+      "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "not_applicable_fim",
+      "chat_template_sha256": null,
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "49fb52743d5ae065b4c6ebf4150fc7690e26643ba40c219a55f8334b166f59b1"
+    },
+    {
+      "task": "sourcegraph-fim",
+      "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "not_applicable_fim",
+      "chat_template_sha256": null,
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "49fb52743d5ae065b4c6ebf4150fc7690e26643ba40c219a55f8334b166f59b1"
+    },
+    {
+      "task": "sourcegraph-fim",
+      "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "status": "available",
+      "request_count": 1024,
+      "content_format": "not_applicable_fim",
+      "chat_template_sha256": null,
+      "system_prompt": null,
+      "chat_template_kwargs": {},
+      "benchmark_config_source": null,
+      "vector_sha256": "49fb52743d5ae065b4c6ebf4150fc7690e26643ba40c219a55f8334b166f59b1"
+    }
+  ]
+}

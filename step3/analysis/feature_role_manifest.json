@@ -1,0 +1,1220 @@
+{
+  "columns": [
+    {
+      "column": "run_key",
+      "role": "key",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "run key"
+    },
+    {
+      "column": "x_protocol_task",
+      "role": "X_protocol",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "x protocol task"
+    },
+    {
+      "column": "x_protocol_seed",
+      "role": "X_protocol",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x protocol seed"
+    },
+    {
+      "column": "x_protocol_num_request_repeats",
+      "role": "X_protocol",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x protocol num request repeats"
+    },
+    {
+      "column": "x_protocol_endpoint_type",
+      "role": "X_protocol",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "x protocol endpoint type"
+    },
+    {
+      "column": "x_hardware_gpu_model",
+      "role": "X_hardware",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "x hardware gpu model"
+    },
+    {
+      "column": "x_hardware_num_gpus",
+      "role": "X_hardware",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x hardware num gpus"
+    },
+    {
+      "column": "x_deployment_max_num_seqs",
+      "role": "X_deployment",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x deployment max num seqs"
+    },
+    {
+      "column": "x_deployment_tensor_parallel",
+      "role": "X_deployment",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x deployment tensor parallel"
+    },
+    {
+      "column": "x_deployment_expert_parallel",
+      "role": "X_deployment",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x deployment expert parallel"
+    },
+    {
+      "column": "x_deployment_data_parallel",
+      "role": "X_deployment",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x deployment data parallel"
+    },
+    {
+      "column": "x_model_benchmark_architecture",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "x model benchmark architecture"
+    },
+    {
+      "column": "x_model_benchmark_total_params_billions",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "x model benchmark total params billions"
+    },
+    {
+      "column": "x_model_benchmark_activated_params_billions",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "x model benchmark activated params billions"
+    },
+    {
+      "column": "x_model_benchmark_weight_precision",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "x model benchmark weight precision"
+    },
+    {
+      "column": "diag_model_id",
+      "role": "diagnostic_split",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "diag model id"
+    },
+    {
+      "column": "diag_model_nickname",
+      "role": "diagnostic_split",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "diag model nickname"
+    },
+    {
+      "column": "diag_model_family",
+      "role": "diagnostic_split",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "diag model family"
+    },
+    {
+      "column": "diag_quality_is_stable",
+      "role": "diagnostic_quality",
+      "exante_allowed": false,
+      "dtype": "bool",
+      "non_null_count": 694,
+      "description": "diag quality is stable"
+    },
+    {
+      "column": "diag_quality_unstable_reason",
+      "role": "diagnostic_quality",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "diag quality unstable reason"
+    },
+    {
+      "column": "prov_results_path",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov results path"
+    },
+    {
+      "column": "prov_prometheus_path_not_downloaded",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov prometheus path not downloaded"
+    },
+    {
+      "column": "y_gpu_steady_state_energy_joules",
+      "role": "Y_gpu",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "y gpu steady state energy joules"
+    },
+    {
+      "column": "y_gpu_steady_state_duration_seconds",
+      "role": "Y_gpu",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "y gpu steady state duration seconds"
+    },
+    {
+      "column": "y_gpu_avg_power_watts",
+      "role": "Y_gpu",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "y gpu avg power watts"
+    },
+    {
+      "column": "y_gpu_energy_per_token_joules",
+      "role": "Y_gpu",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "y gpu energy per token joules"
+    },
+    {
+      "column": "y_gpu_energy_per_request_joules",
+      "role": "Y_gpu",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "y gpu energy per request joules"
+    },
+    {
+      "column": "diag_result_output_throughput_tokens_per_sec",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result output throughput tokens per sec"
+    },
+    {
+      "column": "diag_result_request_throughput_req_per_sec",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result request throughput req per sec"
+    },
+    {
+      "column": "diag_result_total_output_tokens",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result total output tokens"
+    },
+    {
+      "column": "diag_result_completed_requests",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result completed requests"
+    },
+    {
+      "column": "diag_result_avg_output_len",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result avg output len"
+    },
+    {
+      "column": "diag_result_mean_itl_ms",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result mean itl ms"
+    },
+    {
+      "column": "diag_result_median_itl_ms",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result median itl ms"
+    },
+    {
+      "column": "diag_result_p50_itl_ms",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result p50 itl ms"
+    },
+    {
+      "column": "diag_result_p90_itl_ms",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result p90 itl ms"
+    },
+    {
+      "column": "diag_result_p95_itl_ms",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result p95 itl ms"
+    },
+    {
+      "column": "diag_result_p99_itl_ms",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result p99 itl ms"
+    },
+    {
+      "column": "diag_result_avg_batch_size",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "diag result avg batch size"
+    },
+    {
+      "column": "x_workload_max_output_tokens",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x workload max output tokens"
+    },
+    {
+      "column": "x_workload_benchmark_base_request_count",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x workload benchmark base request count"
+    },
+    {
+      "column": "x_workload_benchmark_request_count",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x workload benchmark request count"
+    },
+    {
+      "column": "x_workload_benchmark_unique_prompt_count",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "x workload benchmark unique prompt count"
+    },
+    {
+      "column": "x_workload_benchmark_total_input_tokens",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark total input tokens"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_mean",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens mean"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_p50",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens p50"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_p90",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens p90"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_p95",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens p95"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_max",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens max"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_min",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens min"
+    },
+    {
+      "column": "x_workload_benchmark_input_tokens_std",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark input tokens std"
+    },
+    {
+      "column": "x_workload_benchmark_sum_input_tokens_squared",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x workload benchmark sum input tokens squared"
+    },
+    {
+      "column": "x_workload_benchmark_output_token_upper_bound",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x workload benchmark output token upper bound"
+    },
+    {
+      "column": "prov_tokenization_status",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov tokenization status"
+    },
+    {
+      "column": "prov_tokenization_missing_reason",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 132,
+      "description": "prov tokenization missing reason"
+    },
+    {
+      "column": "prov_planned_benchmark_commit",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov planned benchmark commit"
+    },
+    {
+      "column": "prov_planned_dataset_revision",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov planned dataset revision"
+    },
+    {
+      "column": "prov_planned_request_list_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov planned request list sha256"
+    },
+    {
+      "column": "prov_planned_prompt_template_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov planned prompt template sha256"
+    },
+    {
+      "column": "prov_planned_tokenizer_revision",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "prov planned tokenizer revision"
+    },
+    {
+      "column": "prov_planned_tokenizer_revision_requested",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov planned tokenizer revision requested"
+    },
+    {
+      "column": "prov_planned_prompt_length_semantics",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov planned prompt length semantics"
+    },
+    {
+      "column": "prov_planned_base_input_lengths_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "prov planned base input lengths sha256"
+    },
+    {
+      "column": "x_workload_effective_request_count",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective request count"
+    },
+    {
+      "column": "x_workload_effective_total_input_tokens",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective total input tokens"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_mean",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens mean"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_p50",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens p50"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_p90",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens p90"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_p95",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens p95"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_min",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens min"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_max",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens max"
+    },
+    {
+      "column": "x_workload_effective_input_tokens_std",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective input tokens std"
+    },
+    {
+      "column": "x_workload_effective_sum_input_tokens_squared",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x workload effective sum input tokens squared"
+    },
+    {
+      "column": "prov_effective_status",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov effective status"
+    },
+    {
+      "column": "prov_effective_missing_reason",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 202,
+      "description": "prov effective missing reason"
+    },
+    {
+      "column": "prov_effective_chat_content_format",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 492,
+      "description": "prov effective chat content format"
+    },
+    {
+      "column": "prov_effective_chat_template_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 433,
+      "description": "prov effective chat template sha256"
+    },
+    {
+      "column": "prov_effective_system_prompt_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 63,
+      "description": "prov effective system prompt sha256"
+    },
+    {
+      "column": "prov_effective_chat_template_kwargs_json",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 492,
+      "description": "prov effective chat template kwargs json"
+    },
+    {
+      "column": "prov_effective_base_effective_lengths_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 492,
+      "description": "prov effective base effective lengths sha256"
+    },
+    {
+      "column": "x_physics_prefill_projection_flop_proxy",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics prefill projection flop proxy"
+    },
+    {
+      "column": "x_physics_prefill_attention_flop_proxy",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics prefill attention flop proxy"
+    },
+    {
+      "column": "x_physics_prefill_mlp_flop_proxy",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics prefill mlp flop proxy"
+    },
+    {
+      "column": "x_physics_prefill_total_flop_proxy",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics prefill total flop proxy"
+    },
+    {
+      "column": "x_physics_decode_output_cap_tokens_per_request",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics decode output cap tokens per request"
+    },
+    {
+      "column": "x_physics_decode_upper_bound_flop_proxy",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics decode upper bound flop proxy"
+    },
+    {
+      "column": "x_physics_kv_cache_prefill_sum_bytes",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics kv cache prefill sum bytes"
+    },
+    {
+      "column": "x_physics_kv_cache_prefill_max_request_bytes",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics kv cache prefill max request bytes"
+    },
+    {
+      "column": "x_physics_kv_cache_output_cap_sum_bytes",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics kv cache output cap sum bytes"
+    },
+    {
+      "column": "x_physics_weight_bytes_total",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics weight bytes total"
+    },
+    {
+      "column": "x_physics_prefill_total_flop_proxy_per_gpu_ideal",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics prefill total flop proxy per gpu ideal"
+    },
+    {
+      "column": "x_physics_decode_upper_bound_flop_proxy_per_gpu_ideal",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics decode upper bound flop proxy per gpu ideal"
+    },
+    {
+      "column": "x_physics_kv_cache_prefill_sum_bytes_per_gpu_ideal",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics kv cache prefill sum bytes per gpu ideal"
+    },
+    {
+      "column": "x_physics_weight_bytes_per_gpu_ideal",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics weight bytes per gpu ideal"
+    },
+    {
+      "column": "x_deployment_model_parallel_gpus_per_replica",
+      "role": "X_deployment",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x deployment model parallel gpus per replica"
+    },
+    {
+      "column": "x_physics_kv_bytes_per_element",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 406,
+      "description": "x physics kv bytes per element"
+    },
+    {
+      "column": "x_physics_shared_expert_term_included",
+      "role": "X_workload",
+      "exante_allowed": true,
+      "dtype": "object",
+      "non_null_count": 406,
+      "description": "x physics shared expert term included"
+    },
+    {
+      "column": "prov_physics_status",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov physics status"
+    },
+    {
+      "column": "prov_physics_missing_reason",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 288,
+      "description": "prov physics missing reason"
+    },
+    {
+      "column": "diag_quality_input_reconciliation_status",
+      "role": "diagnostic_quality",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "diag quality input reconciliation status"
+    },
+    {
+      "column": "diag_quality_input_reconciliation_reason",
+      "role": "diagnostic_quality",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 171,
+      "description": "diag quality input reconciliation reason"
+    },
+    {
+      "column": "diag_result_input_token_exact_match",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "object",
+      "non_null_count": 562,
+      "description": "diag result input token exact match"
+    },
+    {
+      "column": "diag_result_total_input_tokens",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "diag result total input tokens"
+    },
+    {
+      "column": "diag_result_input_token_absolute_error",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "diag result input token absolute error"
+    },
+    {
+      "column": "diag_result_input_token_relative_error",
+      "role": "diagnostic_result",
+      "exante_allowed": false,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "diag result input token relative error"
+    },
+    {
+      "column": "x_model_architecture_family",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "x model architecture family"
+    },
+    {
+      "column": "x_model_precision_bits",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "int64",
+      "non_null_count": 694,
+      "description": "x model precision bits"
+    },
+    {
+      "column": "x_model_param_count_total",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "x model param count total"
+    },
+    {
+      "column": "x_model_param_count_active",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 694,
+      "description": "x model param count active"
+    },
+    {
+      "column": "x_model_model_type",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "x model model type"
+    },
+    {
+      "column": "x_model_architecture_class",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "x model architecture class"
+    },
+    {
+      "column": "x_model_num_layers",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model num layers"
+    },
+    {
+      "column": "x_model_hidden_size",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model hidden size"
+    },
+    {
+      "column": "x_model_intermediate_size",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model intermediate size"
+    },
+    {
+      "column": "x_model_num_attention_heads",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model num attention heads"
+    },
+    {
+      "column": "x_model_num_key_value_heads",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model num key value heads"
+    },
+    {
+      "column": "x_model_vocab_size",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model vocab size"
+    },
+    {
+      "column": "x_model_context_length",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model context length"
+    },
+    {
+      "column": "x_model_sliding_window",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 114,
+      "description": "x model sliding window"
+    },
+    {
+      "column": "x_model_moe_intermediate_size",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 334,
+      "description": "x model moe intermediate size"
+    },
+    {
+      "column": "x_model_shared_expert_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 23,
+      "description": "x model shared expert count"
+    },
+    {
+      "column": "x_model_shared_expert_intermediate_size",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 29,
+      "description": "x model shared expert intermediate size"
+    },
+    {
+      "column": "x_model_qk_nope_head_dim",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 23,
+      "description": "x model qk nope head dim"
+    },
+    {
+      "column": "x_model_qk_rope_head_dim",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 23,
+      "description": "x model qk rope head dim"
+    },
+    {
+      "column": "x_model_v_head_dim",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 23,
+      "description": "x model v head dim"
+    },
+    {
+      "column": "x_model_mamba_head_dim",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 63,
+      "description": "x model mamba head dim"
+    },
+    {
+      "column": "x_model_mamba_num_heads",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 63,
+      "description": "x model mamba num heads"
+    },
+    {
+      "column": "x_model_mamba_state_size",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 63,
+      "description": "x model mamba state size"
+    },
+    {
+      "column": "x_model_expert_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 334,
+      "description": "x model expert count"
+    },
+    {
+      "column": "x_model_active_expert_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 334,
+      "description": "x model active expert count"
+    },
+    {
+      "column": "x_model_head_dim",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 562,
+      "description": "x model head dim"
+    },
+    {
+      "column": "x_model_dense_layer_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 499,
+      "description": "x model dense layer count"
+    },
+    {
+      "column": "x_model_moe_layer_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 499,
+      "description": "x model moe layer count"
+    },
+    {
+      "column": "x_model_hybrid_pattern",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 63,
+      "description": "x model hybrid pattern"
+    },
+    {
+      "column": "x_model_hybrid_mamba_layer_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 63,
+      "description": "x model hybrid mamba layer count"
+    },
+    {
+      "column": "x_model_hybrid_attention_layer_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 63,
+      "description": "x model hybrid attention layer count"
+    },
+    {
+      "column": "x_model_hybrid_mlp_layer_count",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 63,
+      "description": "x model hybrid mlp layer count"
+    },
+    {
+      "column": "x_model_attention_variant",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "x model attention variant"
+    },
+    {
+      "column": "x_model_mlp_structure",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "x model mlp structure"
+    },
+    {
+      "column": "x_model_quant_method_config",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 169,
+      "description": "x model quant method config"
+    },
+    {
+      "column": "x_model_runtime_dtype_config",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "str",
+      "non_null_count": 492,
+      "description": "x model runtime dtype config"
+    },
+    {
+      "column": "x_model_runtime_dtype_bits",
+      "role": "X_model",
+      "exante_allowed": true,
+      "dtype": "float64",
+      "non_null_count": 492,
+      "description": "x model runtime dtype bits"
+    },
+    {
+      "column": "prov_config_status",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov config status"
+    },
+    {
+      "column": "prov_config_restricted_reason",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 132,
+      "description": "prov config restricted reason"
+    },
+    {
+      "column": "prov_config_revision",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov config revision"
+    },
+    {
+      "column": "prov_config_sha256",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 562,
+      "description": "prov config sha256"
+    },
+    {
+      "column": "prov_config_resolved_status",
+      "role": "provenance",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 694,
+      "description": "prov config resolved status"
+    },
+    {
+      "column": "eligible_base_exante",
+      "role": "eligibility",
+      "exante_allowed": false,
+      "dtype": "bool",
+      "non_null_count": 694,
+      "description": "eligible base exante"
+    },
+    {
+      "column": "eligible_full_workload",
+      "role": "eligibility",
+      "exante_allowed": false,
+      "dtype": "bool",
+      "non_null_count": 694,
+      "description": "eligible full workload"
+    },
+    {
+      "column": "eligible_physics_feature",
+      "role": "eligibility",
+      "exante_allowed": false,
+      "dtype": "bool",
+      "non_null_count": 694,
+      "description": "eligible physics feature"
+    },
+    {
+      "column": "eligible_primary_stable",
+      "role": "eligibility",
+      "exante_allowed": false,
+      "dtype": "bool",
+      "non_null_count": 694,
+      "description": "eligible primary stable"
+    },
+    {
+      "column": "restricted_feature_reason",
+      "role": "eligibility",
+      "exante_allowed": false,
+      "dtype": "str",
+      "non_null_count": 311,
+      "description": "restricted feature reason"
+    }
+  ]
+}

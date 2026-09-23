@@ -1,0 +1,195 @@
+{
+  "generated_at_utc": "2026-09-22T08:08:37.163452+00:00",
+  "benchmark_commit": "c1d6557fbf7c7c495749b0fcf649f71774eabde9",
+  "gpqa_dataset_revision": "633f5ee89ab8ad4522a9f850766b73f62147ffdd",
+  "phase16_table_sha256": "0dd3e1760400780936322125f00248a54eb87f9b4f8846565f4b768d32695a20",
+  "method": "byte/value-preserving reuse of Phase 1.6 available rows plus local pinned GPQA and Gemma reconstruction",
+  "rows": 694,
+  "available_rows": 562,
+  "restricted_rows": 132,
+  "request_hashes": {
+    "gpqa": "7a647ecfc9dad4434227d20acb5137af91c9f3ee32552a8d4b44b83d3a853647",
+    "lm-arena-chat": "2f801cd5bf61f0b709f74915fda9cf102be5693246304e0b0247dd9623b1df6b"
+  },
+  "unique_input_counts": {
+    "gpqa": 198,
+    "lm-arena-chat": 1016
+  },
+  "pairs": [
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-14B",
+      "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "status": "available",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "ab8c1ebcd5d15855377e6b2798560fe57e0e1026c9b6128ef463a3f1f7220d16"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "revision": "6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5",
+      "status": "available",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "ab8c1ebcd5d15855377e6b2798560fe57e0e1026c9b6128ef463a3f1f7220d16"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
+      "revision": "f07f63f2bbd7540917118ebdf3812696ef303b03",
+      "status": "available",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "ab8c1ebcd5d15855377e6b2798560fe57e0e1026c9b6128ef463a3f1f7220d16"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "revision": "144afc2f379b542fdd4e85a1fcd5e1f79112d95d",
+      "status": "available",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "ab8c1ebcd5d15855377e6b2798560fe57e0e1026c9b6128ef463a3f1f7220d16"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "status": "available",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "ab8c1ebcd5d15855377e6b2798560fe57e0e1026c9b6128ef463a3f1f7220d16"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "status": "available",
+      "tokenizer_class": "Qwen2TokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "ab8c1ebcd5d15855377e6b2798560fe57e0e1026c9b6128ef463a3f1f7220d16"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "deepseek-ai/DeepSeek-R1-0528",
+      "revision": "4236a6af538feda4548eca9ab308586007567f52",
+      "status": "available",
+      "tokenizer_class": "LlamaTokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "b0dcc9c73f777b89664f608ca63c58feef70da61c059e674b5dab32c998e6a61"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "deepseek-ai/DeepSeek-V3.1",
+      "revision": "c0781d039fb7a1ba2abc4add0bdc293e92d2b8db",
+      "status": "available",
+      "tokenizer_class": "LlamaTokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "b0dcc9c73f777b89664f608ca63c58feef70da61c059e674b5dab32c998e6a61"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2",
+      "revision": "f428df0ec725fed457b89cfca54dc26500fb88c1",
+      "status": "available",
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "1464bea2eb85a4cff6a9dc4788f1852eb0d20583145dde93fd629e8895beeeca"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+      "status": "available",
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "1464bea2eb85a4cff6a9dc4788f1852eb0d20583145dde93fd629e8895beeeca"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "openai/gpt-oss-120b",
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "status": "available",
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "a202262539a86b1f1be337c6314a6abb48baf94a8eb2b294a9dea22b255449b5"
+    },
+    {
+      "task": "gpqa",
+      "model_id": "openai/gpt-oss-20b",
+      "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "status": "available",
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "request_count": 198,
+      "vector_sha256": "a202262539a86b1f1be337c6314a6abb48baf94a8eb2b294a9dea22b255449b5"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "google/gemma-3-12b-it",
+      "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "status": "available",
+      "tokenizer_class": "GemmaTokenizerFast",
+      "request_count": 1024,
+      "vector_sha256": "e97a0da161969131597bdc64886c97d8e7681df79128562e67f9d857cdbb5f48"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "google/gemma-3-27b-it",
+      "revision": "005ad3404e59d6023443cb575daa05336842228a",
+      "status": "available",
+      "tokenizer_class": "GemmaTokenizerFast",
+      "request_count": 1024,
+      "vector_sha256": "e97a0da161969131597bdc64886c97d8e7681df79128562e67f9d857cdbb5f48"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-405B-Instruct",
+      "revision": "be673f326cab4cd22ccfef76109faf68e41aa5f1",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-405B-Instruct-FP8",
+      "revision": "64a54b704768dfd589a3e4ac05d546052f67f4fd",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+      "revision": "1605565b47bb9346c5515c34102e054115b4f98b",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "revision": "94125d2bd83076b21eed33119525e29eaf3894f4",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    },
+    {
+      "task": "lm-arena-chat",
+      "model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "revision": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+      "status": "restricted",
+      "reason": "restricted_model_static_files: Meta Llama access rejected; no bypass or mirror used"
+    }
+  ]
+}

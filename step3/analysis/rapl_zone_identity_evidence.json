@@ -1,0 +1,83 @@
+{
+  "generated_at_utc": "2026-09-22T08:08:41.023322+00:00",
+  "scope": "existing bounded ML.ENERGY text-LLM inference metadata and pinned Zeus 0.13.1 source only",
+  "time_box_result": "completed_without_new_downloads",
+  "raw_timeline_downloaded": false,
+  "prometheus_downloaded": false,
+  "inspected_sources": [
+    {
+      "source_class": "existing_bounded_source",
+      "path": "step2/data/zeus-0.13.1/zeus/device/cpu/rapl.py",
+      "sha256": "969cba2ecc862f37477e878d117a8d385af6c9e38aab6394a0fb7a203ebe821d",
+      "bytes": 15229,
+      "direct_mapping_hit_count": 0
+    },
+    {
+      "source_class": "existing_bounded_source",
+      "path": "step2/data/zeus-0.13.1/zeus/monitor/energy.py",
+      "sha256": "e59ba55570c6f55afff63fdb7fac4ff77fff02acb79ef0c4cb724503a9570248",
+      "bytes": 22341,
+      "direct_mapping_hit_count": 0
+    },
+    {
+      "source_class": "existing_bounded_source",
+      "path": "step2/data/official_source/benchmark.py",
+      "sha256": "c8c0f55d5d542c2da851aa0f9023c2f263f383587d598b16affce54b3e8035c1",
+      "bytes": 59302,
+      "direct_mapping_hit_count": 0
+    },
+    {
+      "source_class": "existing_bounded_source",
+      "path": "step2/analysis/cpu_dram_audit.json",
+      "sha256": "e10de1aa715f27e0a7bd4ec127a691f1d6badd63e522faf2b5639280ef46d3e4",
+      "bytes": 10017,
+      "direct_mapping_hit_count": 0
+    },
+    {
+      "source_class": "existing_bounded_source",
+      "path": "step2/docs/cpu_dram_measurement_boundary.md",
+      "sha256": "e959258ded7a46090729dc957f50a5bd455dad04066ce2c821c7bc12550e0e7d",
+      "bytes": 4640,
+      "direct_mapping_hit_count": 0
+    },
+    {
+      "source_class": "existing_bounded_source",
+      "path": "step2/reports/phase1_6_audit_summary.md",
+      "sha256": "7890ef2488246d8914b31c61d21b4abc46378563105bc1bda998437e1587554b",
+      "bytes": 4009,
+      "direct_mapping_hit_count": 0
+    },
+    {
+      "source_class": "bounded_result_metadata_collection",
+      "manifest_path": "step2/analysis/result_metadata_manifest.json",
+      "manifest_sha256": "2d71cb2288084bd6e45b90967d8d489e76683653309a5b669d3b3ee36b7ae9ed",
+      "declared_file_count": 694,
+      "inspected_file_count": 694,
+      "collection_sha256": "820811ab6d8accf00f9efa6f9974f909cfd29e9b57a038b36d90d256df6f3e62",
+      "direct_mapping_hit_count": 0
+    }
+  ],
+  "all_direct_mapping_hits": [],
+  "zone_1_identity": {
+    "zone_index": 1,
+    "status": "unresolved",
+    "resolved_zone_name": null,
+    "neutral_label": "platform-like diagnostic",
+    "numeric_inference_used": false,
+    "observed_power_w_diagnostic_only": {
+      "count": 373,
+      "min": 2665.8009357511733,
+      "p25": 5167.233597889567,
+      "median": 5932.083654177734,
+      "p75": 7071.758010309346,
+      "max": 8615.443867600654,
+      "negative": 0,
+      "zero": 0,
+      "robust_high_threshold_q3_plus_3iqr": 12785.331247568683,
+      "above_robust_high_threshold": 0
+    },
+    "conflicting_names": null,
+    "evidence": []
+  },
+  "conclusion": "Direct index-to-name evidence was not found; retain zone 1 as a platform-like diagnostic."
+}
