@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0",
+  "generated_utc": "2026-09-29T01:05:45.659744+00:00",
+  "status": "pass",
+  "scope": "ML.ENERGY V3 GPU-side text-LLM inference, high-load steady-state Phase 3.0",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "summary": {
+    "core_prediction_rows": 36600,
+    "core_experiments": 120,
+    "exploratory_power_variant": "B4-Hardware__XGBoost",
+    "exploratory_power_mae_watts": 204.36577476881104,
+    "selection_status": "outcome-informed exploratory; no winner-adjusted interval claimed"
+  },
+  "checks": [
+    {
+      "name": "frozen source and actual taskbook hashes",
+      "status": "pass",
+      "details": {
+        "verified_frozen_inputs": 10,
+        "actual_taskbook_sha256": "DDCCAF572D291B6D454351C18FDEAA6961C9570A5B5B37591CF00F6F805C4052"
+      }
+    },
+    {
+      "name": "cohort counts and independent B4/B5 formulas",
+      "status": "pass",
+      "details": {
+        "rows": 694,
+        "eligible_primary_stable": 565,
+        "eligible_static_architecture": 448,
+        "eligible_phase20_full": 381,
+        "eligible_phase20_physics": 305,
+        "independently_rebuilt_physics_rows": 305
+      }
+    },
+    {
+      "name": "feature-role manifest and hardware uncertainty",
+      "status": "pass",
+      "details": {
+        "bundles": 9,
+        "role_manifest_violations": 0,
+        "hardware_mapping": "ambiguous"
+      }
+    },
+    {
+      "name": "split isolation and config-group support",
+      "status": "pass",
+      "details": {
+        "model_folds": 5,
+        "config_groups": 303,
+        "singleton_config_groups": 301,
+        "family_folds": 3,
+        "random_repeats": 10
+      }
+    },
+    {
+      "name": "core OOF coverage and all metric rebuilds",
+      "status": "pass",
+      "details": {
+        "rows": 36600,
+        "experiments": 120,
+        "all_metrics_rebuilt": 120
+      }
+    },
+    {
+      "name": "paired intervals and target reconstruction",
+      "status": "pass",
+      "details": {
+        "paired_comparisons": 4,
+        "bootstrap_draws": 4000,
+        "power_fraction_rows_rebuilt": 305,
+        "log1p_semantics": "no negative predictions observed; positivity not guaranteed"
+      }
+    },
+    {
+      "name": "generalization, report values, and notebook",
+      "status": "pass",
+      "details": {
+        "generalization_rows": 26,
+        "report_b4_mae_reconciled": 204.36577476881104,
+        "notebook_code_cells": 6
+      }
+    },
+    {
+      "name": "fold-local interpretation artifacts",
+      "status": "pass",
+      "details": {
+        "importance_rows": 470,
+        "interpreted_variants": 2,
+        "pdp_features": 5
+      }
+    },
+    {
+      "name": "required artifacts and figures",
+      "status": "pass",
+      "details": {
+        "required_artifacts": 23,
+        "required_figures": 10
+      }
+    },
+    {
+      "name": "repository credential-pattern scan",
+      "status": "pass",
+      "details": {
+        "text_files_scanned": 51,
+        "credential_patterns": [
+          "aws_access_key",
+          "github_classic",
+          "github_fine_grained",
+          "huggingface",
+          "openai",
+          "private_key",
+          "slack"
+        ],
+        "hits": 0
+      }
+    }
+  ],
+  "artifact_hashes": {
+    "step5/config/gpu_hardware_specs.json": "ae81f0e989baf4609f31bddc8bb541871a57b6f0a0600170524dd19d30e230a8",
+    "step5/config/hardware_source_manifest.json": "4c2703cfa0615a425ef0be13a93f42c824170e357aff70cc0f4adff55453eb1d",
+    "step5/config/feature_bundles_phase3.json": "2ace6098ddf2b994808cf495d704dcf726ace9c59e485d79cfdf773229a82285",
+    "step5/analysis/phase3_modeling_table.parquet": "959f219f0edae13a3fc16975bba31e694da3ff18d0e4e8a16bb61865c4cc7073",
+    "step5/analysis/oof_predictions.parquet": "379c6018a1fcf468940e13840c51e3cb68dbc453b4016faa20d7d237cb44ed54",
+    "step5/analysis/oof_predictions.csv": "1557000d5cbba592c47b2d23eaa9d9a88a452f7cdc1d2efcf5cfabc2d1575035",
+    "step5/analysis/generalization_predictions.parquet": "786b738de4aa87e3cc0c8a02209f85b568598d270b6efd5282370eb296d4e4b5",
+    "step5/analysis/hardware_label_sensitivity_predictions.parquet": "8d9598c4c6d18a121a60e4f7fcf5952e3291ef25e37e96ed3ef7044e43e531d5",
+    "step5/analysis/target_strategy_predictions.parquet": "df8adf6c9ad310d8844b5899582c23dfc9b6399b443295d4c756fa2f4b22901d",
+    "step5/reports/model_comparison.csv": "210c73763b84a2557e08fe42d51fa93d435e36727aefb022ae4b0049e6a3760a",
+    "step5/reports/feature_ablation.csv": "7f73e4caab9c5eb5c77c9879554c47fe6d35f9298d98b5af58c75641a95b6f91",
+    "step5/reports/generalization_ladder.csv": "ea00f90289fe3de16ac862b7374f9f7a839f495fa288931ed979c7b06aeef6a3",
+    "step5/reports/hardware_label_sensitivity.csv": "8d9bddaaca8d3b5608472a183257289c08e2118ef1ef4997871fc67db65879b7",
+    "step5/reports/hardware_paired_comparisons.csv": "fdd8b374499f6f48c7eedf502dbde2627e780362acf3ae6970d250f7441d9a28",
+    "step5/reports/hardware_paired_bootstrap_draws.csv": "09664a2f5f3bfe6b570c8c03507f643aad7b010bc69357a9bfb1e1c293b48365",
+    "step5/reports/target_strategy_comparison.csv": "86098395d32971db0a4ceb07e0db2a9518b7f1c3fca31c20fda6c81c2706ebcb",
+    "step5/reports/feature_importance.csv": "8797f25ea4e76804b21602e06d97aac198415f9516ba6ee0727b75e83a9102fc",
+    "step5/reports/partial_dependence.csv": "cdedb5b01e3dc7c33d0d7c456ae66749fb2fa99a44c45fb033c6abb2695a3aca",
+    "step5/reports/error_slices.csv": "938c2e5d5e26c40e43c8a18dfa239232ba6c62231fbb886d19ba7cf5f6ffbeb5",
+    "step5/notebooks/phase3_enhanced_modeling.ipynb": "7be6d2f96878c8b37f3c17aa8aeedd8b42aa013e9b88998ca516e99e58b6beb3",
+    "step5/notebooks/phase3_enhanced_modeling.html": "7da632d112b24684d37918dc8ba204c498175bb395afa481d31d65f7e59c4bb9",
+    "step5/reports/phase3_enhanced_modeling_report.md": "ad39607fdbf4b5dd24d0ecdf2b131c0b3403c2bbbe217cf8f858f396367f08a8",
+    "step5/README.md": "d950173efffcb4631cd9cf28e76f50ca864d2e2cb441459b21b8583bbd6c3d43",
+    "step5/reports/figures/actual_vs_predicted_random_best.png": "21d2c02a43dcaa1c9e1d2f0884cb4f26fb77d6e20db51609750a33fae99aef7d",
+    "step5/reports/figures/actual_vs_predicted_model_holdout_best.png": "954476f2114edfe0b4350cb91062cfb1afe48567716f7d69821c0e999d50f954",
+    "step5/reports/figures/actual_vs_predicted_family_holdout_best.png": "02e6c92b46898cfde1824966d063c4f0ea2d61d17ed7d431c1b849f756a31af1",
+    "step5/reports/figures/residuals_model_holdout_best.png": "7602d8ed3dc035c0efc4fc0bb71c255e5ca7f36dfd37d72eb376aca892d5108b",
+    "step5/reports/figures/actual_vs_predicted_energy_best.png": "6524086449a018da96a0c755b13daf621f7e23c61757269de07dee239e3bf6fe",
+    "step5/reports/figures/residuals_energy_best.png": "2911bd0872dc7975b29e115bad68f2bea774807a2ed0a363f1c876b461583c64",
+    "step5/reports/figures/feature_importance_best.png": "c90368032ecaf70a283ca397927fca342165d03a369f1cd9aa2f4c6a7f743db1",
+    "step5/reports/figures/partial_dependence_best.png": "a07e1ee073b8f96ecbe343d674c845a6a30d9fd4a08ed8a1fb0a5086c3d5001e",
+    "step5/reports/figures/physics_coverage_by_gpu_family.png": "52e72ab702912e337f6581918cea58c57049ab75b18dd4c32ce9875b174a8b6e",
+    "step5/reports/figures/load_regime_distribution.png": "9e67d7b1a6242319b125dd023ece92d2f6fa9f116630e4c78bca03862cc89ed0"
+  }
+}

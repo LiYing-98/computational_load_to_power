@@ -1,0 +1,5 @@
+# Reuse the pinned Phase 2 environment and add optional Phase 3 table learners.
+-r ../step4/requirements-phase20.txt
+xgboost==3.0.5
+catboost==1.2.8
+shap==0.48.0

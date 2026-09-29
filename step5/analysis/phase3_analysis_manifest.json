@@ -1,0 +1,11 @@
+{
+  "exploratory_power_variant": "B4-Hardware__XGBoost",
+  "selection_status": "outcome-informed exploratory follow-up; not an unbiased winner estimate",
+  "generalization_rows": 26,
+  "strategy_rows": 4,
+  "hardware_sensitivity_rows": 4,
+  "hardware_paired_comparisons": 4,
+  "importance_rows": 470,
+  "pdp_features": 5,
+  "shap_status": "not_available; fold-local permutation importance and PDP used"
+}

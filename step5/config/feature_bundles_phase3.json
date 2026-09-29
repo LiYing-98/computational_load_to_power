@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "scope": "ML.ENERGY V3 GPU-side text-LLM inference Phase 3.0; execution-time-known X only",
+  "inherits": "step4/config/feature_bundles.json",
+  "inherited_sha256": "b7ce1ca3039b825fa1dac45587165331c61a9ed5517fc72a8e2470a012ba0bb3",
+  "derived_contract": {
+    "x_hardware_aggregate_rated_power_w": "rated_power_w per GPU multiplied by execution-known num_gpus",
+    "x_hardware_physics_compute_time_proxy_seconds": "selected theoretical prefill FLOPs/request divided by precision-matched per-GPU peak FLOP/s; lower-bound proxy only",
+    "x_hardware_physics_memory_time_proxy_seconds": "(ideal weight bytes/GPU + mean prefill KV bytes/request) divided by theoretical HBM bytes/s; lower-bound proxy only",
+    "x_hardware_physics_weight_capacity_ratio": "ideal weight bytes/GPU divided by HBM capacity bytes/GPU",
+    "x_hardware_physics_kv_capacity_ratio_mean": "mean request KV bytes divided by HBM capacity bytes/GPU",
+    "x_hardware_physics_kv_capacity_ratio_max": "max request KV bytes divided by HBM capacity bytes/GPU",
+    "x_hardware_physics_compute_to_memory_pressure_ratio": "compute-time proxy divided by memory-time proxy where denominator is positive"
+  },
+  "bundles": {
+    "B4-Hardware": {
+      "scientific_role": "B3 plus continuous reference hardware capacity while retaining GPU label",
+      "minimum_cohort": "physics",
+      "sensitivity_only": false,
+      "base_bundle": "B3-Physics",
+      "categorical_add": [],
+      "numeric_add": [
+        "x_hardware_peak_compute_bf16_dense_tflops",
+        "x_hardware_peak_compute_fp8_dense_tflops",
+        "x_hardware_precision_matched_peak_compute_tflops",
+        "x_hardware_hbm_bandwidth_gbps",
+        "x_hardware_hbm_capacity_gb",
+        "x_hardware_rated_power_w",
+        "x_hardware_interconnect_bandwidth_gbps",
+        "x_hardware_aggregate_rated_power_w"
+      ],
+      "columns": []
+    },
+    "B5-HardwarePhysics": {
+      "scientific_role": "B4 plus workload-relative hardware pressure proxies",
+      "minimum_cohort": "physics",
+      "sensitivity_only": false,
+      "base_bundle": "B4-Hardware",
+      "categorical_add": [],
+      "numeric_add": [
+        "x_hardware_physics_compute_time_proxy_seconds",
+        "x_hardware_physics_memory_time_proxy_seconds",
+        "x_hardware_physics_weight_capacity_ratio",
+        "x_hardware_physics_kv_capacity_ratio_mean",
+        "x_hardware_physics_kv_capacity_ratio_max",
+        "x_hardware_physics_compute_to_memory_pressure_ratio"
+      ],
+      "columns": []
+    },
+    "B5-HardwarePhysics-NoLabel": {
+      "scientific_role": "hardware-only identity sensitivity removing categorical GPU label",
+      "minimum_cohort": "physics",
+      "sensitivity_only": true,
+      "base_bundle": "B5-HardwarePhysics",
+      "drop": ["x_hardware_gpu_model"],
+      "categorical_add": [],
+      "numeric_add": [],
+      "columns": []
+    }
+  }
+}

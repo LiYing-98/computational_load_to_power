@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "seed": 20260928,
+  "backends": {
+    "XGBoost": {
+      "available": true,
+      "version": "3.0.5",
+      "fallback": "sklearn.GradientBoostingRegressor"
+    },
+    "CatBoost": {
+      "available": true,
+      "version": "1.2.8",
+      "fallback": "sklearn.RandomForestRegressor_with_one_hot"
+    },
+    "SHAP": {
+      "available": false,
+      "version": null,
+      "fallback": "permutation_importance_and_partial_dependence"
+    }
+  },
+  "selection": "outer-train-only group-aware inner CV"
+}

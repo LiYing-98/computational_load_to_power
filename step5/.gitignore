@@ -1,0 +1,6 @@
+.venv/
+.packages/
+__pycache__/
+*.pyc
+models/checkpoints/
+models/analysis_checkpoints/

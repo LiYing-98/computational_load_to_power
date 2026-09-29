@@ -1,0 +1,5 @@
+reference_variant,candidate_variant,analysis_role,n_rows,n_model_clusters,mae_reference,mae_candidate,row_weighted_mae_delta_candidate_minus_reference,equal_model_mae_delta_candidate_minus_reference,equal_model_mae_delta_ci_low,equal_model_mae_delta_ci_high,bootstrap_replicates
+B0-Core__HistGradientBoosting,B4-Hardware__XGBoost,outcome_informed_exploratory_comparison,305,14,253.28681292563533,204.36577476881106,-48.92103815682427,-66.84831671025628,-129.49473011341914,-20.400684768610876,1000
+B3-Physics__XGBoost,B4-Hardware__XGBoost,outcome_informed_exploratory_comparison,305,14,237.86616554371875,204.36577476881106,-33.500390774907686,-24.808660855791313,-55.47586120685194,9.985114403798747,1000
+B4-Hardware__XGBoost,B5-HardwarePhysics__XGBoost,outcome_informed_exploratory_comparison,305,14,204.36577476881106,241.7462193537365,37.38044458492544,49.941034291882126,10.986580713777851,105.66496751242963,1000
+B5-HardwarePhysics__XGBoost,B5-HardwarePhysics-NoLabel__XGBoost,outcome_informed_exploratory_comparison,305,14,241.7462193537365,233.96914237600637,-7.7770769777301325,-4.179878751031091,-23.70807038240206,8.745586449420513,1000

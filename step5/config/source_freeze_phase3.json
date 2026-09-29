@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scope": "ML.ENERGY V3 GPU-side text-LLM inference, high-load steady-state Phase 3.0",
+  "taskbook_filename": "Codex_Phase3.0任务书_高负载GPU功率能耗增强预测与硬件物理建模.docx",
+  "taskbook_sha256": "DDCCAF572D291B6D454351C18FDEAA6961C9570A5B5B37591CF00F6F805C4052",
+  "phase2_completion_commit": "9224c85",
+  "frozen_inputs": [
+    {"path": "step3/analysis/master_feature_table.parquet", "sha256": "cfd1e1a8c665e821bd32cd8785fbf5aaeb3559d48d521fc20f493aae0d3b0b19"},
+    {"path": "step3/analysis/feature_role_manifest.json", "sha256": "9400697520e271726d49b72372698f199e79df5fc7b509412de76c9098a3b660"},
+    {"path": "step3/config/exante_feature_contract.json", "sha256": "fe0d0880061c072e548e08841b28a43355c000a81ce53d29c56ea4cb744fd591"},
+    {"path": "step4/analysis/modeling_table.parquet", "sha256": "b8a40ea37f1f3dbfbccbcda8a2510291ea33630b115a966083e6c84375d7e363"},
+    {"path": "step4/config/feature_bundles.json", "sha256": "b7ce1ca3039b825fa1dac45587165331c61a9ed5517fc72a8e2470a012ba0bb3"},
+    {"path": "step4/splits/model_group_folds.csv", "sha256": "10dae0d7dd949602a0e09e5565562c1a8d99f4924a7926fbe68546d9c563a6bf"},
+    {"path": "step4/splits/config_group_folds.csv", "sha256": "a86ce61c6a6e3f7f01cf5b906314519efa2d4c0624e07680ce4e37c8332ecbb3"},
+    {"path": "step4/analysis/oof_predictions.parquet", "sha256": "764148f20e94b7de09129669839d9cf7b14143ab4a4f69529f796c533c5f86ce"},
+    {"path": "step4/reports/baseline_metrics.csv", "sha256": "cb40d944d4db4ff38e84fe66d5d478e415c16c266fa45854016de57b414c24ce"},
+    {"path": "step4/reports/verification_receipt.json", "sha256": "70907fe261c8837eafc7ca4160dd7468e1e75ea1cc8074145a42e7fda57735ff"}
+  ]
+}

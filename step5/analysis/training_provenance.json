@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "scope": "Phase 3 Physics cohort, model-holdout OOF core matrix",
+  "selection_protocol": "outer-train-only group-aware inner CV",
+  "completed_experiments": 120,
+  "prediction_rows": 36600,
+  "source_freeze_sha256": "59e710fd9009b995e7b7beee9bdfccb82664c77648cec9a7a22f2d6507d4cafe",
+  "feature_bundles_sha256": "2ace6098ddf2b994808cf495d704dcf726ace9c59e485d79cfdf773229a82285",
+  "model_search_spaces_sha256": "e5ceca66eb56fb7065f16e134f51ad0df62a689ec39ca62fa84cb6a7babf7176",
+  "model_folds_sha256": "10dae0d7dd949602a0e09e5565562c1a8d99f4924a7926fbe68546d9c563a6bf",
+  "model_manifest_sha256": "c09d2d3aac613fcc8ebecb28054ac7ece2f829229d84591a69a9bca4168ab398",
+  "modeling_table_sha256": "959f219f0edae13a3fc16975bba31e694da3ff18d0e4e8a16bb61865c4cc7073",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.4",
+    "pandas": "3.0.1",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.0.5",
+    "catboost": "1.2.8",
+    "shap": null
+  }
+}

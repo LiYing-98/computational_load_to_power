@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "seed": 20260928,
+  "family_group_folds": {
+    "path": "step5/splits/family_group_folds.csv",
+    "sha256": "c3fb458d7b8bf7a7a68acb1c649df5c492c9ac283d71a273e9e0eeabc34f6f54"
+  },
+  "random_split_manifest": {
+    "path": "step5/splits/random_split_manifest.csv",
+    "sha256": "f1aca20099186295c5a5b19f0675adf0e33521cb24f5b2dd5925427e431ea88c",
+    "repeats": 10
+  },
+  "frozen_model_folds": "step4/splits/model_group_folds.csv",
+  "frozen_config_folds": "step4/splits/config_group_folds.csv",
+  "model_manifest": {
+    "path": "step5/models/model_manifest.json",
+    "sha256": "c09d2d3aac613fcc8ebecb28054ac7ece2f829229d84591a69a9bca4168ab398"
+  }
+}

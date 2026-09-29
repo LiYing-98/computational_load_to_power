@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "accessed_on": "2026-09-28",
+  "interpretation": "The public ML.ENERGY V3 dataset identifies only H100 and B200. It does not identify exact board/SXM variants. NVIDIA HGX/DGX-class reference profiles are therefore used as transparent sensitivity proxies and both label-to-profile mappings remain ambiguous.",
+  "gpu_label_resolution": {
+    "H100": {
+      "selected_profile_id": "nvidia_h100_sxm_80gb_reference_proxy",
+      "hardware_source_status": "ambiguous",
+      "reason": "Public benchmark metadata exposes H100 only. Multi-GPU coverage is consistent with, but does not prove, an SXM/HGX platform.",
+      "evidence_urls": [
+        "https://huggingface.co/datasets/ml-energy/benchmark-v3",
+        "https://www.nvidia.com/en-gb/data-center/h100/",
+        "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/components.html"
+      ]
+    },
+    "B200": {
+      "selected_profile_id": "nvidia_b200_sxm6_180gb_reference_proxy",
+      "hardware_source_status": "ambiguous",
+      "reason": "Public benchmark metadata exposes B200 only. The selected HGX/DGX B200 profile is the best official reference, but the run records do not name the host platform/SKU.",
+      "evidence_urls": [
+        "https://huggingface.co/datasets/ml-energy/benchmark-v3",
+        "https://images.nvidia.com/aem-dam/Solutions/documents/HGX-B200-PCF-Summary.pdf",
+        "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/components.html",
+        "https://docs.nvidia.com/dgx/dgxb200-user-guide/introduction-to-dgxb200.html"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "source_id": "mlenergy_v3_dataset_card",
+      "publisher": "ML.ENERGY",
+      "url": "https://huggingface.co/datasets/ml-energy/benchmark-v3",
+      "supports": ["public labels H100/B200", "GPU-side LLM inference dataset scope"],
+      "does_not_support": ["exact SKU", "configured power cap", "host platform"]
+    },
+    {
+      "source_id": "nvidia_h100_product_spec",
+      "publisher": "NVIDIA",
+      "url": "https://www.nvidia.com/en-gb/data-center/h100/",
+      "supports": ["H100 SXM sparse Tensor TFLOPS", "80GB HBM3", "3.35TB/s", "700W max TDP", "900GB/s NVLink"]
+    },
+    {
+      "source_id": "nvidia_hgx_b200_pcf_datasheet",
+      "publisher": "NVIDIA",
+      "url": "https://images.nvidia.com/aem-dam/Solutions/documents/HGX-B200-PCF-Summary.pdf",
+      "supports": ["8x B200 SXM6", "180GB per GPU", "36 PFLOPS sparse FP16/BF16 node", "72 PFLOPS sparse FP8 node", "1000W max TDP per GPU"]
+    },
+    {
+      "source_id": "nvidia_hgx_reference_architecture",
+      "publisher": "NVIDIA",
+      "url": "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/components.html",
+      "supports": ["H100/B200 per-GPU HBM", "per-GPU bandwidth", "900/1800GB/s GPU-to-GPU bandwidth", "B200 1kW maximum"]
+    },
+    {
+      "source_id": "nvidia_dgx_b200_user_guide",
+      "publisher": "NVIDIA",
+      "url": "https://docs.nvidia.com/dgx/dgxb200-user-guide/introduction-to-dgxb200.html",
+      "supports": ["8x B200 and 1440GB total GPU memory", "1000W maximum power per GPU under full PSU availability"]
+    }
+  ],
+  "derivations": {
+    "H100.peak_compute_bf16_dense_tflops": "1979 sparse TFLOP/s divided by 2",
+    "H100.peak_compute_fp8_dense_tflops": "3958 sparse TFLOP/s divided by 2",
+    "B200.peak_compute_bf16_dense_tflops": "36 sparse PFLOP/s per 8-GPU HGX divided by 8 and by 2",
+    "B200.peak_compute_fp8_dense_tflops": "72 sparse PFLOP/s per 8-GPU HGX divided by 8 and by 2"
+    ,"B200.peak_compute_fp4_dense_tflops": "144 sparse PFLOP/s per 8-GPU HGX divided by 8 and by 2"
+  }
+}

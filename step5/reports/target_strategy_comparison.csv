@@ -1,0 +1,5 @@
+target,bundle,model_name,split_scheme,target_transform,target_strategy,n_rows,mae,rmse,r2,mdape_percent,smape_percent,nonfinite_prediction_count,negative_prediction_count,minimum_prediction,maximum_prediction,backend_module
+y_gpu_avg_power_watts,B4-Hardware,XGBoost,model_group,raw,direct,305,204.36577476881112,370.64900365559834,0.960375109140816,8.573163575575036,10.509036983737746,0,0,357.4390563964844,6357.1552734375,xgboost.sklearn
+y_gpu_avg_power_watts,B4-Hardware,XGBoost,model_group,raw,power_fraction,305,239.82385850773122,416.20634433465966,0.9500357011949708,9.323279438020528,12.40167088859104,0,0,392.5597608089447,7292.863368988037,xgboost.sklearn
+y_gpu_energy_per_token_joules,B1-Static,XGBoost,model_group,log1p,direct,305,0.6503762784601121,2.112901497556147,0.6770378000233548,24.424569449143597,29.7467158999569,0,0,0.05335340380582169,12.654211435933895,xgboost.sklearn
+y_gpu_energy_per_token_joules,B1-Static,XGBoost,model_group,raw,direct,305,0.620364920256762,2.1142293528118623,0.6766317405739837,24.2125728043411,29.564784773619664,0,1,-0.02065271884202957,11.913825988769531,xgboost.sklearn

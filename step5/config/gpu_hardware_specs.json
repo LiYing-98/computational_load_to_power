@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "scope": "Reference profiles for ML.ENERGY V3 public GPU labels; not measured run-time hardware telemetry",
+  "profiles": {
+    "H100": {
+      "gpu_profile_id": "nvidia_h100_sxm_80gb_reference_proxy",
+      "resolved_sku": "NVIDIA H100 SXM 80GB reference profile",
+      "hardware_source_status": "ambiguous",
+      "peak_compute_convention": "dense_without_structured_sparsity",
+      "peak_compute_bf16_dense_tflops": 989.5,
+      "peak_compute_fp8_dense_tflops": 1979.0,
+      "peak_compute_fp4_dense_tflops": null,
+      "hbm_bandwidth_gbps": 3350.0,
+      "hbm_capacity_gb": 80.0,
+      "rated_power_w": 700.0,
+      "interconnect_bandwidth_gbps": 900.0
+    },
+    "B200": {
+      "gpu_profile_id": "nvidia_b200_sxm6_180gb_reference_proxy",
+      "resolved_sku": "NVIDIA B200 SXM 180GB reference profile",
+      "hardware_source_status": "ambiguous",
+      "peak_compute_convention": "dense_without_structured_sparsity",
+      "peak_compute_bf16_dense_tflops": 2250.0,
+      "peak_compute_fp8_dense_tflops": 4500.0,
+      "peak_compute_fp4_dense_tflops": 9000.0,
+      "hbm_bandwidth_gbps": 8000.0,
+      "hbm_capacity_gb": 180.0,
+      "rated_power_w": 1000.0,
+      "interconnect_bandwidth_gbps": 1800.0
+    }
+  },
+  "unit_notes": {
+    "peak_compute_*_dense_tflops": "Per-GPU theoretical Tensor Core TFLOP/s with structured-sparsity uplift removed; a lower-bound denominator proxy, not achieved throughput.",
+    "hbm_bandwidth_gbps": "Per-GPU theoretical GB/s (decimal), not observed bandwidth.",
+    "hbm_capacity_gb": "Per-GPU vendor capacity in decimal GB.",
+    "rated_power_w": "Maximum configurable TDP/TGP reference, not the run's configured power cap or observed power.",
+    "interconnect_bandwidth_gbps": "Per-GPU bidirectional NVLink reference GB/s; no communication-time proxy is used without an auditable communication-volume model."
+  }
+}
