@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "scope": "Phase 4 aggregate steady-state GPU power; pure ex-ante X only",
+  "forbidden_input_prefixes": ["y_", "diag_result_", "diag_load_", "prov_"],
+  "forbidden_identity_inputs": ["diag_model_id", "diag_parent_lineage", "diag_subfamily"],
+  "bundles": {
+    "P0-Core": {
+      "scientific_role": "full-stable core execution configuration",
+      "minimum_cohort": "stable",
+      "sensitivity_only": false,
+      "categorical": [
+        "x_hardware_gpu_model",
+        "diag_architecture_class",
+        "x_model_benchmark_weight_precision"
+      ],
+      "numeric": [
+        "x_hardware_num_gpus",
+        "x_deployment_max_num_seqs",
+        "x_deployment_tensor_parallel",
+        "x_deployment_data_parallel",
+        "x_deployment_expert_parallel",
+        "x_model_benchmark_total_params_billions",
+        "x_model_benchmark_activated_params_billions"
+      ]
+    },
+    "P1-AggregatePower": {
+      "scientific_role": "P0 plus aggregate rated-power scale",
+      "minimum_cohort": "stable",
+      "sensitivity_only": false,
+      "base_bundle": "P0-Core",
+      "numeric_add": ["x_hardware_aggregate_rated_power_w"]
+    },
+    "P2-HardwareStatic": {
+      "scientific_role": "P0 plus frozen continuous hardware reference proxies",
+      "minimum_cohort": "stable",
+      "sensitivity_only": false,
+      "base_bundle": "P0-Core",
+      "numeric_add": [
+        "x_hardware_precision_matched_peak_compute_tflops",
+        "x_hardware_peak_compute_bf16_dense_tflops",
+        "x_hardware_peak_compute_fp8_dense_tflops",
+        "x_hardware_hbm_bandwidth_gbps",
+        "x_hardware_hbm_capacity_gb",
+        "x_hardware_rated_power_w",
+        "x_hardware_interconnect_bandwidth_gbps",
+        "x_hardware_aggregate_rated_power_w"
+      ]
+    },
+    "P2-HardwareStatic-NoLabel": {
+      "scientific_role": "continuous hardware representation without categorical GPU identity",
+      "minimum_cohort": "stable",
+      "sensitivity_only": true,
+      "base_bundle": "P2-HardwareStatic",
+      "drop": ["x_hardware_gpu_model"]
+    },
+    "S0-B1-Static": {
+      "scientific_role": "secondary detailed-static support experiment",
+      "minimum_cohort": "static",
+      "sensitivity_only": true,
+      "inherit_columns_from": "step4:B1-Static"
+    },
+    "S1-B1-Static-AggregatePower": {
+      "scientific_role": "secondary B1 plus aggregate rated power",
+      "minimum_cohort": "static",
+      "sensitivity_only": true,
+      "base_bundle": "S0-B1-Static",
+      "numeric_add": ["x_hardware_aggregate_rated_power_w"]
+    },
+    "S2-B1-Static-HardwareStatic": {
+      "scientific_role": "secondary B1 plus complete static hardware proxies",
+      "minimum_cohort": "static",
+      "sensitivity_only": true,
+      "base_bundle": "S0-B1-Static",
+      "numeric_add": [
+        "x_hardware_precision_matched_peak_compute_tflops",
+        "x_hardware_peak_compute_bf16_dense_tflops",
+        "x_hardware_peak_compute_fp8_dense_tflops",
+        "x_hardware_hbm_bandwidth_gbps",
+        "x_hardware_hbm_capacity_gb",
+        "x_hardware_rated_power_w",
+        "x_hardware_interconnect_bandwidth_gbps",
+        "x_hardware_aggregate_rated_power_w"
+      ]
+    }
+  }
+}

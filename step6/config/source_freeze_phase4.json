@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "scope": "ML.ENERGY V3 GPU-side stable text-LLM inference Phase 4.0",
+  "taskbook_filename": "Codex_Phase4_Taskbook.docx",
+  "taskbook_sha256": "79310a9cd023923b39afaf75a08e7965e85ec207341cd1df17a131097d8707dc",
+  "frozen_inputs": [
+    {
+      "path": "step5/analysis/phase3_modeling_table.parquet",
+      "sha256": "959f219f0edae13a3fc16975bba31e694da3ff18d0e4e8a16bb61865c4cc7073"
+    },
+    {
+      "path": "step5/config/gpu_hardware_specs.json",
+      "sha256": "ae81f0e989baf4609f31bddc8bb541871a57b6f0a0600170524dd19d30e230a8"
+    },
+    {
+      "path": "step5/config/hardware_source_manifest.json",
+      "sha256": "4c2703cfa0615a425ef0be13a93f42c824170e357aff70cc0f4adff55453eb1d"
+    },
+    {
+      "path": "step4/config/feature_bundles.json",
+      "sha256": "b7ce1ca3039b825fa1dac45587165331c61a9ed5517fc72a8e2470a012ba0bb3"
+    },
+    {
+      "path": "step5/reports/verification_receipt.json",
+      "sha256": "8b8a3c881ae107593ece557bd44464853499c222bf9dea13d8aa1a14ba39e236"
+    }
+  ]
+}

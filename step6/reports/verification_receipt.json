@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "generated_utc": "2026-09-29T14:44:13.581736+00:00",
+  "status": "pass",
+  "scope": "ML.ENERGY V3 GPU-side stable high-load text-LLM inference Phase 4.0",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "summary": {
+    "candidate": "RandomForest_P2-HardwareStatic_L1",
+    "stable_runs": 565,
+    "development_oof_mae_watts": 272.40183938292745,
+    "confirmatory_rows": 116,
+    "confirmatory_mae_watts": 295.2639480032137,
+    "confirmatory_r2": 0.9209481025880099
+  },
+  "checks": [
+    {
+      "name": "frozen sources and actual taskbook",
+      "status": "pass",
+      "details": {
+        "frozen_inputs": 5,
+        "taskbook_sha256": "79310a9cd023923b39afaf75a08e7965e85ec207341cd1df17a131097d8707dc"
+      }
+    },
+    {
+      "name": "565-run cohort and pure-ex-ante feature boundary",
+      "status": "pass",
+      "details": {
+        "rows": 565,
+        "models": 27,
+        "llama_rows": 117,
+        "main_bundles_complete": 3
+      }
+    },
+    {
+      "name": "development split and confirmatory isolation",
+      "status": "pass",
+      "details": {
+        "development_rows": 449,
+        "development_models": 21,
+        "held_out_models": 6,
+        "folds": 5
+      }
+    },
+    {
+      "name": "development OOF coverage and independent metric rebuilds",
+      "status": "pass",
+      "details": {
+        "prediction_rows": 10776,
+        "cells": 24,
+        "all_cell_metrics_rebuilt": 24,
+        "locked_strategy": "RandomForest_P2-HardwareStatic_L1"
+      }
+    },
+    {
+      "name": "paired hardware ablation and loss scope",
+      "status": "pass",
+      "details": {
+        "paired_comparisons": 18,
+        "bootstrap_draws": 18000,
+        "loss_strategies": 7
+      }
+    },
+    {
+      "name": "one-shot confirmatory hashes and metrics",
+      "status": "pass",
+      "details": {
+        "rows": 116,
+        "models": 6,
+        "mae": 295.263948003,
+        "rmse": 424.611992731,
+        "r2": 0.920948103,
+        "mdape": 16.462190914,
+        "smape": 19.579898628,
+        "signed_bias": 187.730555139,
+        "full_oof_rows": 565
+      }
+    },
+    {
+      "name": "lineage, within-task, and architecture stress coverage",
+      "status": "pass",
+      "details": {
+        "lineages": 6,
+        "within_task_cells": 9,
+        "architectures": 3,
+        "confounded_cells": 3,
+        "prediction_cells_rebuilt": 18
+      }
+    },
+    {
+      "name": "required report, notebook, model, tables, and figures",
+      "status": "pass",
+      "details": {
+        "required_artifacts": 29,
+        "figures": 12,
+        "notebook_code_cells": 5
+      }
+    },
+    {
+      "name": "Phase 4 credential-pattern scan",
+      "status": "pass",
+      "details": {
+        "text_files_scanned": 54,
+        "patterns": [
+          "github_classic",
+          "github_fine_grained",
+          "huggingface",
+          "openai",
+          "private_key"
+        ],
+        "hits": 0
+      }
+    }
+  ],
+  "artifact_hashes": {
+    "step6/README.md": "54ae95b6fee24a22c54c62848d8f3dac98c11f13bdd7d62e7b2e6f893c28d4c3",
+    "step6/config/source_freeze_phase4.json": "c0327f22d826b3f3554df38e6c16be628dda5baf73379a1b80a1238264bc6438",
+    "step6/config/lineage_taxonomy.json": "5b1aaee564423b915fe0e7c62956d4d012ce62a3a8624bb6b3be73c3b50ceb2f",
+    "step6/config/feature_bundles_phase4.json": "5e48c35609e45fa944eadde787b686109330f889a3046e8c5db58e5208a94254",
+    "step6/config/confirmatory_model_holdout.json": "a35b750436247dab4a0ded7df6452c44c9a1e350ef959f7d61228ddb241a8e7f",
+    "step6/config/locked_candidate_phase4.json": "59fb6c82b88f12528e9709b09dc43e3890d2f32e6b6dcb297abbfaa16a923a74",
+    "step6/analysis/phase4_power_modeling_table.parquet": "e599cf2338c274e00eb0e749234c9d4b9d6e06b6a00ceb5e9f138df3c38b8778",
+    "step6/analysis/development_oof_predictions.parquet": "7084ebac0c154e0a30855562741e089154743ded5359f88db8cdcfe5b8bb2874",
+    "step6/analysis/confirmatory_predictions.parquet": "1f0b723184c0f121fe04dad4e0926a27045f65cbc10810b780cd8c32f636d0eb",
+    "step6/analysis/full_cohort_oof_predictions.parquet": "4f82bc9adc90353e0a9b08b955c458cc0aa904c9ea194ff9ed0f96e72cc17235",
+    "step6/analysis/confirmatory_evaluation_receipt.json": "692c3e494a163c64558692cfae832420cd024464b37f35766e31047353e067d7",
+    "step6/splits/full_cohort_lineage_holdout_folds.csv": "f6d3585b49526cb9e049535d9824c2231f09c04e8f14d21826c79f7a5730721b",
+    "step6/splits/full_cohort_within_task_lineage_folds.csv": "aa7089880cde39222f40b9582043bde80ec5532c94738ed8d9d4319e20da7ef9",
+    "step6/splits/full_cohort_architecture_holdout_folds.csv": "c081188aef922782861448ada2bcb8964c96aa099bd11590718b0e594bac1a17",
+    "step6/reports/main_model_comparison.csv": "002e6d72f1ca60e4251c8ea5726dc5855d627a0573f94731d9006fc790947ed7",
+    "step6/reports/hardware_ablation.csv": "7ab778261af2711a110d43db0d9a185332e95659a873a24a6dda3916cd223d53",
+    "step6/reports/hardware_bootstrap_draws.csv": "a415c2832a366349f2b62ef997fa9ea89c823ca593d89c365ff39ecf23765107",
+    "step6/reports/loss_strategy_comparison.csv": "8e82053b022fc27c56dd2b961077d472be4e623899df655e26c00233ef4c2ae6",
+    "step6/reports/generalization_by_lineage.csv": "96220fe2d2afefa3338aca09701a71632fa3ca6930bc755859177e804ed4230e",
+    "step6/reports/within_task_lineage_holdout.csv": "dd22c18abbdaea750adb960f3ba01806afdeec4624832497507af91ea8454f7a",
+    "step6/reports/architecture_holdout.csv": "f9063145f0cc5a469a33af10385b5e390ff08f6547ff4921331456df81cb5a94",
+    "step6/reports/error_slices.csv": "f1ef5d99974a0aff1d74d43312462b4e65071c92f69cd49d28d64af64815ee82",
+    "step6/reports/confirmatory_metrics.csv": "d81832ad63fff443b2f24a6d7ac15f37789e8e082cf386958ecaca486c2747b0",
+    "step6/reports/prediction_validity.csv": "de94c52568f0d73ed36c48778d4a561137cd3e0d483cedc43b7a4d10c38e1752",
+    "step6/reports/phase4_power_model_report.md": "780fed5d4b752218e6926c4a144c44229dc6072541310382188ddbce1c9d9397",
+    "step6/models/phase4_candidate_model.joblib": "d5e0d0150323a62b110ec02cf3675c871038296b45501fcc58ab8b3ec1ea579b",
+    "step6/models/phase4_candidate_metadata.json": "e9fc54d9b6bfc06bcfa6832302d50d3cdb8d70be4b3dd6d40f6c475a389018a2",
+    "step6/notebooks/phase4_power_modeling.ipynb": "af77782e0a015515cb6a3b40ec6ab1c4ab27b00f8a93d586d52f71d1dafcc329",
+    "step6/notebooks/phase4_power_modeling.html": "036b7f8748546e5605bd2fc9e7fa0088f2eae27c54f81aa4dec1eb34fba4958d",
+    "step6/reports/figures/target_distribution.png": "7299d44a84ec0f292cd86696414e9bda4e8ba651140d12d9de05ad4c2dca5fd3",
+    "step6/reports/figures/task_parent_lineage_heatmap.png": "a0772bf0b22cc3a5ef692705005447f03e258b742cff29a3a6daf653efeb5aeb",
+    "step6/reports/figures/architecture_parent_lineage_heatmap.png": "5127d22f8468010aba1a9498951503e64d8352d8f65eefe6df2a7527b86fc283",
+    "step6/reports/figures/development_actual_vs_predicted.png": "586d57fbb79bb8e3287d1253378940d0da659d0a413a5e9e82befe633c954ad3",
+    "step6/reports/figures/confirmatory_actual_vs_predicted.png": "d5fddc73cff7f024b7abe8a4bd651402a4e0311e8c42fe470ee35a1a26d9b0e9",
+    "step6/reports/figures/residual_vs_measured_power.png": "155bfbb566f32554c959e5be3899e99096b58369181a63ad1c27af1d9c001577",
+    "step6/reports/figures/residual_by_gpu_count.png": "afc1256ac67727a5504c6632a8752b51f7280c35de3196c6d0a17c7ab4d1e50d",
+    "step6/reports/figures/residual_by_gpu_model.png": "4b73798f33498d275e23af830801f762e3d47363ced17351a80113d648982978",
+    "step6/reports/figures/residual_by_parent_lineage.png": "6114936ba1078998551c26d5ff2666bfd615080719d1eb0e41e3af3f54e37f89",
+    "step6/reports/figures/top_power_quantile_bias.png": "8693c603c8999ce96762b00625878c9350f35489899fe091bb0ae1c583a9fc12",
+    "step6/reports/figures/hardware_paired_mae_delta.png": "0bff0689c1d1fac8fd1208ec77ee04e34e1789a09b73afb4267c894cf6aa6cff",
+    "step6/reports/figures/lineage_holdout_mae_bias.png": "16db782925ac67071a8e3f8b59b16cdd60f534dc0d46d6e67f0a2011f63787e2"
+  }
+}

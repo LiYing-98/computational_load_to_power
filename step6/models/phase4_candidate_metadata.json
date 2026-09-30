@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "algorithm": "RandomForest",
+  "feature_bundle": "P2-HardwareStatic",
+  "feature_columns": [
+    "x_hardware_gpu_model",
+    "diag_architecture_class",
+    "x_model_benchmark_weight_precision",
+    "x_hardware_num_gpus",
+    "x_deployment_max_num_seqs",
+    "x_deployment_tensor_parallel",
+    "x_deployment_data_parallel",
+    "x_deployment_expert_parallel",
+    "x_model_benchmark_total_params_billions",
+    "x_model_benchmark_activated_params_billions",
+    "x_hardware_precision_matched_peak_compute_tflops",
+    "x_hardware_peak_compute_bf16_dense_tflops",
+    "x_hardware_peak_compute_fp8_dense_tflops",
+    "x_hardware_hbm_bandwidth_gbps",
+    "x_hardware_hbm_capacity_gb",
+    "x_hardware_rated_power_w",
+    "x_hardware_interconnect_bandwidth_gbps",
+    "x_hardware_aggregate_rated_power_w"
+  ],
+  "target": "y_gpu_avg_power_watts",
+  "objective": "absolute_error",
+  "use_high_power_weights": false,
+  "selected_hyperparameter_index": 1,
+  "selected_hyperparameters": {
+    "n_estimators": 400,
+    "max_depth": 12,
+    "min_samples_leaf": 2,
+    "max_features": 0.7
+  },
+  "inner_group_cv_mae": [
+    276.4531320763885,
+    258.59458301784906
+  ],
+  "training_rows": 449,
+  "training_models": 21,
+  "locked_candidate_sha256": "59fb6c82b88f12528e9709b09dc43e3890d2f32e6b6dcb297abbfaa16a923a74",
+  "table_sha256": "e599cf2338c274e00eb0e749234c9d4b9d6e06b6a00ceb5e9f138df3c38b8778"
+}

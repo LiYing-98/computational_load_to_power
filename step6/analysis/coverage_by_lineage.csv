@@ -1,0 +1,11 @@
+diag_parent_lineage,diag_subfamily,diag_architecture_class,n_runs,n_models
+DeepSeek,DeepSeek,mixture_of_experts,22,2
+GPT-OSS,GPT-OSS,mixture_of_experts,65,2
+Gemma,Gemma-3,dense_transformer,29,2
+Llama,Llama-3.1,dense_transformer,69,4
+Llama,Llama-3.3,dense_transformer,19,1
+Llama,Llama-4,mixture_of_experts,29,2
+Nemotron,Nemotron-Nano-v2,hybrid_mamba_transformer,56,2
+Qwen,Qwen3,dense_transformer,86,3
+Qwen,Qwen3,mixture_of_experts,140,6
+Qwen,Qwen3-Coder,mixture_of_experts,50,3

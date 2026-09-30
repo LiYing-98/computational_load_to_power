@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "selection_source_sha256": "7084ebac0c154e0a30855562741e089154743ded5359f88db8cdcfe5b8bb2874",
+  "candidate_shortlist": [
+    {
+      "algorithm": "RandomForest",
+      "feature_bundle": "P2-HardwareStatic",
+      "development_mae": 272.40183938292745,
+      "development_rmse": 474.32516356499696,
+      "development_signed_bias": 37.58244585254652,
+      "top_quartile_mae": 682.4007940424558,
+      "top_quartile_signed_bias": -9.938380297819911,
+      "lower_75pct_mae": 134.5152861789789
+    },
+    {
+      "algorithm": "XGBoost",
+      "feature_bundle": "P0-Core",
+      "development_mae": 277.294050242652,
+      "development_rmse": 508.08558995280595,
+      "development_signed_bias": -31.762258003082458,
+      "top_quartile_mae": 674.7932041723127,
+      "top_quartile_signed_bias": -168.97586813233568,
+      "lower_75pct_mae": 143.61129906987924
+    }
+  ]
+}

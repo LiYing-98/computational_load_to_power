@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "created_before_phase4_training": true,
+  "selection_rule": "For each parent lineage with at least two model IDs, choose the smallest SHA256(seed|lineage|model_id); target values are not read.",
+  "seed": 20260929,
+  "stratification": "diag_parent_lineage",
+  "held_out_models": [
+    {
+      "diag_parent_lineage": "DeepSeek",
+      "diag_model_id": "deepseek-ai/DeepSeek-R1-0528"
+    },
+    {
+      "diag_parent_lineage": "GPT-OSS",
+      "diag_model_id": "openai/gpt-oss-120b"
+    },
+    {
+      "diag_parent_lineage": "Gemma",
+      "diag_model_id": "google/gemma-3-27b-it"
+    },
+    {
+      "diag_parent_lineage": "Llama",
+      "diag_model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
+    },
+    {
+      "diag_parent_lineage": "Nemotron",
+      "diag_model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+    },
+    {
+      "diag_parent_lineage": "Qwen",
+      "diag_model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507"
+    }
+  ],
+  "held_out_model_ids": [
+    "deepseek-ai/DeepSeek-R1-0528",
+    "openai/gpt-oss-120b",
+    "google/gemma-3-27b-it",
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "source_table": "step6/analysis/phase4_power_modeling_table.parquet",
+  "source_sha256": "e599cf2338c274e00eb0e749234c9d4b9d6e06b6a00ceb5e9f138df3c38b8778",
+  "confirmatory_rows_excluded": 116,
+  "development_rows": 449,
+  "development_models": 21,
+  "manifests": {
+    "development_model_folds.csv": {
+      "rows": 449,
+      "folds": 5
+    },
+    "lineage_holdout_folds.csv": {
+      "rows": 449,
+      "folds": 6
+    },
+    "within_task_lineage_folds.csv": {
+      "rows": 399,
+      "folds": 9
+    },
+    "architecture_holdout_folds.csv": {
+      "rows": 449,
+      "folds": 3
+    },
+    "full_cohort_lineage_holdout_folds.csv": {
+      "rows": 565,
+      "folds": 6
+    },
+    "full_cohort_within_task_lineage_folds.csv": {
+      "rows": 515,
+      "folds": 9
+    },
+    "full_cohort_architecture_holdout_folds.csv": {
+      "rows": 565,
+      "folds": 3
+    }
+  }
+}

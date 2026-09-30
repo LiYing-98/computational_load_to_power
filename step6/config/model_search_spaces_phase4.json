@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "selection_protocol": "group_aware_inner_cv_on_outer_train",
+  "selection_metric": "mae",
+  "seed": 20260929,
+  "algorithms": {
+    "DummyMean": {"backend": "sklearn", "candidates": [{}]},
+    "Ridge": {"backend": "sklearn", "candidates": [{"alpha": 1.0}, {"alpha": 100.0}]},
+    "HistGradientBoosting": {"backend": "sklearn", "candidates": [
+      {"max_iter": 200, "learning_rate": 0.05, "max_leaf_nodes": 15, "min_samples_leaf": 10, "l2_regularization": 1.0},
+      {"max_iter": 250, "learning_rate": 0.03, "max_leaf_nodes": 31, "min_samples_leaf": 8, "l2_regularization": 3.0}
+    ]},
+    "RandomForest": {"backend": "sklearn", "candidates": [
+      {"n_estimators": 300, "max_depth": null, "min_samples_leaf": 1, "max_features": 1.0},
+      {"n_estimators": 400, "max_depth": 12, "min_samples_leaf": 2, "max_features": 0.7}
+    ]},
+    "CatBoost": {"backend": "catboost", "candidates": [
+      {"iterations": 300, "depth": 4, "learning_rate": 0.03, "l2_leaf_reg": 3.0},
+      {"iterations": 250, "depth": 6, "learning_rate": 0.03, "l2_leaf_reg": 5.0}
+    ]},
+    "XGBoost": {"backend": "xgboost", "candidates": [
+      {"n_estimators": 300, "max_depth": 3, "learning_rate": 0.03, "subsample": 0.8, "colsample_bytree": 0.8},
+      {"n_estimators": 250, "max_depth": 4, "learning_rate": 0.05, "subsample": 0.8, "colsample_bytree": 1.0}
+    ]}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "role_boundary": {
+    "diag_architecture_class": "normalized core network computation structure; allowed as ex-ante X",
+    "diag_parent_lineage": "product/technical lineage; diagnostic and split only",
+    "diag_subfamily": "generation or usage branch; diagnostic and split only",
+    "diag_model_id": "specific model identity; diagnostic and split only"
+  },
+  "architecture_mapping": {
+    "dense_transformer": "dense_transformer",
+    "mixture_of_experts": "mixture_of_experts",
+    "hybrid_mamba_transformer": "hybrid_mamba_transformer"
+  },
+  "subfamily_to_parent_lineage": {
+    "Qwen3": "Qwen",
+    "Qwen3-Coder": "Qwen",
+    "Llama-3.1": "Llama",
+    "Llama-3.3": "Llama",
+    "Llama-4": "Llama",
+    "DeepSeek": "DeepSeek",
+    "Gemma-3": "Gemma",
+    "Nemotron-Nano-v2": "Nemotron",
+    "GPT-OSS": "GPT-OSS"
+  }
+}

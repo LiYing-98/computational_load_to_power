@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "target": "y_gpu_avg_power_watts",
+  "selection": "group-aware inner CV by diag_model_id within every outer-train fold",
+  "outer_test_used_for_selection": false,
+  "table_sha256": "e599cf2338c274e00eb0e749234c9d4b9d6e06b6a00ceb5e9f138df3c38b8778",
+  "folds_sha256": "4a22939845ce62e51ad73e39ac47aa4315e45d5cf5e96bab9b0e328b30d47f71",
+  "feature_config_sha256": "5e48c35609e45fa944eadde787b686109330f889a3046e8c5db58e5208a94254",
+  "search_config_sha256": "3c92486d76fc83baf8a28caf87b72d5cfa9b41987dd6967ae462ccee00615d1b",
+  "python": "3.12.14",
+  "rows": 449,
+  "models": 21,
+  "experiments": 24
+}

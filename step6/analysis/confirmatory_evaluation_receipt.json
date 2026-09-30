@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "evaluated_once": true,
+  "policy": "Idempotent re-runs verify hashes and never refit or rewrite confirmatory artifacts.",
+  "locked_candidate_sha256": "59fb6c82b88f12528e9709b09dc43e3890d2f32e6b6dcb297abbfaa16a923a74",
+  "original_pre_migration_locked_candidate_raw_sha256": "71c6c8f844cf5a85e56e12a9bde26f05a371ac4480889670b0f13d0c70c740a2",
+  "text_hash_policy": "UTF-8 text is normalized to LF before SHA-256; binary files remain byte-exact.",
+  "hash_policy_migration": "Text provenance hashes were canonicalized after review and RandomForest aggregation was fixed to one thread; the selected strategy, objective, candidates, and all reported-precision development metrics remain unchanged from pre-confirmatory commit 691508f.",
+  "holdout_definition_sha256": "a35b750436247dab4a0ded7df6452c44c9a1e350ef959f7d61228ddb241a8e7f",
+  "confirmatory_predictions_sha256": "1f0b723184c0f121fe04dad4e0926a27045f65cbc10810b780cd8c32f636d0eb",
+  "full_cohort_oof_sha256": "4f82bc9adc90353e0a9b08b955c458cc0aa904c9ea194ff9ed0f96e72cc17235",
+  "candidate_model_sha256": "d5e0d0150323a62b110ec02cf3675c871038296b45501fcc58ab8b3ec1ea579b",
+  "prediction_rows": 116,
+  "held_out_model_ids": [
+    "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "deepseek-ai/DeepSeek-R1-0528",
+    "google/gemma-3-27b-it",
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "openai/gpt-oss-120b"
+  ],
+  "development_rows": 449
+}

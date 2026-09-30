@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "status": "final_locked_before_confirmatory_evaluation",
+  "decision_rule": "lowest development OOF MAE unless a strategy within 5% improves top-quartile MAE by >=5% and absolute top-quartile bias by >=20%",
+  "development_predictions_sha256": "5a7a3cb27c60563eae4a59a96fcfe4d99cab98b75f016438f4023b31b50ccdd4",
+  "loss_comparison_sha256": "8e82053b022fc27c56dd2b961077d472be4e623899df655e26c00233ef4c2ae6",
+  "candidate_shortlist_source_sha256": "b423c1faa30969fe389204c29bccd63017710416cb81e5fba988fa2ce27ec02c",
+  "selected": {
+    "strategy_id": "RandomForest_P2-HardwareStatic_L1",
+    "algorithm": "RandomForest",
+    "feature_bundle": "P2-HardwareStatic",
+    "objective": "absolute_error",
+    "use_high_power_weights": false,
+    "development_metrics": {
+      "mae": 272.40183938292745,
+      "rmse": 474.32516356499696,
+      "r2": 0.9408874332161978,
+      "mdape": 10.054891266244406,
+      "smape": 13.614261196384248,
+      "signed_bias": 37.58244585254652,
+      "top25_mae": 682.4007940424558,
+      "top25_signed_bias": -9.938380297819911,
+      "top10_mae": 1009.3720700082445,
+      "top10_signed_bias": -392.47055827412277,
+      "lower75_mae": 134.5152861789789
+    },
+    "hyperparameter_candidates": [
+      {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": 1.0
+      },
+      {
+        "n_estimators": 400,
+        "max_depth": 12,
+        "min_samples_leaf": 2,
+        "max_features": 0.7
+      }
+    ]
+  }
+}
