@@ -1,0 +1,1854 @@
+{
+  "cohorts": [
+    "full",
+    "static",
+    "compact",
+    "effective"
+  ],
+  "experiments": [
+    {
+      "experiment_id": "L0-Basic__full__DummyMean__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__DummyMean__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__Ridge__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__Ridge__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__ElasticNet__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__ElasticNet__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__HistGradientBoosting__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__HistGradientBoosting__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__RandomForest__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__RandomForest__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__ExtraTrees__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__ExtraTrees__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__XGBoost__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__XGBoost__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__CatBoost__T-total",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0-Basic__full__CatBoost__G-perGPU",
+      "feature_level": "L0-Basic",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__DummyMean__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__DummyMean__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__Ridge__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__Ridge__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__ElasticNet__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__ElasticNet__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__HistGradientBoosting__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__HistGradientBoosting__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__RandomForest__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__RandomForest__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__ExtraTrees__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__ExtraTrees__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__XGBoost__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__XGBoost__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__CatBoost__T-total",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L0A-ActiveAware__full__CatBoost__G-perGPU",
+      "feature_level": "L0A-ActiveAware",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__DummyMean__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__DummyMean__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__Ridge__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__Ridge__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__ElasticNet__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__ElasticNet__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__HistGradientBoosting__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__HistGradientBoosting__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__RandomForest__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__RandomForest__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__ExtraTrees__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__ExtraTrees__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__XGBoost__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__XGBoost__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__CatBoost__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L1-Deployment__full__CatBoost__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__DummyMean__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__DummyMean__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__Ridge__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__Ridge__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__ElasticNet__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__ElasticNet__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__HistGradientBoosting__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__HistGradientBoosting__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__RandomForest__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__RandomForest__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__ExtraTrees__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__ExtraTrees__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__XGBoost__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__XGBoost__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__CatBoost__T-total",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L2-StaticCore__static__CatBoost__G-perGPU",
+      "feature_level": "L2-StaticCore",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__DummyMean__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__DummyMean__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__Ridge__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__Ridge__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__ElasticNet__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__ElasticNet__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__HistGradientBoosting__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__HistGradientBoosting__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__RandomForest__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__RandomForest__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__ExtraTrees__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__ExtraTrees__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__XGBoost__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__XGBoost__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__CatBoost__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3-Workload__static__CatBoost__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__DummyMean__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__DummyMean__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__Ridge__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__Ridge__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__ElasticNet__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__ElasticNet__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__HistGradientBoosting__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__HistGradientBoosting__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__RandomForest__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__RandomForest__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__ExtraTrees__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__ExtraTrees__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__XGBoost__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__XGBoost__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__CatBoost__T-total",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L4-CompactPhysics__compact__CatBoost__G-perGPU",
+      "feature_level": "L4-CompactPhysics",
+      "cohort": "compact",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "main"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__DummyMean__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__DummyMean__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__Ridge__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__Ridge__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__ElasticNet__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__ElasticNet__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__HistGradientBoosting__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__HistGradientBoosting__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__RandomForest__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__RandomForest__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__ExtraTrees__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__ExtraTrees__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__XGBoost__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__XGBoost__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__CatBoost__T-total",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L3E-Effective__effective__CatBoost__G-perGPU",
+      "feature_level": "L3E-Effective",
+      "cohort": "effective",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__DummyMean__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__DummyMean__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__Ridge__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__Ridge__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__ElasticNet__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__ElasticNet__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__HistGradientBoosting__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__HistGradientBoosting__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__RandomForest__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__RandomForest__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__ExtraTrees__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__ExtraTrees__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__XGBoost__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__XGBoost__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__CatBoost__T-total",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L2X-StaticExtended__static__CatBoost__G-perGPU",
+      "feature_level": "L2X-StaticExtended",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__DummyMean__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__DummyMean__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__Ridge__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__Ridge__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__ElasticNet__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__ElasticNet__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__HistGradientBoosting__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__HistGradientBoosting__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__RandomForest__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__RandomForest__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__ExtraTrees__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__ExtraTrees__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__XGBoost__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__XGBoost__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__CatBoost__T-total",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L4B5-OldB5Sensitivity__compact__CatBoost__G-perGPU",
+      "feature_level": "L4B5-OldB5Sensitivity",
+      "cohort": "compact",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__DummyMean__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__DummyMean__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__Ridge__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__Ridge__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__ElasticNet__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__ElasticNet__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__HistGradientBoosting__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__HistGradientBoosting__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__RandomForest__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__RandomForest__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__ExtraTrees__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__ExtraTrees__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__XGBoost__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__XGBoost__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__CatBoost__T-total",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-TaskSensitivity__full__CatBoost__G-perGPU",
+      "feature_level": "L1-TaskSensitivity",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__DummyMean__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__DummyMean__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__Ridge__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__Ridge__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__ElasticNet__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__ElasticNet__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__HistGradientBoosting__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__HistGradientBoosting__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__RandomForest__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__RandomForest__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__ExtraTrees__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__ExtraTrees__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__XGBoost__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__XGBoost__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__CatBoost__T-total",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1T-TokenizerFreeTextProxy__full__CatBoost__G-perGPU",
+      "feature_level": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "sensitivity"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__DummyMean__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__DummyMean__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__Ridge__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__Ridge__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__ElasticNet__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__ElasticNet__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__HistGradientBoosting__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__HistGradientBoosting__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__RandomForest__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__RandomForest__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__ExtraTrees__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__ExtraTrees__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__XGBoost__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__XGBoost__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__CatBoost__T-total",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L1-Deployment__static__CatBoost__G-perGPU",
+      "feature_level": "L1-Deployment",
+      "cohort": "static",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__DummyMean__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__DummyMean__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__Ridge__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__Ridge__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__ElasticNet__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__ElasticNet__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__HistGradientBoosting__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__HistGradientBoosting__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__RandomForest__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__RandomForest__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__ExtraTrees__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__ExtraTrees__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__XGBoost__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__XGBoost__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__CatBoost__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__compact__CatBoost__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "compact",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__DummyMean__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "DummyMean",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__DummyMean__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "DummyMean",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__Ridge__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "Ridge",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__Ridge__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "Ridge",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__ElasticNet__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "ElasticNet",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__ElasticNet__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "ElasticNet",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__HistGradientBoosting__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__HistGradientBoosting__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "HistGradientBoosting",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__RandomForest__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "RandomForest",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__RandomForest__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "RandomForest",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__ExtraTrees__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__ExtraTrees__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "ExtraTrees",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__XGBoost__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "XGBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__XGBoost__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "XGBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__CatBoost__T-total",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "CatBoost",
+      "target_strategy": "T-total",
+      "analysis_role": "matched_support_reference"
+    },
+    {
+      "experiment_id": "L3-Workload__effective__CatBoost__G-perGPU",
+      "feature_level": "L3-Workload",
+      "cohort": "effective",
+      "algorithm": "CatBoost",
+      "target_strategy": "G-perGPU",
+      "analysis_role": "matched_support_reference"
+    }
+  ],
+  "adjacent_pairs": [
+    {
+      "lower": "L0-Basic",
+      "higher": "L0A-ActiveAware",
+      "cohort": "full"
+    },
+    {
+      "lower": "L0A-ActiveAware",
+      "higher": "L1-Deployment",
+      "cohort": "full"
+    },
+    {
+      "lower": "L1-Deployment",
+      "higher": "L2-StaticCore",
+      "cohort": "static"
+    },
+    {
+      "lower": "L2-StaticCore",
+      "higher": "L3-Workload",
+      "cohort": "static"
+    },
+    {
+      "lower": "L3-Workload",
+      "higher": "L4-CompactPhysics",
+      "cohort": "compact"
+    },
+    {
+      "lower": "L2-StaticCore",
+      "higher": "L2X-StaticExtended",
+      "cohort": "static"
+    },
+    {
+      "lower": "L3-Workload",
+      "higher": "L3E-Effective",
+      "cohort": "effective"
+    },
+    {
+      "lower": "L4-CompactPhysics",
+      "higher": "L4B5-OldB5Sensitivity",
+      "cohort": "compact"
+    },
+    {
+      "lower": "L1-Deployment",
+      "higher": "L1-TaskSensitivity",
+      "cohort": "full"
+    },
+    {
+      "lower": "L1-Deployment",
+      "higher": "L1T-TokenizerFreeTextProxy",
+      "cohort": "full"
+    }
+  ]
+}

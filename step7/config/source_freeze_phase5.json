@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "text_hash_policy": "UTF-8 LF; binary byte exact",
+  "taskbook_sha256": "71573fb954ba7d90ff62bfcdab48662922b7063082d568adbf288694239a8f56",
+  "inputs": [
+    {
+      "path": "step3/analysis/master_feature_table.parquet",
+      "sha256": "cfd1e1a8c665e821bd32cd8785fbf5aaeb3559d48d521fc20f493aae0d3b0b19"
+    },
+    {
+      "path": "step3/analysis/feature_role_manifest.json",
+      "sha256": "b58d27d0d4012dd25ea54a5781f47a1b98b507d76e0f5308224ced6c6436234d"
+    },
+    {
+      "path": "step3/analysis/planned_workload_provenance.json",
+      "sha256": "acaa1220c10f77a2c40aa925122e21aa4d993735121b05ab564761e9cfbc823c"
+    },
+    {
+      "path": "step3/analysis/effective_workload_provenance.json",
+      "sha256": "dbaa2173a7806da949c2ec83abb038c8640e0bf7ccd209a398402fcfcaaaa478"
+    },
+    {
+      "path": "step3/analysis/model_architecture_features.parquet",
+      "sha256": "081715f6d4c4d2a9f2587ec1ccc45577e868994562317fde6976be089165de6d"
+    },
+    {
+      "path": "step3/scripts/build_physics_features.py",
+      "sha256": "b0bd0b5311f5c731af363244bdba8d676e7c3881c7b278598d60782117b21c9e"
+    },
+    {
+      "path": "step3/scripts/reconstruct_planned_workload.py",
+      "sha256": "16a6dae4a307770b2f7a8c54bd454567ee4781592fac727f41c5ae9ade5df4c8"
+    },
+    {
+      "path": "step5/analysis/phase3_modeling_table.parquet",
+      "sha256": "959f219f0edae13a3fc16975bba31e694da3ff18d0e4e8a16bb61865c4cc7073"
+    },
+    {
+      "path": "step5/config/gpu_hardware_specs.json",
+      "sha256": "ae81f0e989baf4609f31bddc8bb541871a57b6f0a0600170524dd19d30e230a8"
+    },
+    {
+      "path": "step5/config/hardware_source_manifest.json",
+      "sha256": "4c2703cfa0615a425ef0be13a93f42c824170e357aff70cc0f4adff55453eb1d"
+    },
+    {
+      "path": "step6/analysis/phase4_power_modeling_table.parquet",
+      "sha256": "e599cf2338c274e00eb0e749234c9d4b9d6e06b6a00ceb5e9f138df3c38b8778"
+    },
+    {
+      "path": "step6/config/locked_candidate_phase4.json",
+      "sha256": "59fb6c82b88f12528e9709b09dc43e3890d2f32e6b6dcb297abbfaa16a923a74"
+    },
+    {
+      "path": "step6/reports/main_model_comparison.csv",
+      "sha256": "002e6d72f1ca60e4251c8ea5726dc5855d627a0573f94731d9006fc790947ed7"
+    },
+    {
+      "path": "step6/reports/confirmatory_metrics.csv",
+      "sha256": "d81832ad63fff443b2f24a6d7ac15f37789e8e082cf386958ecaca486c2747b0"
+    },
+    {
+      "path": "step6/reports/error_slices.csv",
+      "sha256": "f1ef5d99974a0aff1d74d43312462b4e65071c92f69cd49d28d64af64815ee82"
+    },
+    {
+      "path": "step6/reports/static_subset_comparison.csv",
+      "sha256": "2e958b60deba3bc367e124df588f65223c93b7ea63497162f8019b3f8302d5b8"
+    },
+    {
+      "path": "step4/reports/ablation_summary.csv",
+      "sha256": "283a0521ce428d5bcfc8cf1a30c9869d00d8577cc913f15e49fe747440289a8b"
+    },
+    {
+      "path": "step5/reports/feature_ablation.csv",
+      "sha256": "5e1dc3605a62f5c7cf2f44c8ffcb6224f9ed99be753e0a3ad191084ad77630c4"
+    },
+    {
+      "path": "step2/data/planned_requests/lm-arena-chat.json",
+      "sha256": "2f801cd5bf61f0b709f74915fda9cf102be5693246304e0b0247dd9623b1df6b"
+    },
+    {
+      "path": "step2/data/planned_requests/sourcegraph-fim.json",
+      "sha256": "1799ba0b7d47e52dfe55aea544dbab9b82e5f4f1cf37b67c931fa0bbb51bc9c9"
+    },
+    {
+      "path": "step3/data/hf_cache/datasets--Idavidrein--gpqa/snapshots/633f5ee89ab8ad4522a9f850766b73f62147ffdd/gpqa_diamond.csv",
+      "sha256": "41d1213cd7a4998605a26c2798500652572007161b3a92817ba46b35befcd305"
+    }
+  ]
+}

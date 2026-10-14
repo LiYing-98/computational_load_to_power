@@ -1,0 +1,4 @@
+task,status,reason,n_requests,request_list_sha256
+gpqa,verified,exact frozen request-list hash; no tokenizer or completion used,198,7a647ecfc9dad4434227d20acb5137af91c9f3ee32552a8d4b44b83d3a853647
+lm-arena-chat,verified,exact frozen request-list hash; no tokenizer or completion used,1024,2f801cd5bf61f0b709f74915fda9cf102be5693246304e0b0247dd9623b1df6b
+sourcegraph-fim,verified,exact frozen request-list hash; no tokenizer or completion used,1024,1799ba0b7d47e52dfe55aea544dbab9b82e5f4f1cf37b67c931fa0bbb51bc9c9

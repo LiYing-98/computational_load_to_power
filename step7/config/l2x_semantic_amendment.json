@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "frozen_before_corrected_training": true,
+  "frozen_utc": "2026-10-13T21:10:27.041167+00:00",
+  "reason": "review-confirmed structural N/A semantic bug; not result-based retuning",
+  "affected_level": "L2X-StaticExtended",
+  "changed_columns": [
+    "x_p5_extended_sliding_window",
+    "x_p5_extended_sliding_window_applicable",
+    "x_p5_extended_sliding_window_unknown"
+  ],
+  "rule": "existing pinned raw config use_sliding_window=false and sliding_window=null -> value0, applicable0, unknown0",
+  "evidence": [
+    {
+      "model_id": "Qwen/Qwen3-14B",
+      "rows": 26,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-14B/config.json",
+      "raw_sha256": "e73c3664ca09b10a673fef0c22e8a6b456201d49bd4713c9691f775720e8857a",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "rows": 31,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-235B-A22B-Instruct-2507/config.json",
+      "raw_sha256": "ad59a339665ee1c68cbff06ac72c9e59f5183ebfaf3698c98737e003a870e9e2",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+      "rows": 23,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-235B-A22B-Instruct-2507-FP8/config.json",
+      "raw_sha256": "f056921e486d3e22aed125b5218b87146ea2ac838ccf1521dea5b08f809e8d59",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "rows": 18,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-235B-A22B-Thinking-2507/config.json",
+      "raw_sha256": "ad59a339665ee1c68cbff06ac72c9e59f5183ebfaf3698c98737e003a870e9e2",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
+      "rows": 22,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-235B-A22B-Thinking-2507-FP8/config.json",
+      "raw_sha256": "f056921e486d3e22aed125b5218b87146ea2ac838ccf1521dea5b08f809e8d59",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "rows": 31,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-30B-A3B-Instruct-2507/config.json",
+      "raw_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+      "rows": 15,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-30B-A3B-Thinking-2507/config.json",
+      "raw_sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-32B",
+      "rows": 31,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-32B/config.json",
+      "raw_sha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-8B",
+      "rows": 29,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-8B/config.json",
+      "raw_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "rows": 24,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-Coder-30B-A3B-Instruct/config.json",
+      "raw_sha256": "e2c8d8eea39471785cd93379d8b48241ad7dcda299013155dd02526e34a0de62",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "rows": 10,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-Coder-480B-A35B-Instruct/config.json",
+      "raw_sha256": "653230e2dd1c41bd1125d046f00259ed98d6294c75c63969f8890c6e139af7de",
+      "use_sliding_window": false,
+      "sliding_window": null
+    },
+    {
+      "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "rows": 16,
+      "config_path": "step3/data/static_models/Qwen--Qwen3-Coder-480B-A35B-Instruct-FP8/config.json",
+      "raw_sha256": "7d3720a766100b946b4895112eda83df64979fe9417561deaaf4ee3396bc821b",
+      "use_sliding_window": false,
+      "sliding_window": null
+    }
+  ],
+  "original_protocol_sha256": "fe107ed6bbea145eb5d053d3b2809a0ee9913aeed2d58d232a9c6ae09089eb22",
+  "original_master_sha256": "c5604445db76dbbf40909164ca73431cab36f257625669b6c09dcde1947230dc",
+  "effective_table_path": "step7/analysis/phase5_l2x_amended_table.parquet",
+  "effective_table_sha256": "413fe5b0460903f646141d5d4447382c0d9c17fbcd980022389862db76308e40",
+  "code_sha256": "d0b049274260ffecfb283a4854ad78043317e84be8e5f2cbeacd5d3644f19565",
+  "original_matrix_path": "step7/analysis/superseded_l2x/original_main_model_matrix.csv",
+  "original_matrix_sha256": "3f292ebe92d832a430459962ae14f3825ba9854ce101d345de7baa507358810e",
+  "candidate_selection_feedback": false
+}

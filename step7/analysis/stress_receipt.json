@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "candidate_lock_sha256": "f0ec393e8cf37b595104be29461572c446d099775a849fa66ca3b1427a958356",
+  "n_stress_cells": 52,
+  "prediction_rows": 4584,
+  "selection_feedback": false
+}

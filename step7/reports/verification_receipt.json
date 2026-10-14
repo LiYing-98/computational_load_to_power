@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "scope": "Phase5 GPU-side stable high-load text-LLM inference",
+  "mode": "final",
+  "status": "pass",
+  "generated_utc": "2026-10-13T23:09:49.244454+00:00",
+  "checks": [
+    {
+      "name": "source/protocol integrity",
+      "status": "pass",
+      "details": {
+        "source_files": 21,
+        "protocol_files": 12
+      }
+    },
+    {
+      "name": "cohort/feature/formula boundary",
+      "status": "pass",
+      "details": {
+        "stable_rows": 565,
+        "models": 27,
+        "levels": 11,
+        "independent_physics_rows": 305
+      }
+    },
+    {
+      "name": "fold/candidate fairness",
+      "status": "pass",
+      "details": {
+        "cohorts": 4,
+        "experiments": 224,
+        "nonbaseline_budget": 8
+      }
+    },
+    {
+      "name": "selective semantic amendment and preserved main evidence",
+      "status": "pass",
+      "details": {
+        "changed_rows": 276,
+        "models": 12,
+        "corrected_cells": 16,
+        "preserved_cells": 208
+      }
+    },
+    {
+      "name": "OOF total/per-GPU metrics and isolation",
+      "status": "pass",
+      "details": {
+        "cells_independently_rebuilt": 224
+      }
+    },
+    {
+      "name": "slice memberships and both power scales",
+      "status": "pass",
+      "details": {
+        "slice_cells_independently_rebuilt": 6640
+      }
+    },
+    {
+      "name": "paired model-cluster statistics",
+      "status": "pass",
+      "details": {
+        "paired_comparisons_rebuilt": 272,
+        "draws": 544000
+      }
+    },
+    {
+      "name": "candidate freeze and stress evidence",
+      "status": "pass",
+      "details": {
+        "development_candidates": 4,
+        "post_hoc_stress_cells": 52
+      }
+    },
+    {
+      "name": "required delivery and credential patterns",
+      "status": "pass",
+      "details": {
+        "required_artifacts": 11,
+        "figures": 6,
+        "executed_code_cells": 6,
+        "secret_pattern_files": 83
+      }
+    }
+  ]
+}

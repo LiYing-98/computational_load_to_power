@@ -1,0 +1,8 @@
+{
+  "information_accuracy_curve.png": "information_curve_source.csv (own supports; winner bias)",
+  "algorithm_feature_heatmap.png": "main_model_matrix.csv main rows",
+  "total_per_gpu_paired.png": "target_paired_plot_source.csv",
+  "gpu_count_error_scaling.png": "gpu_count_scaling_source.csv",
+  "calibration_overall_8gpu_top10.png": "analysis/calibration_figure_source.parquet",
+  "feature_increment_forest.png": "feature_increment_effects.csv matched-support row-weighted intervals"
+}

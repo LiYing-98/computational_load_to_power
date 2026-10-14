@@ -1,0 +1,9 @@
+{
+  "weight_bytes_total": "total_params_billions * 1e9 * benchmark_precision_bits / 8",
+  "active_weight_bytes_total": "activated_params_billions * 1e9 * benchmark_precision_bits / 8",
+  "model_parallel_gpus_per_replica": "num_gpus/data_parallel with positive integer validation",
+  "max_num_seqs_per_gpu": "max_num_seqs/num_gpus; not a per-replica capacity claim",
+  "gqa_ratio": "heads/kv_heads only for GQA; structural zero plus applicability flag otherwise",
+  "physics": "See physics_feature_formulas_phase5.md",
+  "text": "Sum characters and UTF-8 bytes of raw input fields, excluding completion, template markers and tokenizer; exact frozen request-list hash verified"
+}

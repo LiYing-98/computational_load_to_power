@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "completed_experiments": 224,
+  "expected_experiments": 224,
+  "missing_experiments": [],
+  "semantic_amendment": "config/l2x_semantic_amendment.json",
+  "collector": "step7.scripts.amend_l2x.collect_amended_results; original collector is pre-amendment only"
+}

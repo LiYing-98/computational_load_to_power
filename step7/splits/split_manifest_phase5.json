@@ -1,0 +1,32 @@
+{
+  "seed": 20261013,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "group": "diag_model_id",
+  "cohorts": [
+    {
+      "cohort": "full",
+      "n_rows": 565,
+      "n_models": 27,
+      "sha256": "d2c272968a1ecabbb395eadeba24e97302afc0d6909c08c9a2e92ab258ebf7d9"
+    },
+    {
+      "cohort": "static",
+      "n_rows": 448,
+      "n_models": 20,
+      "sha256": "a5564170abd67bd50434fda58b262481d182da2ed61b15d978d8433f18deb277"
+    },
+    {
+      "cohort": "compact",
+      "n_rows": 305,
+      "n_models": 14,
+      "sha256": "f2ee0a36922c3d8ffb6d908eb701f25c968de42ca2ac92e74d7e39efef2e0108"
+    },
+    {
+      "cohort": "effective",
+      "n_rows": 383,
+      "n_models": 18,
+      "sha256": "1be8f9d365de8971731b4d7489bba7ad9af0931cc264d41dc703cbfd9359481a"
+    }
+  ]
+}

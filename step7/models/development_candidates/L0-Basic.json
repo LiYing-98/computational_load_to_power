@@ -1,0 +1,61 @@
+{
+  "level": "L0-Basic",
+  "algorithm": "CatBoost",
+  "target_strategy": "T-total",
+  "feature_columns": [
+    "x_hardware_num_gpus",
+    "x_model_benchmark_total_params_billions",
+    "x_p5_precision_bits",
+    "x_p5_weight_bytes_total",
+    "x_hardware_rated_power_w",
+    "x_hardware_aggregate_rated_power_w",
+    "x_hardware_hbm_capacity_gb",
+    "x_hardware_hbm_bandwidth_gbps",
+    "x_hardware_precision_matched_peak_compute_tflops",
+    "x_hardware_interconnect_bandwidth_gbps",
+    "x_hardware_gpu_model",
+    "diag_architecture_class",
+    "x_model_benchmark_weight_precision"
+  ],
+  "n_rows": 565,
+  "n_models": 27,
+  "development_candidate_not_external_validated": true,
+  "model_sha256": "77cd73d639b2e37711506cd76ca45f765a4c8d2b10379b52766dd16ffa4ef9e4",
+  "lock_sha256": "f0ec393e8cf37b595104be29461572c446d099775a849fa66ca3b1427a958356",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.4",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.7.2",
+    "xgboost": "3.0.5",
+    "catboost": "unavailable"
+  },
+  "selected_index": 4,
+  "selected_hyperparameters": {
+    "random_strength": 1.0,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 20.0,
+    "iterations": 600,
+    "depth": 5
+  },
+  "group_cv_total_mae": [
+    410.5070614385462,
+    421.95610808766065,
+    457.3390587997943,
+    376.1328177966459,
+    344.0370673472366,
+    393.90781096035806,
+    500.79441626236695,
+    373.90157586429996
+  ],
+  "candidate_failures": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

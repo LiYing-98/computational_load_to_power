@@ -1,0 +1,12 @@
+feature_level,n_rows,n_models,n_lineages,n_architectures,gpu_composition,task_composition,gpu_count_composition
+L0-Basic,565,27,6,3,"{""B200"": 291, ""H100"": 274}","{""lm-arena-chat"": 328, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 250, ""8"": 128, ""2"": 104, ""4"": 83}"
+L0A-ActiveAware,565,27,6,3,"{""B200"": 291, ""H100"": 274}","{""lm-arena-chat"": 328, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 250, ""8"": 128, ""2"": 104, ""4"": 83}"
+L1-Deployment,565,27,6,3,"{""B200"": 291, ""H100"": 274}","{""lm-arena-chat"": 328, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 250, ""8"": 128, ""2"": 104, ""4"": 83}"
+L2-StaticCore,448,20,5,3,"{""B200"": 245, ""H100"": 203}","{""lm-arena-chat"": 211, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 230, ""8"": 89, ""2"": 86, ""4"": 43}"
+L3-Workload,448,20,5,3,"{""B200"": 245, ""H100"": 203}","{""lm-arena-chat"": 211, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 230, ""8"": 89, ""2"": 86, ""4"": 43}"
+L4-CompactPhysics,305,14,2,2,"{""B200"": 166, ""H100"": 139}","{""lm-arena-chat"": 172, ""gpqa"": 83, ""sourcegraph-fim"": 50}","{""1"": 134, ""8"": 67, ""2"": 61, ""4"": 43}"
+L3E-Effective,383,18,4,3,"{""B200"": 213, ""H100"": 170}","{""lm-arena-chat"": 211, ""gpqa"": 122, ""sourcegraph-fim"": 50}","{""1"": 190, ""8"": 89, ""2"": 61, ""4"": 43}"
+L2X-StaticExtended,448,20,5,3,"{""B200"": 245, ""H100"": 203}","{""lm-arena-chat"": 211, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 230, ""8"": 89, ""2"": 86, ""4"": 43}"
+L4B5-OldB5Sensitivity,305,14,2,2,"{""B200"": 166, ""H100"": 139}","{""lm-arena-chat"": 172, ""gpqa"": 83, ""sourcegraph-fim"": 50}","{""1"": 134, ""8"": 67, ""2"": 61, ""4"": 43}"
+L1-TaskSensitivity,565,27,6,3,"{""B200"": 291, ""H100"": 274}","{""lm-arena-chat"": 328, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 250, ""8"": 128, ""2"": 104, ""4"": 83}"
+L1T-TokenizerFreeTextProxy,565,27,6,3,"{""B200"": 291, ""H100"": 274}","{""lm-arena-chat"": 328, ""gpqa"": 187, ""sourcegraph-fim"": 50}","{""1"": 250, ""8"": 128, ""2"": 104, ""4"": 83}"

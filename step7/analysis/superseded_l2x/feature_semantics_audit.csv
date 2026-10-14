@@ -1,0 +1,139 @@
+feature,source,formal_role,missing_rows,unique_count,structural_na_rows,unknown_rows
+diag_architecture_class,step6/analysis/phase4_power_modeling_table.parquet,exante,0,3,0,0
+x_deployment_data_parallel,step6/analysis/phase4_power_modeling_table.parquet,exante,0,3,0,0
+x_deployment_expert_parallel,step6/analysis/phase4_power_modeling_table.parquet,exante,0,4,0,0
+x_deployment_max_num_seqs,step6/analysis/phase4_power_modeling_table.parquet,exante,0,16,0,0
+x_deployment_tensor_parallel,step6/analysis/phase4_power_modeling_table.parquet,exante,0,4,0,0
+x_hardware_aggregate_rated_power_w,step6/analysis/phase4_power_modeling_table.parquet,exante,0,8,0,0
+x_hardware_gpu_model,step6/analysis/phase4_power_modeling_table.parquet,exante,0,2,0,0
+x_hardware_hbm_bandwidth_gbps,step6/analysis/phase4_power_modeling_table.parquet,exante,0,2,0,0
+x_hardware_hbm_capacity_gb,step6/analysis/phase4_power_modeling_table.parquet,exante,0,2,0,0
+x_hardware_interconnect_bandwidth_gbps,step6/analysis/phase4_power_modeling_table.parquet,exante,0,2,0,0
+x_hardware_num_gpus,step6/analysis/phase4_power_modeling_table.parquet,exante,0,4,0,0
+x_hardware_physics_compute_time_proxy_seconds,step6/analysis/phase4_power_modeling_table.parquet,exante,260,37,0,260
+x_hardware_physics_compute_to_memory_pressure_ratio,step6/analysis/phase4_power_modeling_table.parquet,exante,260,32,0,260
+x_hardware_physics_kv_capacity_ratio_mean,step6/analysis/phase4_power_modeling_table.parquet,exante,260,39,0,260
+x_hardware_physics_memory_time_proxy_seconds,step6/analysis/phase4_power_modeling_table.parquet,exante,260,42,0,260
+x_hardware_physics_weight_capacity_ratio,step6/analysis/phase4_power_modeling_table.parquet,exante,260,20,0,260
+x_hardware_precision_matched_peak_compute_tflops,step6/analysis/phase4_power_modeling_table.parquet,exante,0,5,0,0
+x_hardware_rated_power_w,step6/analysis/phase4_power_modeling_table.parquet,exante,0,2,0,0
+x_model_attention_variant,step6/analysis/phase4_power_modeling_table.parquet,exante,117,3,0,117
+x_model_benchmark_activated_params_billions,step6/analysis/phase4_power_modeling_table.parquet,exante,0,15,0,0
+x_model_benchmark_total_params_billions,step6/analysis/phase4_power_modeling_table.parquet,exante,0,16,0,0
+x_model_benchmark_weight_precision,step6/analysis/phase4_power_modeling_table.parquet,exante,0,3,0,0
+x_model_context_length,step6/analysis/phase4_power_modeling_table.parquet,exante,117,4,0,117
+x_model_dense_layer_count,step6/analysis/phase4_power_modeling_table.parquet,exante,117,7,0,117
+x_model_head_dim,step6/analysis/phase4_power_modeling_table.parquet,exante,117,4,0,117
+x_model_hidden_size,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_model_intermediate_size,step6/analysis/phase4_power_modeling_table.parquet,exante,117,11,0,117
+x_model_mlp_structure,step6/analysis/phase4_power_modeling_table.parquet,exante,117,2,0,117
+x_model_moe_layer_count,step6/analysis/phase4_power_modeling_table.parquet,exante,117,7,0,117
+x_model_num_attention_heads,step6/analysis/phase4_power_modeling_table.parquet,exante,117,6,0,117
+x_model_num_key_value_heads,step6/analysis/phase4_power_modeling_table.parquet,exante,117,4,0,117
+x_model_num_layers,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_p5_active_param_ratio,Phase5 ex-ante formula or frozen request text,exante,0,9,0,0
+x_p5_active_params_per_layer,Phase5 ex-ante formula or frozen request text,exante,117,13,0,117
+x_p5_active_weight_bytes_per_model_parallel_gpu,Phase5 ex-ante formula or frozen request text,exante,0,25,0,0
+x_p5_active_weight_bytes_total,Phase5 ex-ante formula or frozen request text,exante,0,19,0,0
+x_p5_active_weight_hbm_ratio,Phase5 ex-ante formula or frozen request text,exante,0,36,0,0
+x_p5_decode_one_token_flop_mean_context,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_dense_layer_fraction,Phase5 ex-ante formula or frozen request text,exante,117,3,0,117
+x_p5_extended_active_expert_count,Phase5 ex-ante formula or frozen request text,exante,29,3,259,29
+x_p5_extended_active_expert_count_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_active_expert_count_unknown,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_expert_count,Phase5 ex-ante formula or frozen request text,exante,29,5,259,29
+x_p5_extended_expert_count_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_expert_count_unknown,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_hybrid_attention_layer_count,Phase5 ex-ante formula or frozen request text,exante,0,3,509,0
+x_p5_extended_hybrid_attention_layer_count_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_hybrid_attention_layer_count_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_hybrid_mamba_layer_count,Phase5 ex-ante formula or frozen request text,exante,0,3,509,0
+x_p5_extended_hybrid_mamba_layer_count_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_hybrid_mamba_layer_count_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_hybrid_mlp_layer_count,Phase5 ex-ante formula or frozen request text,exante,0,3,509,0
+x_p5_extended_hybrid_mlp_layer_count_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_hybrid_mlp_layer_count_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_mamba_head_dim,Phase5 ex-ante formula or frozen request text,exante,0,2,509,0
+x_p5_extended_mamba_head_dim_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_mamba_head_dim_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_mamba_num_heads,Phase5 ex-ante formula or frozen request text,exante,0,2,509,0
+x_p5_extended_mamba_num_heads_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_mamba_num_heads_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_mamba_state_size,Phase5 ex-ante formula or frozen request text,exante,0,2,509,0
+x_p5_extended_mamba_state_size_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_mamba_state_size_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_moe_intermediate_size,Phase5 ex-ante formula or frozen request text,exante,29,6,259,29
+x_p5_extended_moe_intermediate_size_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_moe_intermediate_size_unknown,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_qk_nope_head_dim,Phase5 ex-ante formula or frozen request text,exante,0,2,543,0
+x_p5_extended_qk_nope_head_dim_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_qk_nope_head_dim_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_qk_rope_head_dim,Phase5 ex-ante formula or frozen request text,exante,0,2,543,0
+x_p5_extended_qk_rope_head_dim_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_qk_rope_head_dim_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_extended_shared_expert_count,Phase5 ex-ante formula or frozen request text,exante,284,2,259,284
+x_p5_extended_shared_expert_count_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_shared_expert_count_unknown,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_shared_expert_intermediate_size,Phase5 ex-ante formula or frozen request text,exante,280,1,259,280
+x_p5_extended_shared_expert_intermediate_size_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_shared_expert_intermediate_size_unknown,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_sliding_window,Phase5 ex-ante formula or frozen request text,exante,354,3,117,354
+x_p5_extended_sliding_window_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_sliding_window_unknown,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_v_head_dim,Phase5 ex-ante formula or frozen request text,exante,0,2,543,0
+x_p5_extended_v_head_dim_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_extended_v_head_dim_unknown,Phase5 ex-ante formula or frozen request text,exante,0,1,0,0
+x_p5_ffn_expansion_ratio,Phase5 ex-ante formula or frozen request text,exante,117,8,0,117
+x_p5_gqa_ratio,Phase5 ex-ante formula or frozen request text,exante,0,7,195,0
+x_p5_gqa_ratio_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_kv_max_request_bytes,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_kv_mean_request_bytes,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_kv_p95_request_bytes,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_max_num_seqs_per_gpu,Phase5 ex-ante formula or frozen request text,exante,0,22,0,0
+x_p5_model_parallel_gpus_per_replica,Phase5 ex-ante formula or frozen request text,exante,0,4,0,0
+x_p5_moe_layer_fraction,Phase5 ex-ante formula or frozen request text,exante,117,3,0,117
+x_p5_params_per_layer,Phase5 ex-ante formula or frozen request text,exante,117,13,0,117
+x_p5_precision_bits,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_p5_prefill_attention_flop_per_request,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_prefill_mlp_flop_per_request,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_prefill_projection_flop_per_request,Phase5 ex-ante formula or frozen request text,exante,260,14,0,260
+x_p5_transformer_composition_applicable,Phase5 ex-ante formula or frozen request text,exante,0,2,0,0
+x_p5_weight_bytes_per_model_parallel_gpu,Phase5 ex-ante formula or frozen request text,exante,0,26,0,0
+x_p5_weight_bytes_total,Phase5 ex-ante formula or frozen request text,exante,0,19,0,0
+x_p5_weight_hbm_ratio,Phase5 ex-ante formula or frozen request text,exante,0,36,0,0
+x_protocol_task,step6/analysis/phase4_power_modeling_table.parquet,exante,0,3,0,0
+x_text_characters_per_request_max,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_characters_per_request_mean,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_characters_per_request_p50,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_characters_per_request_p90,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_characters_per_request_p95,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_characters_per_request_second_moment,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_characters_per_request_std,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_max,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_mean,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_p50,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_p90,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_p95,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_second_moment,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_text_utf8_bytes_per_request_std,Phase5 ex-ante formula or frozen request text,exante,0,3,0,0
+x_workload_benchmark_input_tokens_cv,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_max,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_mean,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_min,step6/analysis/phase4_power_modeling_table.parquet,exante,117,7,0,117
+x_workload_benchmark_input_tokens_p50,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_p90,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_p95,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_rms,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_second_moment,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_benchmark_input_tokens_std,step6/analysis/phase4_power_modeling_table.parquet,exante,117,9,0,117
+x_workload_effective_input_tokens_cv,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_max,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_mean,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_min,step6/analysis/phase4_power_modeling_table.parquet,exante,182,10,0,182
+x_workload_effective_input_tokens_p50,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_p90,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_p95,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_rms,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_second_moment,step6/analysis/phase4_power_modeling_table.parquet,exante,182,11,0,182
+x_workload_effective_input_tokens_std,step6/analysis/phase4_power_modeling_table.parquet,exante,182,8,0,182
+x_workload_max_output_tokens,step6/analysis/phase4_power_modeling_table.parquet,exante,0,3,0,0

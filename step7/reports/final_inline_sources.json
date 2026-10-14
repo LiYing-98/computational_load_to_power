@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "phase5-information-tiers",
+      "title": "分层研发候选的观察OOF误差",
+      "queries": [{
+        "id": "phase5-main-tier-minima",
+        "source": {
+          "label": "ML.ENERGY V3 Phase5本地研究结果",
+          "files": [{"label":"main_model_matrix.csv"},{"label":"development_candidates_lock.json"},{"label":"phase5_hierarchical_modeling_report.md"}],
+          "metricDefinitions": [{"label":"总功率MAE","definition":"总功率MAE是在各自支持集的model-group nested OOF上计算的GPU稳态聚合功率绝对误差均值，单位W。G-perGPU预测先乘卡数恢复总功率。"}],
+          "filters": ["GPU-side stable text-LLM high-load steady-state inference","5 outer model-group folds and 3 inner folds","主层候选，不含敏感性分支"],
+          "caveats": ["L2只有448条记录，不能把其MAE与L1的565条结果直接相减当作特征增益。","观察到的每层最低OOF有winner-selection bias；研发候选未外部验证。","每个非基线算法统一8个预冻结候选，搜索覆盖小于默认24候选。"],
+          "evidenceFlow": [{"kind":"source","title":"保存的数值证据","detail":"读取当前主矩阵与研发锁，L0选CatBoost/T-total，L1选XGBoost/G-perGPU，L2选HistGradientBoosting/G-perGPU；主候选锁与208个未修正单元保持不变。"}]
+        },
+        "columns":[{"field":"tier","label":"信息层"},{"field":"runs","label":"支持集记录数"},{"field":"total_mae_w","label":"观察总MAE (W)"}],
+        "rows":[{"tier":"L0","runs":565,"total_mae_w":283.5},{"tier":"L1","runs":565,"total_mae_w":202.7},{"tier":"L2","runs":448,"total_mae_w":163.0}],
+        "preview":{"kind":"aggregate","note":"三个主信息层候选，数值保留一位小数；完整矩阵有224单元。","totalRows":224}
+      }]
+    },
+    {
+      "id":"phase5-final-acceptance",
+      "title":"最终验收与研究边界",
+      "queries":[{
+        "id":"phase5-validation-record",
+        "source":{
+          "label":"Phase5验收记录",
+          "files":[{"label":"verification_receipt.json"},{"label":"final_code_review.md"},{"label":"negative_prediction_audit.md"}],
+          "caveats":["六类独立PNG已检查；最终HTML首部已目检，深部fragment跳转截图未成功，因此不声称HTML整页视觉覆盖。","58个负预测仅在L2X两个T-total线性敏感性基线中，原值未裁剪；主层及所有G-perGPU单元无负值。"],
+          "evidenceFlow":[{"kind":"validation","title":"验收结果","detail":"当前224单元全部完成；全20项Step7测试通过；独立9项检查全部PASS，重算224OOF、6640切片、272配对比较及544000模型簇draws，并检查原始/修正OOF和stress来源指纹。"},{"kind":"validation","title":"一次审查与选择性修正","detail":"独立审查的3个Important问题已修复并经RED→GREEN回归及完整suite确认。仅重跑16个L2X敏感性单元，保留208个原单元、冻结候选和开发锁，不把已看Phase4 confirmatory称新盲测。"}]
+        }
+      }]
+    }
+  ]
+}

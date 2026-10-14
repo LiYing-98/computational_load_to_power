@@ -1,0 +1,12 @@
+{
+  "T-total": {
+    "train": "aggregate GPU watts",
+    "selection": "row-weighted total watts MAE"
+  },
+  "G-perGPU": {
+    "train": "aggregate watts / num_gpus",
+    "restore": "prediction_per_gpu * num_gpus",
+    "selection": "row-weighted restored total watts MAE",
+    "meaning": "aggregate mean GPU power, not individual-card measurement"
+  }
+}
